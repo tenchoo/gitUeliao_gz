@@ -1,0 +1,8 @@
+.idea/
+.settings/
+.svn/
+.buildpath
+.project
+php_errors.log
+producted/runtime/*
+sftp-config.json

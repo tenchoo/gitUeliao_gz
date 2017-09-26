@@ -1,0 +1,22 @@
+<?php
+return array(
+	"账号设置" => array(
+		"个人资料:membercenter/editinfo",
+		"安全设置:membercenter/accountsecurity",
+		"帐户余额:",
+		"我的积分:",
+		"我的优惠券:",
+		"我的购物卡:"
+	),
+	"我的交易" => array(
+		"已买到的货品:order/default/list",
+		"我的购物车:/cart/",
+		"收货地址:/address",
+	),
+	"产品管理" => array(
+		"发布产品:product/publish",
+		"出售中的产品:product/productlist",
+		"仓库中的产品:product/productlist/repertory",
+		"草稿箱:product/productlist/draft"
+	),
+);

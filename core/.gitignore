@@ -1,0 +1,7 @@
+.svn/
+.buildpath
+.project
+.settings/
+.idea/
+sftp-config.json
+deployment-config.json

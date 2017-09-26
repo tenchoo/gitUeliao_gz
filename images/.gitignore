@@ -1,0 +1,5 @@
+.settings/
+.svn/
+.project
+deployment-config.json
+sftp-config.json

@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit|ie-stand|ie-comp">
+  <title>已卖出的货品</title>
+  <meta name="keywords" content=""/>
+  <meta name="description" content=""/>
+  <link rel="stylesheet" href="/libs/normalize/3.0.3/normalize.min.css"/>
+  <link rel="stylesheet" href="/common/style.css"/>
+  <script src="/libs/seajs/2.3.0/sea.js"></script>
+  <script src="/libs/seajs/2.3.0/seajs-css.js"></script>
+  <script src="/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="/common/init.js"></script>
+</head>
+<body>
+  <link rel="stylesheet" href="/modules/button/css/style.css"/>
+  <link rel="stylesheet" href="/modules/form/css/style.css"/>
+  <link rel="stylesheet" href="/app/member/frame/css/style.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <div class="frame-head">
+    <div class="container">
+      <h1 class="pull-left"><a href="javascript:"><img src="/app/member/frame/image/logo.png" width="164" height="45" alt=""/></a></h1>
+      <ul class="frame-nav text-center text-bold list-unstyled">
+        <li class="active"><a href="javascript:">首页</a><span></span></li>
+        <li><a href="javascript:">账号设置</a></li>
+        <li><a href="javascript:">消息</a></li>
+        <li><a href="javascript:">管理中心</a></li>
+      </ul>
+      <div class="pull-right frame-search">
+        <form action="" method="get">
+          <input type="text" placeholder="请输入产品名称"/>
+          <button type="submit"><span class="hide">搜索</span></button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="container frame-body">
+    <div class="pull-left list-unstyled frame-menu">
+      <h3 class="active"><span><i></i></span>交易管理</h3>
+      <ul class="list-unstyled">
+        <li class="active"><a href="javascript:">已卖出的货品</a></li>
+        <li><a href="javascript:">发货</a></li>
+        <li><a href="javascript:">评价管理</a></li>
+        <li><a href="javascript:">物流设置</a></li>
+      </ul>
+    </div>
+    <script>seajs.use('app/member/frame/js/menu.js');</script>
+    <div class="pull-right frame-content">
+      <div class="frame-tab">
+        <ul class="clearfix list-unstyled frame-tab-hd">
+          <li class="active"><a href="javascript:">全部订单</a></li>
+          <li><a href="javascript:">待买家付款<b class="text-warning">0</b></a></li>
+          <li><a href="javascript:">待发货<b class="text-warning">0</b></a></li>
+          <li><a href="javascript:">已发货<b class="text-warning">0</b></a></li>
+          <li><a href="javascript:">退款中<b class="text-warning">0</b></a></li>
+          <li><a href="javascript:">交易成功</a></li>
+          <li><a href="javascript:">交易关闭</a></li>
+        </ul>
+      </div>
+      <div class="frame-list salelist">
+        <div class="frame-list-search">
+          <form action="" method="get">
+          	<div class="pull-left">
+	          	<div class="item">
+		          	<label>产品名称：<input type="text" class="form-control input-xs"></label>
+		          	<label>订单编号：<input type="text" class="form-control input-xs"></label>
+		          	<label>会员名称：<input type="text" class="form-control input-xs"></label>
+	          	</div>
+	          	<div class="item">
+		            <label class="order-time">交易时间：<input type="text" class="form-control input-xs input-date" id="starttime" readonly><span>到</span><input type="text" class="form-control input-xs input-date" id="endtime" readonly></label>
+		            <label>交易状态：
+			            <select name="" class="form-control input-xs">
+			              <option value="">等待买家付款</option>
+			              <option value="">待发货</option>
+			              <option value="">已发货</option>
+			              <option value="">退款中</option>
+			              <option value="">交易成功</option>
+			              <option value="">交易关闭</option>
+			            </select>
+		            </label>
+	            </div>
+            </div>
+            <div class="pull-right"><button class="btn btn-xs btn-cancel">查找</button></div>
+          </form>
+        </div>
+        <div class="frame-list-bd">
+          <table>
+            <thead>
+              <tr><th class="title">宝贝</th><th width="80">单价</th><th width="50">数量</th><th width="80">商品操作</th><th width="80">交易状态</th><th width="100">实付款</th><th width="80">交易操作</th></tr>
+              <tr class="list-page-head"><td colspan="7">
+              	<div class="pull-left">
+                  <label for="selectall" class="checkbox-inline"><input type="checkbox" class="selectall">全选</label>
+                  <a href="" class="btn btn-cancel btn-xs">批量导出</a>
+									<label class="checkbox-inline no-show"><input type="checkbox">不显示已关闭订单</label>
+                </div>
+                <div class="pull-right">
+                  <div class="page-text text-muted pull-left">第 1-10 条, 共 12 条 <span>第1页/共2页</span></div>
+                  <div class="page pull-left">
+                    <ul class="list-unstyled">
+                      <li><a href="" class="prev btn btn-cancel btn-xs"><i></i></a></li>
+                      <li><a href="" class="next btn btn-cancel btn-xs">下一页<i></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </td></tr>
+            </thead>
+            <tfoot class="list-page-foot">
+              <tr class="spacing"><td colspan="7"></td></tr>
+              <tr><td colspan="7">
+              	<div class="pull-left">
+                  <label for="selectall" class="checkbox-inline"><input type="checkbox" class="selectall">全选</label>
+                  <a href="" class="btn btn-cancel btn-xs">批量导出</a>
+									<label class="checkbox-inline no-show"><input type="checkbox">不显示已关闭订单</label>
+                </div>
+                <div class="pull-right">
+                  <div class="page pull-left">
+                    <ul class="list-unstyled">
+                      <li><a href="" class="prev btn btn-cancel btn-xs"><i></i></a></li>
+                      <li><a href="" class="prev-c btn btn-cancel btn-xs"><i></i>上一页</a></li>
+                      <li><a href="" class="page-num active">1</a></li>
+                      <li><a href="" class="page-num ">2</a></li>
+                      <li><a href="" class="next btn btn-cancel btn-xs">下一页<i></i></a></li>
+                      <li><a href="" class="next-l btn btn-cancel btn-xs"><i></i></a></li>
+                    </ul>
+                  </div>
+                  <div class="page-text text-muted pull-left">
+                    <span>到第</span>
+                    <input type="text">
+                    <span>页</span>
+                  </div>
+                  <a href="" class="btn btn-cancel btn-xs">确定</a>
+                </div>
+              </td></tr>
+            </tfoot>
+            <tbody class="list-page-body">
+              <tr class="spacing"><td colspan="7"></td></tr>
+              <tr class="list-body-hd">
+                <td colspan="7">
+                	<label class="checkbox-inline"><input type="checkbox" class="select"></label>
+                  <div class="order-info inline-block">
+                    <b>2015-07-15</b>
+                    <span>订单编号：1523587745656</span>
+                  </div>
+                  <div class="online-service inline-block">
+                    <span>天天饰品</span>
+                    <span><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=642797629&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:642797629:51" alt="点击这里给我发消息" title="点击这里给我发消息"/></a></span>
+                  </div>
+                </td>
+              </tr>
+              <tr class="list-body-bd">
+                <td class="title">
+                  <div class="c-img pull-left"><a href=""><img src=""/></a></div>
+                  <div class="product-title">
+                    <a href="">2012新款 可爱浪漫少女一字领荷叶边衬衫</a>
+                  </div>
+                  <p class="text-minor"><span>颜色：黑色</span><span>尺码：170/90(M)</span><span>尺码：170/90(M)</span><span>尺码：170/90(M)</span></p>
+                </td>
+                <td class="price">6001.00</td>
+                <td class="num">1</td>
+                <td class="service">
+                  <p><a href="">投诉卖家</a></p>
+                  <p class="text-warning">正在处理中</p>
+                </td>
+                <td class="status">
+                  <p class="text-warning">等待买家付款</p>
+                  <p class="text-success">交易成功</p>
+                  <p><a href="javascript:">订单详情</a></p>
+                </td>
+                <td class="total-price">25.00<p class="text-minor">(含快递费：10.00)</p></td>
+                <td class="operations">
+                  <a href="javascript:" class="btn btn-success btn-xs">发货</a>
+                  <p><a href="javascript:" class="cancel-order">取消订单</a></p>
+                  <div class="cancel-order-tip hide">
+                    <p>您确定要取消该订单吗？取消订单后，不能恢复。</p>
+                    <p>
+                      <select >
+                       <option value="">请选择取消的理由</option>
+                       <option value="">我不想买了</option>
+                       <option value="">信息填写错误，重新拍</option>
+                       <option value="">暂时缺货</option>
+                       <option value="">其它原因</option>
+                      </select>
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr class="spacing"><td colspan="7"></td></tr>
+            </tbody>
+            <tbody class="list-page-body">
+              <tr class="spacing"><td colspan="7"></td></tr>
+              <tr class="list-body-hd">
+                <td colspan="7">
+                	<label class="checkbox-inline"><input type="checkbox" class="select"></label>
+                  <div class="order-info inline-block">
+                    <b>2015-07-15</b>
+                    <span>订单编号：1523587745656</span>
+                  </div>
+                  <div class="online-service inline-block">
+                    <span>天天饰品</span>
+                    <span><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=642797629&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:642797629:51" alt="点击这里给我发消息" title="点击这里给我发消息"/></a></span>
+                  </div>
+                </td>
+              </tr>
+              <tr class="list-body-bd">
+                <td class="title">
+                  <div class="c-img pull-left"><a href=""><img src=""/></a></div>
+                  <div class="product-title">
+                    <a href="">2012新款 可爱浪漫少女一字领荷叶边衬衫</a>
+                  </div>
+                  <p class="text-minor"><span>颜色：黑色</span><span>尺码：170/90(M)</span><span>尺码：170/90(M)</span><span>尺码：170/90(M)</span></p>
+                </td>
+                <td class="price">6001.00</td>
+                <td class="num">1</td>
+                <td class="service">
+                  <p><a href="">投诉卖家</a></p>
+                </td>
+                <td rowspan="2" class="status">
+                  <p class="text-warning">等待买家付款</p>
+                  <p><a href="">订单详情</a></p>
+                </td>
+                <td rowspan="2" class="total-price">25.00<p class="text-minor">(含快递费：10.00)</p></td>
+                <td rowspan="2" class="operations">
+                  <a href="javascript:" class="btn btn-warning btn-xs change-price">改价</a>
+                  <div class="cancel-order-tip hide">
+                    <div class="frame-list-bd">
+						          <table>
+						            <thead>
+						              <tr><th class="title">产品信息</th><th width="60">单价（元）</th><th width="40">数量</th><th width="60">原价</th><th width="50">涨价或折扣</th><th width="50">邮费（元）</th></tr>
+						            </thead>
+						            <tbody class="list-page-body">
+						              <tr>
+						                <td>
+						                  <div class="product-title">
+                                <a href="">2012新款 可爱浪漫少女一字领荷叶边衬衫</a>
+                              </div>
+						                  <p class="text-minor"><span>颜色分类：白色码</span><span>尺码：均码</span></p>
+						                </td>
+						                <td>45.00</td>
+						                <td>1</td>
+						                <td>45.00</td>
+						                <td><input type="text" class="form-control input-xs"/></td>
+						                <td rowspan="2" class="postage"><input type="text" class="form-control input-xs"/></td>
+						              </tr>
+						              <tr>
+                            <td>
+                              <div class="product-title">
+                                <a href="">2012新款 可爱浪漫少女一字领荷叶边衬衫</a>
+                              </div>
+                              <p class="text-minor"><span>颜色分类：白色码</span><span>尺码：均码</span></p>
+                            </td>
+                            <td>45.00</td>
+                            <td>1</td>
+                            <td>45.00</td>
+                            <td><input type="text" class="form-control input-xs"/></td>
+                          </tr>
+						            </tbody>
+						          </table>
+						        </div>
+						        <p>实付款（原价+运费+涨价或折扣）: <span class="dialog-price">45.00</span>+<span class="dialog-freight">10.00</span>+<span class="dialog-discount">0.00</span>=<b class="text-warning dialog-total-price">55.00</b>元</p>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>seajs.use('./js/salelist.js');</script>
+</body>
+</html>

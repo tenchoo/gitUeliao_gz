@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit|ie-stand|ie-comp">
+  <title>注册</title>
+  <meta name="keywords" content=""/>
+  <meta name="description" content=""/>
+  <link rel="stylesheet" href="/libs/normalize/3.0.3/normalize.min.css"/>
+  <link rel="stylesheet" href="/common/style.css"/>
+  <script src="/libs/seajs/2.3.0/sea.js"></script>
+  <script src="/libs/seajs/2.3.0/seajs-css.js"></script>
+  <script src="/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="/common/init.js"></script>
+</head>
+<body>
+  <link rel="stylesheet" href="/modules/icon/css/style.css"/>
+  <link rel="stylesheet" href="/modules/button/css/style.css"/>
+  <link rel="stylesheet" href="/modules/form/css/style.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <div class="container head">
+    <h1 class="logo pull-left">
+      <a href="javascript:"><img src="/app/home/image/logo.png" width="213" height="58" alt="指易达"/></a>
+    </h1>
+    <ol class="pull-left step list-inline text-bold">
+      <li class="active">
+        <i>1</i>填写注册信息
+      </li>
+      <li>
+        <i>2</i>注册成功
+      </li>
+    </ol>
+  </div>
+  <div class="container">
+    <div class="form-horizontal">
+      <form action="" method="post">
+        <div class="form-group">
+          <label class="control-label" for="account">登录名：</label>
+          <input type="text" name="RegForm[account]" class="form-control username" placeholder="手机或邮箱注册" id="account" data-ajax="/ajax/CheckAccount"/>
+        </div>
+        <div class="form-group">
+          <label class="control-label" for="password">登录密码：</label>
+          <input type="password" name="RegForm[password]" data-help="请输入6-16个字符，密码需字母和数字组合" class="form-control" id="password"/>
+          <ol class="clearfix password-strength list-unstyled form-group-offset text-center text-minor">
+            <li class="level1"><span></span>弱</li>
+            <li class="level2"><span></span>中</li>
+            <li class="level3"><span></span>强</li>
+          </ol>
+        </div>
+        <div class="form-group">
+          <label class="control-label" for="repassword">确认密码：</label>
+          <input type="password" name="RegForm[repassword]" data-help="请再次输入密码" class="form-control" id="repassword"/>
+        </div>
+        <div class="form-group">
+          <label class="control-label" for="verifyCode">验证码：</label>
+          <input type="text" name="RegForm[verifyCode]" class="form-control code append-help no-success-help" id="verifyCode"/>
+          <button class="btn btn-cancel btn-xs send-code" type="button">免费发送验证码</button>
+        </div>
+        <div class="form-group form-group-offset">
+          <label class="checkbox-inline">
+            <input type="checkbox" name="RegForm[agree]" value="0" checked/>我已认真阅读并同意商城 <a href="javascript:" class="text-link">《用户注册协议》</a>
+          </label>
+        </div>
+        <div class="form-group form-group-offset">
+          <button class="btn btn-warning" type="submit">同意协议并注册</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script>
+    seajs.use('app/member/account/js/register.js');
+  </script>
+</body>
+</html>

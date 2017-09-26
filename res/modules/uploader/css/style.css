@@ -1,0 +1,9 @@
+.uploader{display: inline-block;
+*display: inline;
+*zoom: 1;overflow: hidden;position: relative;}
+.uploader input{display: none;}
+.uploader-image{height:86px;width:86px;}
+.uploader-image button{position: relative;width:86px;height:86px;padding:0;background:#f9f9f9 url(img/uploader-image.png) center;border:solid 3px #e6e6e6;}
+.uploader-image input{display: none;}
+.uploader-image span{position: absolute;width:80px;height:21px;left: 0;bottom: 0;line-height:21px;color:#fff}
+.uploader-image .bg{background:#000;opacity:0.6;filter: alpha(opacity=60);}

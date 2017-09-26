@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit|ie-stand|ie-comp">
+  <title>产品类目管理</title>
+  <meta name="keywords" content=""/>
+  <meta name="description" content=""/>
+  <link rel="stylesheet" href="/libs/normalize/3.0.3/normalize.min.css"/>
+  <link rel="stylesheet" href="/common/style.css"/>
+  <script src="/libs/seajs/2.3.0/sea.js"></script>
+  <script src="/libs/seajs/2.3.0/seajs-css.js"></script>
+  <script src="/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="/common/init.js"></script>
+</head>
+<body>
+  <link rel="stylesheet" href="/modules/button/css/style.css"/>
+  <link rel="stylesheet" href="/modules/icon/css/style.css"/>
+  <link rel="stylesheet" href="/modules/form/css/style.css"/>
+  <link rel="stylesheet" href="/app/member/frame/css/style.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+
+  <div class="frame-head">
+    <div class="container">
+      <h1 class="pull-left"><a href="javascript:"><img src="/app/member/frame/image/logo.png" width="164" height="45" alt=""/></a></h1>
+      <ul class="frame-nav text-center text-bold list-unstyled">
+        <li><a href="javascript:">首页</a><span></span></li>
+        <li><a href="javascript:">账号设置</a></li>
+        <li><a href="javascript:">消息</a></li>
+        <li class="active"><a href="javascript:">我要开店</a></li>
+      </ul>
+      <div class="pull-right frame-search">
+        <form action="" method="get">
+          <input type="text" placeholder="请输入产品名称"/>
+          <button type="submit"><span class="hide">搜索</span></button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="container frame-body">
+    <div class="pull-left list-unstyled frame-menu">
+      <h3 class="active"><span><i></i></span>网铺管理</h3>
+      <ul class="list-unstyled">
+        <li><a href="recommend.html">首页推荐</a></li>
+        <li  class="active"><a href="choosetemplate.html">店铺装修</a></li>
+        <li><a href="shopsetting.html">店铺基本设置</a></li>
+        <li><a href="javascript:">域名设置</a></li>
+        <li><a href="/app/shop/manage/newslist.html">信息发布</a></li>
+        <li><a href="closeshop.html">申请关店</a></li>
+      </ul>
+    </div>
+    <script>seajs.use('app/member/frame/js/menu.js');</script>
+    <div class="pull-right frame-content">
+      <div class="frame-tab">
+        <ul class="clearfix list-unstyled frame-tab-hd">
+          <li><a href="category.html">产品类目管理</a></li>
+          <li class="active"><a href="productscategory.html">产品归类</a></li>
+        </ul>
+        <div class="frame-tab-bd frame-tab-bd-active productscategory">
+          <div class="frame-list-search">
+            <form action="" method="get">
+            <select name="" class="form-control input-xs">
+              <option value="">选择产品分类</option>
+            </select>
+            <input type="text" class="form-control input-xs" placeholder="请输入产品名称">
+            <button class="btn btn-xs btn-cancel">查找</button>
+            </form>
+          </div>
+          <div class="frame-list-bd">
+            <table>
+              <thead>
+                <tr><th colspan="2" class="title">信息标题</th><th width="200">所属分类</th><th width="165">添加所属分类</th></tr>
+                <tr class="list-page-head"><td colspan="4">
+                  <div class="pull-left">
+                    <label class="checkbox-inline"><input type="checkbox" class="selectall">全选</label>
+                    <select name="" class="form-control input-xs">
+                      <option value="">添加到分类</option>
+                    </select>
+                  </div>
+                  <div class="pull-right">
+                    <div class="page-text text-muted pull-left">第 1-10 条, 共 12 条 <span>第1页/共2页</span></div>
+                    <div class="page pull-left">
+                      <ul class="list-unstyled">
+                        <li><a href="" class="prev btn btn-cancel btn-xs"><i></i></a></li>
+                        <li><a href="" class="next btn btn-cancel btn-xs">下一页<i></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </td></tr>
+              </thead>
+              <tfoot class="list-page-foot">
+                <tr class="spacing"><td colspan="4"></td></tr>
+                <tr><td colspan="4">
+                  <div class="pull-left">
+                    <label class="checkbox-inline"><input type="checkbox" class="selectall">全选</label>
+                    <select name="" class="form-control input-xs">
+                      <option value="">添加到分类</option>
+                    </select>
+                  </div>
+                  <div class="pull-right">
+                    <div class="page pull-left">
+                      <ul class="list-unstyled">
+                        <li><a href="" class="prev btn btn-cancel btn-xs"><i></i></a></li>
+                        <li><a href="" class="prev-c btn btn-cancel btn-xs"><i></i>上一页</a></li>
+                        <li><a href="" class="page-num active">1</a></li>
+                        <li><a href="" class="page-num ">2</a></li>
+                        <li><a href="" class="next btn btn-cancel btn-xs">下一页<i></i></a></li>
+                        <li><a href="" class="next-l btn btn-cancel btn-xs"><i></i></a></li>
+                      </ul>
+                    </div>
+                    <div class="page-text text-muted pull-left">
+                      <span>到第</span>
+                      <input type="text">
+                      <span>页</span>
+                    </div>
+                    <a href="" class="btn btn-cancel btn-xs">确定</a>
+                  </div>
+                </td></tr>
+              </tfoot>
+              <tbody class="list-page-body">
+                <tr>
+                  <td class="check"><input type="checkbox" ></td>
+                  <td class="t">
+                    <a href="javascript:" class="pull-left"><img src="/common/placeholder.png" alt="" width="50" height="50"></a>
+                    <a href="javascript:">费好大劲才抢到的，非常美，很庆幸把剩块费好大劲才抢剩块</a></td>
+                  <td class="categorys">
+                    <span class="default">未分类</span>
+                  </td>
+                  <td>
+                    <select name="" class="form-control input-xs">
+                      <option value="">添加所属分类</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="check"><input type="checkbox" ></td>
+                  <td class="t">
+                    <a href="javascript:" class="pull-left"><img src="/common/placeholder.png" alt="" width="50" height="50"></a>
+                    <a href="javascript:">费好大劲才抢到的，非常美，很庆幸把剩块费好大劲才抢剩块</a></td>
+                  <td class="categorys">
+                    <span class="default">雪纺风格->韩吧</span>
+                    <div class="more-category">
+                      <div class="more-category-hd text-minor">更多(<span class="count">1</span>)<span class="arr"><i></i></span></div>
+                      <div class="more-category-bd">
+                        <div class="clearfix">
+                          <a href="javascript:" class="pull-right icon icon-control icon-close"></a>
+                        </div>
+                        <ul class="list-unstyled">
+                          <li class="clearfix">
+                            <span class="pull-left">雪纺风格->韩吧</span>
+                            <a href="javascript:" class="icon icon-control icon-close-sm pull-right"></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <select name="" class="form-control input-xs">
+                      <option value="">添加所属分类</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="check"><input type="checkbox" ></td>
+                  <td class="t">
+                    <a href="javascript:" class="pull-left"><img src="/common/placeholder.png" alt="" width="50" height="50"></a>
+                    <a href="javascript:">费好大劲才抢到的，非常美，很庆幸把剩块费好大劲才抢剩块</a></td>
+                  <td class="categorys">
+                    <span class="default">雪纺风格->韩吧</span>
+                    <div class="more-category">
+                      <div class="more-category-hd text-minor">更多(<span class="count">5</span>)<span class="arr"><i></i></span></div>
+                      <div class="more-category-bd">
+                        <div class="clearfix">
+                          <a href="javascript:" class="pull-right icon icon-control icon-close"></a>
+                        </div>
+
+                        <ul class="list-unstyled">
+                          <li class="clearfix">
+                            <span class="pull-left">雪纺风格->韩吧</span>
+                            <a href="javascript:" class="icon icon-control icon-close-sm pull-right"></a>
+                          </li>
+                          <li class="clearfix">
+                            <span class="pull-left">雪纺风格->韩吧</span>
+                            <a href="javascript:" class="icon icon-control icon-close-sm pull-right"></a>
+                          </li>
+                          <li class="clearfix">
+                            <span class="pull-left">雪纺风格->韩吧</span>
+                            <a href="javascript:" class="icon icon-control icon-close-sm pull-right"></a>
+                          </li>
+                          <li class="clearfix">
+                            <span class="pull-left">雪纺风格->韩吧</span>
+                            <a href="javascript:" class="icon icon-control icon-close-sm pull-right"></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <select name="" class="form-control input-xs">
+                      <option value="">添加所属分类</option>
+                    </select>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+  	seajs.use('app/shop/manage/js/productscategory.js');
+  </script>
+</body>
+</html>

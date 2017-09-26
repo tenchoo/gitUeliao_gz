@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit|ie-stand|ie-comp">
+<title>确认订单</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="stylesheet" href="/libs/normalize/3.0.3/normalize.min.css" />
+<link rel="stylesheet" href="/common/style.css" />
+<script src="/libs/seajs/2.3.0/sea.js"></script>
+<script src="/libs/seajs/2.3.0/seajs-css.js"></script>
+<script src="/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/common/init.js"></script>
+</head>
+<body>
+  <link rel="stylesheet" href="/modules/button/css/style.css" />
+  <link rel="stylesheet" href="/modules/icon/css/style.css" />
+  <link rel="stylesheet" href="/modules/form/css/style.css" />
+  <link rel="stylesheet" href="/app/member/frame/css/style.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <div class="container">
+    <br><br>
+    <div class="cart-step">
+      <ul class="list-unstyled">
+        <li class="first done done-a"><span class="one">1.查看购物车</span></li>
+        <li class="cur"><span class="two">2.确认订单信息</span></li>
+        <li><span class="three">3.付款</span></li>
+        <li><span class="four">4.确认收货</span></li>
+        <li class="last"><span class="five">5.评价</span></li>
+      </ul>
+    </div>
+    <div class="select-client">
+      <h2 class="c-hd">选择客户</h2>
+      <div class="bd c-box">
+        <label>客户名称：</label>
+        <input type="text" class="form-control input-xs">
+
+      </div>
+    </div>
+    <div class="receiving-address">
+      <h2 class="c-hd">选择收货地址</h2>
+      <div class="bd c-box">
+        <div class="no-data">还未添加收货地址，现在<a href="javascript:" class="btn btn-warning btn-xs add">新增收货地址</a></div>
+
+      </div>
+      <div class="clearfix address-list">
+        <ul class="list-unstyled">
+          <li class="select">
+            <a class="modify pull-right" href="javascript:">修改</a>
+            <span class="text-minor pull-right">（默认地址）</span>
+            <label class="radio-inline"><input class="radio" name="order[address]" checked="checked" value="23" type="radio">
+            <span>广东深圳市龙岗区平湖华南城一号交易广场</span> <em>( 石头 收 )13760366803</em></label>
+          </li>
+          <li>
+            <a class="modify pull-right" href="javascript:">修改</a>
+            <label class="radio-inline"><input class="radio" name="order[address]" value="23" type="radio">
+            <span>广东深圳市龙岗区平湖华南城一号交易广场</span> <em>( 石头 收 )13760366803</em></label>
+          </li>
+        </ul>
+        <div class="pull-right">
+          <a class="btn btn-cancel btn-xs add" href="javascript:">新增收货地址</a>
+        </div>
+      </div>
+      <div class="address-form form-horizontal">
+        <form method="post" action="">
+          <div class="form-group">
+            <label class="control-label" for="name"><span class="text-red">*</span>收货人姓名：</label>
+            <input name="name" class="form-control input-xs" id="name" type="text">
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="address"><span class="text-red">*</span>所在地区：</label>
+            <div class="inline-block area-select">
+              <select name="" class="form-control input-xs province">
+                <option value="default">请选择省份</option>
+              </select>
+              <select name="" class="form-control input-xs city">
+                <option value="default">请选择市</option>
+              </select>
+              <select name="" class="form-control input-xs county">
+                <option value="default">请选择区/县</option>
+              </select>
+              <input type="hidden" name="address" class="form-control input-xs" value="" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="street-address"><span class="text-red">*</span>街道地址：</label>
+            <input name="street-address" class="form-control input-xs" id="street-address" type="text">
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="zip-code"><span class="text-red">*</span>邮政编码：</label>
+            <input name="zip-code" class="form-control input-xs" id="zip-code" type="text">
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="phone">手机：</label>
+            <input name="phone" class="form-control input-xs" id="phone" type="text">
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="landline">固定电话：</label>
+            <input name="landline" class="form-control input-xs" id="landline" type="text">
+          </div>
+          <div class="form-group form-group-offset">
+            <button class="btn btn-warning btn-xs" type="submit">保存信息</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="frame-list-bd">
+      <h2 class="c-hd">现货订单</h2>
+      <table class="order-now">
+        <thead>
+          <tr>
+            <th class="title">商品信息</th>
+            <th width="140">单价（元）</th>
+            <th width="110">数量</th>
+            <th width="110">金额（元）</th>
+            <th width="140">配送方式</th>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr class="list-body-foot">
+            <td colspan="5">
+              <div class="message pull-left">
+                <span>给卖家留言：</span>
+                <textarea class="textarea-box" name=""></textarea>
+              </div>
+              <div class="date pull-left">
+                <label class="checkbox-inline">
+                  <input type="checkbox">需留货<span class="hide text-minor">（从下单起可留货7天）</span><span class="hide">将留货到2015-09-04</span>
+                </label>
+              </div>
+              <div class="price-list text-right pull-right">
+                <p><span class="total">运费共计：<span>0</span>元</span>商品总额：<span>752.00</span>元</p>
+                小计：<strong class="text-warning">120.00</strong>元
+              </div>
+            </td>
+          </tr>
+        </tfoot>
+        <tbody class="list-page-body">
+          <tr class="list-body-bd">
+            <td class="title">
+              <div class="c-img product-img pull-left">
+                <a href=""><img src="" /></a>
+              </div>
+              <div class="product-title">
+                <a href="">2012新款 可爱浪漫少女一字领荷叶边衬衫</a>
+              </div>
+              <p class="text-minor">
+                <span>颜色：黑色</span><span>尺码：170/90(M)</span><span>尺码：170/90(M)</span><span>尺码：170/90(M)</span>
+              </p>
+            </td>
+            <td class="price">256.00</td>
+            <td class="num">1</td>
+            <td class="text-warning total">256</td>
+            <td class="delivery-method" rowspan="2">
+              <div class="freight">
+                物流运费：到付<br>
+                如需配送请联系客服
+              </div>
+            </td>
+          </tr>
+          <tr class="list-body-bd">
+            <td class="title">
+              <div class="c-img product-img pull-left">
+                <a href=""><img src="" /></a>
+              </div>
+              <div class="product-title">
+                <a href="">2012新款 可爱浪漫少女一字领荷叶边衬衫</a>
+              </div>
+              <p class="text-minor">
+                <span>颜色：黑色</span><span>尺码：170/90(M)</span><span>尺码：170/90(M)</span><span>尺码：170/90(M)</span>
+              </p>
+            </td>
+            <td class="price">256.00</td>
+            <td class="num">1</td>
+            <td class="text-warning total">120</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <h2 class="c-hd">预定订单</h2>
+      <table class="order-future">
+        <thead>
+          <tr>
+            <th class="title">商品信息</th>
+            <th width="140">单价（元）</th>
+            <th width="110">数量</th>
+            <th width="110">金额（元）</th>
+            <th width="140">配送方式</th>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr class="list-body-foot">
+            <td colspan="5">
+              <div class="message pull-left">
+                <span>给卖家留言：</span>
+                <textarea class="textarea-box" name=""></textarea>
+              </div>
+              <div class="date pull-left">
+                <span>要求交货日期：</span>
+                <input type="text" class="form-control input-xs">
+              </div>
+              <div class="price-list text-right pull-right">
+                <p><span class="total">运费共计：<span>0</span>元</span>商品总额：<span>752.00</span>元</p>
+                小计：<strong class="text-warning">120.00</strong>元
+              </div>
+            </td>
+          </tr>
+        </tfoot>
+        <tbody class="list-page-body">
+          <tr class="list-body-bd">
+            <td class="title">
+              <div class="c-img product-img pull-left">
+                <a href=""><img src="" /></a>
+              </div>
+              <div class="product-title">
+                <a href="">2012新款 可爱浪漫少女一字领荷叶边衬衫</a>
+              </div>
+              <p class="text-minor">
+                <span>颜色：黑色</span><span>尺码：170/90(M)</span><span>尺码：170/90(M)</span><span>尺码：170/90(M)</span>
+              </p>
+            </td>
+            <td class="price">256.00</td>
+            <td class="num">1</td>
+            <td class="text-warning total">256</td>
+            <td class="delivery-method" rowspan="2">
+              <div class="freight">
+                物流运费：到付<br>
+                如需配送请联系客服
+              </div>
+            </td>
+          </tr>
+          <tr class="list-body-bd">
+            <td class="title">
+              <div class="c-img product-img pull-left">
+                <a href=""><img src="" /></a>
+              </div>
+              <div class="product-title">
+                <a href="">2012新款 可爱浪漫少女一字领荷叶边衬衫</a>
+              </div>
+              <p class="text-minor">
+                <span>颜色：黑色</span><span>尺码：170/90(M)</span><span>尺码：170/90(M)</span><span>尺码：170/90(M)</span>
+              </p>
+            </td>
+            <td class="price">256.00</td>
+            <td class="num">1</td>
+            <td class="text-warning total">120</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <div class="text-right submit-info">
+        选择付款订单：
+        <label class="checkbox-inline"><input name="CartForm[integral]" type="checkbox"><span>现货订单</span></label>
+        <label class="checkbox-inline"><input name="CartForm[integral]" type="checkbox"><span>预定订单</span></label>
+        实付款：<b class="text-warning">141.00</b>元
+        <br>
+        <br>
+        <a href="javascript:">&lt;&lt;返回购物车修改</a>
+        <button  class="btn btn-warning" type="submit">提交订单</button>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <script>
+    seajs.use('app/cart/js/firmorder.js');
+  </script>
+</body>
+</html>

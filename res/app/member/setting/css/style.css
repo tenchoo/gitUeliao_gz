@@ -1,0 +1,39 @@
+.frame-tab-bd{padding:20px}
+.frame-tab.profile{padding:0}
+
+.add-client .required{color:#999;margin-left: 56px;}
+.add-client .area{padding-bottom:10px }
+.add-client .area input{width:1px;height:1px;overflow: hidden;border-width:0;margin-left: -4px;background: transparent;}
+
+/*图片上传样式*/
+.form-horizontal .face-group .control-label{vertical-align: top;}
+
+/*详细资料*/
+.profile input:disabled,select:disabled{cursor:not-allowed;background:#ebebeb}
+.form-margin-top{margin-top:10px}
+.form-secant{border-bottom:1px solid #dedede}
+.contacts-hd{height:30px;line-height:30px;font-size:14px;font-weight:700;margin-top:10px}
+.form-contacts .input-xs{width:180px}
+.form-contacts span{margin-left:10px}
+.form-contacts .radio-inline input{margin:8px 0 0 -15px;}
+.area-select select.form-control{width:91px;}
+
+/*安全设置*/
+.frame-box.security{padding:0}
+.security{overflow:hidden}
+.security ul{margin:0 0 -1px}
+.security li {padding: 30px 20px 30px 30px;border-bottom: solid 1px #e8e8e8}
+.security .login{border-right: solid 1px #e8e8e8;padding: 5px 30px 5px 10px;color:#555;margin-right:10px}
+.security .login .icon{margin-right:10px}
+
+.frame-box{padding:20px}
+.message{margin-top:5px}
+.code{width:98px}
+.send-code{margin-left:6px}
+.form-group-offset .send-code{margin-left:0}
+
+.paypassword .code-wrap label{margin-right:3px;}
+.paypassword .code-wrap img {margin:0 20px 0 10px}
+.paypassword .code-wrap span.refreshcode {width:36px;color:#888;line-height:14px;cursor:pointer}
+
+

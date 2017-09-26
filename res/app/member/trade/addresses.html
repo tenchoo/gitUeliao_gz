@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit|ie-stand|ie-comp">
+<title>收货地址</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="stylesheet" href="/libs/normalize/3.0.3/normalize.min.css" />
+<link rel="stylesheet" href="/common/style.css" />
+<script src="/libs/seajs/2.3.0/sea.js"></script>
+<script src="/libs/seajs/2.3.0/seajs-css.js"></script>
+<script src="/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/common/init.js"></script>
+</head>
+<body>
+  <link rel="stylesheet" href="/modules/button/css/style.css" />
+  <link rel="stylesheet" href="/modules/icon/css/style.css"/>
+  <link rel="stylesheet" href="/modules/form/css/style.css" />
+  <link rel="stylesheet" href="/app/member/frame/css/style.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <div class="frame-head">
+    <div class="container">
+      <h1 class="pull-left">
+        <a href="javascript:"><img src="/app/member/frame/image/logo.png" width="164" height="45" alt="" /></a>
+      </h1>
+      <ul class="frame-nav text-center text-bold list-unstyled">
+        <li class="active"><a href="javascript:">首页</a><span></span></li>
+        <li><a href="javascript:">账号设置</a></li>
+        <li><a href="javascript:">消息</a></li>
+        <li><a href="javascript:">管理中心</a></li>
+      </ul>
+      <div class="pull-right frame-search">
+        <form action="" method="get">
+          <input type="text" placeholder="请输入产品名称" />
+          <button type="submit">
+            <span class="hide">搜索</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="container frame-body">
+    <div class="pull-left list-unstyled frame-menu">
+      <h3 class="active">
+        <span><i></i></span>我的交易
+      </h3>
+      <ul class="list-unstyled">
+        <li><a href="buylist.html">已买到的货品</a></li>
+        <li><a href="javascript:">我的购物车</a></li>
+        <li><a href="javascript:">评价管理</a></li>
+        <li class="active"><a href="addresses.html">收货地址</a></li>
+        <li><a href="myfavorites.html">我的收藏</a></li>
+      </ul>
+    </div>
+    <script>
+      seajs.use('app/member/frame/js/menu.js');
+    </script>
+    <div class="pull-right frame-content">
+      <div class="remind-box">友情提醒：最多可添加 <b class="text-warning">10</b>个收货地址</div>
+      <div class="remind-box">友情提醒：还可添加 <b class="text-warning">9</b>个收货地址</div>
+      <div class="frame-box addresses">
+        <div class="hd">新增地址</div>
+        <div class="bd form-horizontal">
+          <form method="post" action="">
+            <div class="form-group">
+              <label class="control-label" for="name"><span class="text-red">*</span>收货人：</label> <input name="MemberAddress[name]" class="form-control input-xs" id="name" type="text" data-help="不能为空"/>
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="address"><span class="text-red">*</span>所在地区：</label>
+              <div class="inline-block area-select">
+                <select name="" class="form-control input-xs province">
+                  <option value="default">请选择省份</option>
+                </select>
+                <select name="" class="form-control input-xs city">
+                  <option value="default">请选择市</option>
+                </select>
+                <select name="" class="form-control input-xs county">
+                  <option value="default">请选择区/县</option>
+                </select>
+                <input type="hidden" name="address" class="form-control input-xs" value="" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="street-address"><span class="text-red">*</span>街道地址：</label> <input name="MemberAddress[address]" class="form-control input-xs" id="street-address" type="text" data-help="不能为空"/>
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="zip-code"><span class="text-red">*</span>邮政编码：</label> <input name="MemberAddress[code]" class="form-control input-xs" id="zip-code" type="text" data-help="不能为空"/>
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="phone">手机：</label> <input name="phone" class="form-control input-xs" id="phone" type="text">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="landline">固定电话：</label> <input name="landline" class="form-control input-xs" id="landline" type="text">
+            </div>
+            <div class="form-group form-group-offset">
+              <button class="btn btn-success btn-xs" type="submit">保存</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="frame-list address-list">
+        <div class="frame-list-bd">
+          <table>
+            <thead>
+              <tr>
+                <th width="60" class="title">默认</th>
+                <th width="80">收货人</th>
+                <th>收货地址</th>
+                <th width="200">手机/固定号码</th>
+                <th width="100">操作</th>
+              </tr>
+            </thead>
+            <tbody class="list-page-body">
+              <tr>
+                <td class="check"><input type="radio"><span>默认</span></td>
+                <td>石头</td>
+                <td><div class="item">广东省深圳市龙岗区平湖华南城环球物流大厦1919号</div></td>
+                <td><p>13760366803</p>
+                  <p>0755-85233755-812</p></td>
+                <td><a href="javascript:" class="text-link">编辑</a> <a href="javascript:" class="text-link del">删除</a></td>
+              </tr>
+              <tr>
+                <td class="check"><input type="radio"></td>
+                <td>石头</td>
+                <td><div class="item">广东省深圳市龙岗区平湖华南城环球物流大厦1919号</div></td>
+                <td><p>13760366803</p>
+                  <p>0755-85233755-812</p></td>
+                <td><a href="javascript:" class="text-link">编辑</a> <a href="javascript:" class="text-link del">删除</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>seajs.use('./js/addresses.js');</script>
+</body>
+</html>

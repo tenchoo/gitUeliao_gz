@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit|ie-stand|ie-comp">
+  <title>个人资料</title>
+  <meta name="keywords" content=""/>
+  <meta name="description" content=""/>
+  <link rel="stylesheet" href="/libs/normalize/3.0.3/normalize.min.css"/>
+  <link rel="stylesheet" href="/common/style.css"/>
+  <script src="/libs/seajs/2.3.0/sea.js"></script>
+  <script src="/libs/seajs/2.3.0/seajs-css.js"></script>
+  <script src="/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="/common/init.js"></script>
+</head>
+<body>
+  <link rel="stylesheet" href="/app/member/frame/css/style.css"/>
+  <link rel="stylesheet" href="/modules/icon/css/style.css"/>
+  <link rel="stylesheet" href="/modules/button/css/style.css"/>
+  <div class="frame-head">
+    <div class="container">
+      <h1 class="pull-left"><a href="javascript:"><img src="/app/member/frame/image/logo.png" width="164" height="45" alt=""/></a></h1>
+      <ul class="frame-nav text-center text-bold list-unstyled">
+        <li><a href="javascript:">首页</a><span></span></li>
+        <li class="active"><a href="javascript:">账号设置</a></li>
+        <li><a href="javascript:">消息</a></li>
+        <li><a href="javascript:">管理中心</a></li>
+      </ul>
+      <div class="pull-right frame-search">
+        <form action="" method="get">
+          <input type="text" placeholder="请输入产品名称"/>
+          <button type="submit"><span class="hide">搜索</span></button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="container frame-body">
+    <div class="pull-left list-unstyled frame-menu">
+      <h3 class="active"><span><i></i></span>账号设置</h3>
+      <ul class="list-unstyled">
+        <li><a href="javascript:">个人资料
+        <li class="active"><a href="javascript:">安全设置</a></li>
+        <li><a href="javascript:">帐户余额</a></li>
+        <li><a href="javascript:">我的积分</a></li>
+        <li><a href="javascript:">我的优惠券</a></li>
+        <li><a href="javascript:">我的购物卡</a></li>
+      </ul>
+    </div>
+    <script>seajs.use('app/member/frame/js/menu.js');</script>
+    <div class="pull-right frame-content">
+      <link rel="stylesheet" href="css/style.css"/>
+      <div class="frame-box security">
+        <ul class="list-unstyled">
+          <li><span class="pull-right"><a class="btn btn-xs btn-cancel" target="_blank" href="javascript:">修改密码</a></span><span class="login"><i class="icon icon-lg icon-success"></i><span>登录密码</span></span><span class="text-minor">建议您定期修改密码以保证账号安全。</span></li>
+          <li><span class="pull-right"><a class="btn btn-xs btn-success" target="_blank" href="javascript:">立即验证</a></span><span class="login"><i class="icon icon-lg icon-warn"></i><span>邮箱验证</span></span><span class="text-minor">验证邮箱后您可以直接用邮箱登录。</span></li>
+          <li><span class="pull-right"><a class="btn btn-xs btn-success" target="_blank" href="javascript:">立即验证</a></span><span class="login"><i class="icon icon-lg icon-warn"></i><span>手机验证</span></span><span class="text-minor">验证后可接收订单、退款、账户余额等变动提醒，保障您的账户及资金安全。</span></li>
+          <li><span class="pull-right"><a class="btn btn-xs btn-success" target="_blank" href="javascript:">设置密码</a></span><span class="login"><i class="icon icon-lg icon-warn"></i><span>支付密码</span></span><span class="text-minor">为了您在支付过程中更加安全，请启用支付密码。</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

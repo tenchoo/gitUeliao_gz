@@ -1,0 +1,45 @@
+.icon{display: inline-block;
+*display: inline;
+*zoom: 1;width:20px;height:20px;overflow: hidden;vertical-align: middle;background:url(img/icon.png) no-repeat;}
+
+.icon-info{background-position:0 0}
+.icon-success{background-position:0 -20px}
+.icon-error{background-position:0 -40px}
+.icon-qrcode{background-position:0 -60px}
+
+.icon-lg{width:30px;height:30px;background:url(img/icon-lg.png) no-repeat;}
+.icon-lg.icon-success{background-position:0 -30px}
+.icon-lg.icon-error{background-position:0 -60px}
+
+.icon-xl{width:40px;height:40px;background:url(img/icon-xl.png) no-repeat;}
+.icon-xl.icon-success{background-position:0 -40px}
+.icon-xl.icon-error{background-position:0 -80px}
+
+/*保存成功提示页面统一样式*/
+.success-message-title{margin:0; font-size:16px;}
+.success-message-title .icon{margin: -3px 5px 0 -4px;}
+.success-message-next{margin-left: 20px;}
+.success-message-next-sm{margin-left:20px}
+.success-message-link a{margin-right:20px}
+
+.icon-control{background:url(img/icon-control.png) no-repeat;}
+.icon-green-up{background-position:-40px 0}
+.icon-green-down{background-position:-60px 0}
+.icon-blue-up{background-position:-40px -20px}
+.icon-blue-down{background-position:-60px -20px}
+.icon-green-up-dis{background-position:0 0}
+.icon-green-down-dis{background-position:-20px 0}
+.icon-blue-up-dis{background-position:0 -20px}
+.icon-blue-down-dis{background-position:-20px -20px}
+.icon-control-plus{background-position:0 -40px}
+.icon-control-minus{background-position:-20px -40px}
+.icon-close{background-position:-40px -40px}
+.icon-close-active{background-position:-60px -40px}
+.icon-close-sm{background-position:-40px -60px}
+.icon-close-sm-active{background-position:-60px -60px}
+
+.icon-cart{background:url(img/icon-cart.png) no-repeat;}
+.icon-plus{background-position:-20px 0}
+.icon-minus{background-position:0 0}
+.icon-plus-dis{background-position:-60px 0}
+.icon-minus-dis{background-position:-40px 0}

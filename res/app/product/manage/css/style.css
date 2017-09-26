@@ -1,0 +1,23 @@
+/*产品发布样式*/
+.create-cate h2{font-size:14px;margin:0 0 10px;}
+.create-cate select{width: 260px;height: 217px;}
+.create-cate .cate2{margin: 0 12px;}
+.select-help{margin:12px 0 35px; padding:0 10px; background:#fff9e2;line-height:30px;border:solid 1px #ccc;}
+
+/*产品列表框架样式*/
+.frame-list-bd thead .icon{margin-top:-5px}
+.frame-list-bd tbody tr {border:0}
+.frame-list-bd tbody td{border:0}
+.list-body-hd{background:#f9f9f9}
+.list-page-body input[type="checkbox"]{position:absolute;margin:3px 5px 0 15px;*margin:-1px 5px 0 10px}
+.list-body-hd .check span{margin-left:35px}
+.list-body-bd .product-img{margin-right:10px}
+.list-body-bd .product-img img{width:50px;height:50px}
+.list-body-bd .product-title{width:180px;height:38px;overflow:hidden}
+.list-body-bd .product-price{color:#999;font-weight:700}
+.list-body-bd .product-price span{color:#f60}
+
+/*出售中的产品*/
+.salelist .list-body-hd .qrcode{position:relative;padding-right:30px}
+.salelist .list-body-hd .qrcode-img{position:absolute;right:32px;*top:20px;padding:9px;width:150px;height:150px;border:1px solid #e3e3e3;overflow:hidden;background:#fff;z-index:999}
+.salelist .list-body-hd .qrcode-img img{width:150px;height:150px}

@@ -1,0 +1,9 @@
+.page-wrap{padding:10px;background:#f9f9f9;border:solid 1px #ececec;}
+.page-wrap .batch-del{height:25px;line-height:25px}
+.page-wrap .checkbox-inline input{margin-top:6px}
+
+.list{margin-bottom:0; border:solid #ececec;border-width:0 1px;padding:12px 9px;}
+.list img{border:solid 1px #d4d4d4;margin-bottom:5px}
+.list li{width:162px;margin:10px 17px; float: left;}
+.list label{color:#f60;font-weight:700}
+.list .t{display: block;overflow: hidden;height:20px;margin-top:3px}

@@ -1,0 +1,132 @@
+.book{background:#e8f6d2}
+.obligate{background:#fff9dc}
+.tailproduct{background: #d7ecff;}
+/*已买到的货品*/
+.frame-tab-hd li a b{margin-left: 3px;}
+.frame-tab-hd li a:hover{text-decoration:none}
+.buylist .frame-list-search{background:#fff}
+.buylist .frame-list-search select.input-xs {width:100px}
+.buylist .frame-list-search .order-time{line-height:23px;margin:0 10px}
+.buylist .frame-list-search .order-time .input-xs{width:130px}
+.buylist .frame-list-bd table th,.buylist .frame-list-bd table .list-body-bd td{text-align:center}
+.buylist .frame-list-bd table th.title,.buylist .frame-list-bd table .list-body-bd td.title{text-align:left}
+.buylist .list-body-hd{border-top:1px solid #e8e8e8;background:#f9f9f9}
+.list-body-hd .order-info{padding:0 15px 0 0;}
+.list-body-hd .order-info b,.list-body-hd .order-info span{margin-right:80px}
+.list-body-hd td{padding:10px 15px;}
+.list-body-bd .c-img{margin-right:10px;width:50px;height:50px}
+.list-body-bd .c-img a{width:50px;height:50px;*font-size:50px}
+.list-body-bd .product-title{width:160px;max-height:38px;line-height:19px;overflow:hidden}
+.list-body-bd p{margin:0}
+.list-body-bd .title p{max-height:32px;line-height:16px;overflow:hidden}
+.list-body-bd .title p span{margin-right:5px}
+.list-body-bd td{border:1px solid #e8e8e8}
+.list-body-bd .title,.list-body-bd .price,.list-body-bd .num,.list-body-bd .service{border:0}
+.buylist .frame-list-bd table th.title{text-align:left}
+
+.dialog-confirm p{padding-bottom:5px}
+
+/*收货地址*/
+.remind-box{background: #ffffe1 url(img/remind.png) 10px center no-repeat;border: 1px solid #e9c085;padding:10px 30px;margin-bottom:10px}
+.remind-box b{margin:0 5px}
+.addresses .hd{height:24px;line-height:24px;font-size:14px;font-weight:700;padding:5px 15px}
+.addresses{margin-bottom:20px}
+.address-list .title{padding-left:15px}
+.address-list td p{margin:0}
+.address-list .item{width:200px}
+.area-select select.form-control{width:91px;}
+
+/*我的收藏*/
+.myfavorites .list-page-head td{border-top:1px solid #e8e8e8}
+.product-fav{width:784px;margin:0px auto;padding:12px 0px;}
+.product-fav li{width:162px; padding:12px 17px;float:left}
+.product-fav li p{margin:0}
+.product-fav li .c-img{border:1px solid #d4d4d4;}
+.product-fav li .c-img a{width:160px;height:160px;*font-size:160px}
+.product-fav li .price{margin-top:5px;padding:0 3px 5px;}
+.product-fav li .price .check{margin: 5px 5px 0px 0px;}
+.product-fav li .price b{margin-left:20px;color:#c81614;font-size:14px;font-weight:700}
+.product-fav li .pro-title{height:20px;line-height:20px;overflow:hidden}
+
+.shop-fav .list-page-body .c-img{width:60px;height:60px;border:1px solid #dbdbdb;margin-right:10px}
+.shop-fav .list-page-body .c-img a{width:60px;height:60px;*font-size:60px}
+.shop-fav .list-page-body .product-title{height:40px;line-height:20px;overflow:hidden;width:220px}
+.shop-fav .list-page-body .new-pro i{background:url(img/newpro-i.png);width:15px;height:15px;margin-right:5px;display:inline-block;vertical-align:middle}
+.shop-fav .list-page-body .active i{background-position:15px 0}
+.shop-fav .list-page-body{border-bottom:1px solid #e8e8e8}
+.shop-fav .list-page-body tr{border-bottom:0}
+
+.shop-fav .list-page-body .list-bd{position:relative;}
+.shop-fav .list-page-body .list-bd i{position:absolute;top:0; right:330px;width:0;height:0;border:solid 5px #fff;border-bottom-color:#f9f9f9;}
+.shop-fav .list-page-body .list-bd ul{background:#f9f9f9;margin:0 5px;overflow:hidden;padding:0 10px}
+.shop-fav .list-page-body .list-bd ul li{float:left;margin:10px 5px;width:142px;text-align:center;}
+.shop-fav .list-page-body .list-bd ul li .c-img{width:140px;height:140px;border:1px solid #dbdbdb;margin-right:0}
+.shop-fav .list-page-body .list-bd ul li .c-img a{width:140px;height:140px;*font-size:140px}
+.shop-fav .list-page-body .list-bd ul li p{margin:0}
+.shop-fav .list-page-body .list-bd ul li b{color:#c81614;font-size:14px;font-weight:700}
+.shop-fav .list-page-body .list-bd ul li .pro-title{height:20px;line-height:20px;overflow:hidden}
+
+/*订单详情*/
+.order-status{background: #ffffe1;border: 1px solid #e9c085;padding:10px 30px;margin-bottom:10px}
+.order-status .hd{font-size:14px;font-weight:700}
+.order-status .hd .countdown{margin-left:30px;font-size:12px;font-weight:400}
+.order-status p{margin:10px 0}
+.order-status span{margin:0 5px}
+
+.order-details-list .hd{background:#f6f4f7;border:1px solid #dedcdf;height:38px;line-height:38px;padding:0 20px}
+.order-details-list .hd .pull-right{width: 239px;text-align: right;margin-left:-100px;white-space:nowrap;text-overflow: ellipsis;overflow: hidden;}
+.order-details-list .bd li{line-height:38px;padding:0 20px;border:solid #dedcdf;border-width:0 1px 1px}
+.order-details-list .bd .memo div{padding-top:8px;line-height:24px;padding-bottom:12px;}
+.order-details-list .bd li:before,
+.order-details-list .bd li:after{
+  content: " ";
+  display: table;
+}
+
+.order-details-list .bd li:after{
+  clear: both;
+}
+.order-details-list .hd .item,.order-details-list .bd li .item{float: left; width:300px;padding-right:10px;overflow:hidden;}
+.order-details .frame-list-bd{margin:10px 0;}
+.order-details .frame-list-bd .form-control{width:auto;}
+.order-details .frame-list-bd th,.order-details .frame-list-bd td{text-align:center}
+.order-details .frame-list-bd th.title,.order-details .frame-list-bd td.title{text-align:left;width:240px}
+.order-details .list-page-body .total td{text-align:right;padding-right:10px}
+.order-details .list-page-body .total td span{margin-left:20px}
+
+/*查看物流*/
+.order-status .bd .item{width:240px;margin-right:20px;display:inline-block}
+.order-status .bd .item-company{width:180px}
+.express-info{padding:20px;overflow:hidden}
+.express-info .hd{width:80px;text-align:right;font-weight:700}
+.express-info .bd{min-height:300px}
+.express-info .bd p{margin:0}
+.express-address{padding:10px 30px;background:#f7f7f7;line-height:24px}
+.express-address p{margin:0}
+
+/*客户反馈*/
+.comment .c-img{margin-right:10px;width:50px;height:50px}
+.comment .c-img a{width:50px;height:50px;*font-size:50px}
+.comment .product-title{width:200px;height:38px;overflow:hidden}
+.comment p{margin:0}
+.comment .title p{max-height:32px;line-height:16px;overflow:hidden}
+.comment .frame-box-bd{padding-bottom:20px}
+.comment .frame-box-bd table{width:100%}
+.comment .frame-box-bd td{padding:20px 15px;border-bottom:1px solid #ececec}
+.comment .frame-box-bd textarea{width:300px;height:60px;resize:none}
+.comment .frame-box-bd .text-center{margin-top:20px}
+
+/*
+订单审核
+ */
+.order-check span>.form-control{display: inline-block;width:auto}
+.order-check span>.input-note{width:400px}
+.order-check td>.int-only{width:80px}
+.order-check td>.price-only{width:100px}
+.order-check td>.input-note{width:240px}
+.order-check span>.input-date{margin-right:20px}
+.order-check td.text-right{text-align: right;}
+
+.order-check .frame-box .form-horizontal .control-label{width:auto;padding-left:20px;}
+.order-check .frame-box .form-horizontal textarea{margin-right:10px;}
+.order-check .btn-group .btn{margin: 0 3px;}

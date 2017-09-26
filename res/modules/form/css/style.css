@@ -1,0 +1,28 @@
+.form-control{height:35px;width:268px;border:solid 1px #ccc;padding:0 5px;line-height:35px;}
+input.form-control:focus{border-color:#32b16c;outline:none}
+select.form-control{height:37px;line-height:37px;width:280px}
+.input-sm{height:30px;line-height:30px}
+select.input-sm{height:32px}
+.input-xs{height:26px;line-height:26px}
+select.input-xs{height:28px}
+.input-disabled{background:#ececec}
+.has-success{border-color:#32b16c}
+.has-error,input.has-error:focus{border-color:#e60012}
+
+.image-group .control-label,.textarea-group .control-label{vertical-align: top;}
+.textarea-group textarea{width:410px;height:95px;border:1px solid #ccc;line-height:1.6}
+.textarea-group textarea:focus {border-color:#32b16c;outline:none}
+
+.send-code{width:116px;}
+.expired{margin-left:10px}
+
+span.help-block{ margin-left:10px; display: inline-block;
+*display: inline;
+*zoom: 1;height:20px; line-height:20px;}
+span.help-block .icon{margin-top:-2px}
+.has-error span.has-error{color:#f00}
+
+.checkbox-inline,.radio-inline{padding:0 15px;cursor:pointer}
+.checkbox-inline input,.radio-inline input{position: absolute;margin: 3px 0 0 -15px;*margin:-3px 0 0 -20px}
+
+.input-date{width:158px;background: #fff url(img/datePicker.gif) no-repeat right;}

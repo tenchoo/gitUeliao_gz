@@ -1,0 +1,33 @@
+.container{width:990px;}
+
+.logo{padding:30px 0}
+
+.image{padding-top:20px}
+
+.login{width: 316px; /* height: 356px; */border:solid 2px #dedede;}
+.login-title{background:#f1f1f1;height:37px;margin:0; line-height:37px;padding-left:20px;font-weight: 400;font-size: 14px;}
+.message-box{margin-top: -25px;position: absolute;}
+.message-box span.has-error{margin-left:0;color:#f00;}
+
+
+.login-body{/* height: 255px; */padding: 30px 20px 0;}
+.login-body .form-group{height:57px}
+.login-body .form-control{width: 239px;}
+.login-body .username,.login-body .password{padding-left: 30px;background: url(img/login-icon.png) no-repeat 5px 10px;}
+.login-body .password{background-position:5px -40px}
+.login-body .code{width: 98px;}
+  .code-wrap img{margin: 3px 20px 0 10px;}
+  .code-wrap span{width:36px;color:#888;line-height:14px;cursor:pointer;margin-top: 2px;}
+.login-body button{margin-bottom:10px}
+
+.login-foot{/*border-top:solid 1px #e3e3e3;*/visibility: hidden; height: 43px;padding:0 20px;color:#999;line-height:43px}
+/*.footer-member{position: absolute;bottom: 0;width: 100%;}*/
+
+/*404页面*/
+.image-notice{padding-top:20px;width:560px;height:100%;overflow:hidden;}
+.error-notice{width:400px;}
+.error-notice h1{font-size:32px;font-weight:400;}
+.error-notice p{color:#000;}
+.error-notice p span{color:#999;}
+.error-notice .error-url{border-top:1px solid #f1f1f1;padding-top:10px;}
+.error-notice .error-url a{color:#06c}

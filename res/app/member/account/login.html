@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit|ie-stand|ie-comp">
+  <title>登录</title>
+  <meta name="keywords" content=""/>
+  <meta name="description" content=""/>
+  <link rel="stylesheet" href="/libs/normalize/3.0.3/normalize.min.css"/>
+  <link rel="stylesheet" href="/common/style.css"/>
+  <script src="/libs/seajs/2.3.0/sea.js"></script>
+  <script src="/libs/seajs/2.3.0/seajs-css.js"></script>
+  <script src="/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="/common/init.js"></script>
+</head>
+<body>
+  <link rel="stylesheet" href="/modules/button/css/style.css"/>
+  <link rel="stylesheet" href="/modules/form/css/style.css"/>
+  <link rel="stylesheet" href="css/login.css"/>
+  <h1 class="container logo">
+    <a href="javascript:"><img src="/app/home/image/logo.png" width="213" height="58" alt="指易达"/></a>
+  </h1>
+  <div class="container">
+    <div class="pull-left image">
+      <a href="javascript:"><img src="/common/placeholder.png" width="560" height="320" alt=""/></a>
+    </div>
+    <div class="pull-right login">
+      <h2 class="login-title">登录</h2>
+      <div class="login-body">
+        <form action="" method="post">
+          <div class="form-group">
+            <input type="text" class="form-control username" autofocus placeholder="会员名/手机号码/邮箱"/>
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control password"/>
+          </div>
+          <div class="clearfix form-group code-wrap">
+            <input type="text" class="form-control code pull-left"/>
+            <img src="/common/placeholder.png" width="80" height="30" alt="点击刷新验证码" class="pull-left" title="点击刷新验证码"/>
+            <span class="pull-left">看不清换一张</span>
+          </div>
+          <button class="btn btn-warning btn-block" type="submit">登 录</button>
+        </form>
+        <div class="clearfix">
+          <a href="javascript:" class="pull-left">忘记登录密码？</a>
+          <a href="javascript:" class="pull-right">免费注册</a>
+        </div>
+      </div>
+      <div class="login-foot">其它帐号登录：</div>
+    </div>
+  </div>
+  <script>
+    seajs.use('app/member/account/js/login.js');
+  </script>
+</body>
+</html>

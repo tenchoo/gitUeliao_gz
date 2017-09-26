@@ -1,0 +1,926 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit|ie-stand|ie-comp">
+  <title>填写产品信息 发布产品</title>
+  <meta name="keywords" content=""/>
+  <meta name="description" content=""/>
+  <link rel="stylesheet" href="/libs/normalize/3.0.3/normalize.min.css"/>
+  <link rel="stylesheet" href="/common/style.css"/>
+  <script src="/libs/seajs/2.3.0/sea.js"></script>
+  <script src="/libs/seajs/2.3.0/seajs-css.js"></script>
+  <script src="/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="/common/init.js"></script>
+</head>
+<body>
+  <link rel="stylesheet" href="/modules/button/css/style.css"/>
+  <link rel="stylesheet" href="/modules/form/css/style.css"/>
+  <link rel="stylesheet" href="/modules/uploader/css/style.css"/>
+  <link rel="stylesheet" href="/app/member/frame/css/style.css"/>
+  <link rel="stylesheet" href="css/create.css"/>
+
+  <div class="frame-head">
+    <div class="container">
+      <h1 class="pull-left"><a href="javascript:"><img src="/app/member/frame/image/logo.png" width="164" height="45" alt=""/></a></h1>
+      <ul class="frame-nav text-center text-bold list-unstyled">
+        <li><a href="javascript:">首页</a><span></span></li>
+        <li><a href="javascript:">账号设置</a></li>
+        <li><a href="javascript:">消息</a></li>
+        <li class="active"><a href="javascript:">卖家中心</a></li>
+      </ul>
+      <div class="pull-right frame-search">
+        <form action="" method="get">
+          <input type="text" placeholder="请输入产品名称"/>
+          <button type="submit"><span class="hide">搜索</span></button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="container frame-body">
+    <div class="pull-left list-unstyled frame-menu">
+      <h3 class="active"><span><i></i></span>商品管理</h3>
+      <ul class="list-unstyled">
+        <li class="active"><a href="javascript:">发布产品</a></li>
+        <li><a href="salelist.html">出售中的产品</a></li>
+        <li><a href="javascript:">仓库中的产品</a></li>
+        <li><a href="javascript:">产品类目管理</a></li>
+        <li><a href="javascript:">订购说明</a></li>
+        <li><a href="javascript:">售后服务</a></li>
+        <li><a href="javascript:">退换货</a></li>
+      </ul>
+    </div>
+    <script>seajs.use('app/member/frame/js/menu.js');</script>
+    <div class="pull-right frame-content">
+      <div class="frame-list salelist create-info">
+        <div class="clearfix cate-select">
+          <div class="pull-left">您当前选择的类目：皮具成品 &gt; 皮具成品 &gt; 皮革成品</div>
+          <div class="pull-right">
+            <a href="javascript:" class="btn btn-xs btn-cancel">返回重选类目</a>
+            <span class="text-minor">返回重选类目会造成已填写的信息丢失，请慎重操作！</span>
+          </div>
+        </div>
+        <form action="" class="form-horizontal" method="post">
+          <div class="frame-box base-info">
+            <div class="frame-box-hd">产品基本信息</div>
+            <div class="frame-box-bd">
+              <div class="form-group">
+                <label class="control-label" for="title"><span class="text-red">*</span>产品标题：</label>
+                <input type="text" name="title" class="form-control input-xs input-title" id="title">
+              </div>
+              <div class="form-group">
+                <label class="control-label" for="code"><span class="text-red">*</span>产品编号：</label>
+                <input type="text" name="code" class="form-control input-xs input-short" id="code">
+              </div>
+              <div class="form-group">
+                <label class="block-control-label control-label">产品属性：</label>
+                <div class="inline-block">
+                  <p class="text-minor minor-help">尽可能完整填写产品属性，增加被买家搜索到的机会</p>
+                  <div class="block-control">
+                    <div class="form-group">
+                      <label class="control-label">品牌：</label>
+                      <select name="" class="form-control input-xs input-short">
+                        <option value=""></option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label">风格：</label>
+                      <select name="" class="form-control input-xs input-short">
+                        <option value=""></option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label class="block-control-label control-label">质地：</label>
+                      <div class="inline-block min-block-control">
+                        <label class="checkbox-inline"><input type="checkbox" name="">质地</label>
+                        <label class="checkbox-inline"><input type="checkbox" name="">质地</label>
+                        <label class="checkbox-inline"><input type="checkbox" name="">质地</label>
+                        <label class="checkbox-inline"><input type="checkbox" name="">质地</label>
+                        <label class="checkbox-inline"><input type="checkbox" name="">质地</label>
+                        <label class="checkbox-inline"><input type="checkbox" name="">质地</label>
+                        <label class="checkbox-inline"><input type="checkbox" name="">质地</label>
+                        <label class="checkbox-inline"><input type="checkbox" name="">质地</label>
+                        <label class="checkbox-inline"><input type="checkbox" name="">质地</label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label">是否系带：</label>
+                      <label class="radio-inline"><input type="radio" name="">是</label>
+                      <label class="radio-inline"><input type="radio" name="">否</label>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label">其它：</label>
+                      <input type="text" name="title" class="form-control input-xs input-short">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="block-control-label control-label">产品规格：</label>
+                <div class="inline-block block-control">
+                  <div class="form-group">
+                    <label class="block-control-label control-label">颜色分类：</label>
+                    <div class="inline-block min-block-control">
+                      <ul class="list-unstyled colors-cate">
+                        <li class="inline-block">
+                          <label class="checkbox-inline"><input type="checkbox" name=""><span></span></label>颜色
+                        </li>
+                        <li class="inline-block">
+                          <label class="checkbox-inline"><input type="checkbox" name=""><span></span></label>颜色
+                        </li>
+                        <li class="inline-block">
+                          <label class="checkbox-inline"><input type="checkbox" name=""><span></span></label>颜色
+                        </li>
+                        <li class="inline-block">
+                          <label class="checkbox-inline"><input type="checkbox" name=""><span></span></label>颜色
+                        </li>
+                        <li class="inline-block">
+                          <label class="checkbox-inline"><input type="checkbox" name=""><span></span></label>颜色
+                        </li>
+                        <li class="inline-block">
+                          <label class="checkbox-inline"><input type="checkbox" name=""><span></span></label>颜色
+                        </li>
+                        <li class="inline-block">
+                          <label class="checkbox-inline"><input type="checkbox" name=""><span></span></label>颜色
+                        </li>
+                        <li class="inline-block">
+                          <label class="checkbox-inline"><input type="checkbox" name=""><span></span></label>颜色
+                        </li>
+                        <li class="inline-block">
+                          <label class="checkbox-inline"><input type="checkbox" name=""><span></span></label>颜色
+                        </li>
+                        <li class="inline-block">
+                          <label class="checkbox-inline"><input type="checkbox" name=""><span></span></label>颜色
+                        </li>
+                        <li class="inline-block">
+                          <label class="checkbox-inline"><input type="checkbox" name=""><span></span></label>颜色
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="block-control-label control-label">尺码：</label>
+                    <div class="inline-block min-block-control">
+                      <ul class="list-unstyled sizes-cate">
+                        <li class="inline-block">
+                          <label class="checkbox-inline"><input type="checkbox" name=""></label><input type="text" value="XXS" class="form-control input-xs">
+                        </li>
+                        <li class="inline-block">
+                          <label class="checkbox-inline"><input type="checkbox" name=""></label><input type="text" value="XS" class="form-control input-xs">
+                        </li>
+                        <li class="inline-block">
+                          <label class="checkbox-inline"><input type="checkbox" name=""></label>S
+                        </li>
+                        <li class="inline-block">
+                          <label class="checkbox-inline"><input type="checkbox" name=""></label>M
+                        </li>
+                        <li class="inline-block">
+                          <label class="checkbox-inline"><input type="checkbox" name=""></label>L
+                        </li>
+                        <li class="inline-block">
+                          <label class="checkbox-inline"><input type="checkbox" name=""></label>XL
+                        </li>
+                        <li class="inline-block">
+                          <label class="checkbox-inline"><input type="checkbox" name=""></label>XXL
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="block-control-label control-label">匹配图片：</label>
+                <div class="inline-block block-control colors-image">
+                  <ul class="list-unstyled">
+                    <li class="inline-block">
+                      <span class="uploader uploader-image">
+                        <button type="button" class="image-wrap"></button>
+                      </span>
+                      军绿色
+                    </li>
+                    <li class="inline-block">
+                      <span class="uploader uploader-image">
+                        <button type="button" class="image-wrap"></button>
+                      </span>
+                      军绿色
+                    </li>
+                    <li class="inline-block">
+                      <span class="uploader uploader-image">
+                        <button type="button" class="image-wrap"></button>
+                      </span>
+                      军绿色
+                    </li>
+                    <li class="inline-block">
+                      <span class="uploader uploader-image">
+                        <button type="button" class="image-wrap"></button>
+                      </span>
+                      军绿色
+                    </li>
+                    <li class="inline-block">
+                      <span class="uploader uploader-image">
+                        <button type="button" class="image-wrap"></button>
+                      </span>
+                      军绿色
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="frame-box transaction-info">
+            <div class="frame-box-hd">交易信息 (零售/无规格)</div>
+            <div class="frame-box-bd">
+              <div class="form-group">
+                <label class="control-label"><span class="text-red">*</span>网上订购：</label>
+                <label class="radio-inline"><input type="radio" name="" checked="">支持</label>
+                <label class="radio-inline"><input type="radio" name="">不支持</label>
+              </div>
+              <div class="form-group">
+                <label class="control-label"><span class="text-red">*</span>销售类型：</label>
+                <label class="radio-inline"><input type="radio" name="" checked="">零售</label>
+                <label class="radio-inline"><input type="radio" name="">批发</label>
+              </div>
+              <div class="form-group">
+                <label class="control-label"><span class="text-red">*</span>计量单位：</label>
+                <select name="" class="form-control input-xs input-short">
+                  <option value="">件</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="control-label"><span class="text-red">*</span>一口价：</label>
+                <input type="text" class="form-control input-xs input-short">元
+              </div>
+              <div class="form-group">
+                <label class="control-label"><span class="text-red">*</span>可售数量：</label>
+                <input type="text" class="form-control input-xs input-short">件
+              </div>
+            </div>
+          </div>
+          <div class="frame-box transaction-info">
+            <div class="frame-box-hd">交易信息 (零售/有规格)</div>
+            <div class="frame-box-bd">
+              <div class="form-group">
+                <label class="control-label"><span class="text-red">*</span>网上订购：</label>
+                <label class="radio-inline"><input type="radio" name="" checked>支持</label>
+                <label class="radio-inline"><input type="radio" name="">不支持</label>
+              </div>
+              <div class="form-group">
+                <label class="control-label"><span class="text-red">*</span>销售类型：</label>
+                <label class="radio-inline"><input type="radio" name="" checked>零售</label>
+                <label class="radio-inline"><input type="radio" name="">批发</label>
+              </div>
+              <div class="form-group">
+                <label class="control-label"><span class="text-red">*</span>计量单位：</label>
+                <select name="" class="form-control input-xs input-short">
+                  <option value="">件</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="control-label"><span class="text-red">*</span>一口价：</label>
+                <input type="text" class="form-control input-xs input-short">元
+              </div>
+              <div class="form-group">
+                <label class="block-control-label control-label"><span class="text-red">*</span>可售数量：</label>
+                <div class="inline-block">
+                  <table class="numbers-table">
+                    <thead>
+                      <tr class="text-muted">
+                        <th width="80">颜色</th>
+                        <th width="80">尺码</th>
+                        <th width="120"><span class="text-red">*</span>单价（元）</th>
+                        <th width="120"><span class="text-red">*</span>可售数量</th>
+                        <th width="120">单品编码</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="txt">军绿色</td>
+                        <td class="txt">XXS</td>
+                        <td><input type="text" class="form-control input-xs input-short"></td>
+                        <td><input type="text" class="form-control input-xs input-short"></td>
+                        <td><input type="text" class="form-control input-xs input-short"></td>
+                      </tr>
+                      <tr>
+                        <td class="txt">军绿色</td>
+                        <td class="txt">XXS</td>
+                        <td><input type="text" class="form-control input-xs input-short"></td>
+                        <td><input type="text" class="form-control input-xs input-short"></td>
+                        <td><input type="text" class="form-control input-xs input-short"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label">可售总量：</label>
+                100件
+              </div>
+            </div>
+          </div>
+          <div class="frame-box transaction-info">
+            <div class="frame-box-hd">交易信息 (批发/按数量/无规格)</div>
+            <div class="frame-box-bd">
+              <div class="form-group">
+                <label class="control-label"><span class="text-red">*</span>网上订购：</label>
+                <label class="radio-inline"><input type="radio" name="" checked>支持</label>
+                <label class="radio-inline"><input type="radio" name="">不支持</label>
+              </div>
+              <div class="form-group">
+                <label class="control-label"><span class="text-red">*</span>销售类型：</label>
+                <label class="radio-inline"><input type="radio" name="">零售</label>
+                <label class="radio-inline"><input type="radio" name="" checked>批发</label>
+              </div>
+              <div class="form-group">
+                <label class="control-label"><span class="text-red">*</span>计量单位：</label>
+                <select name="" class="form-control input-xs input-short">
+                  <option value="">件</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="block-control-label control-label"><span class="text-red">*</span>价格区间：</label>
+                <div class="inline-block">
+                  <div class="inline-block">
+                    <table class="prices-table">
+                      <thead>
+                        <tr class="text-muted">
+                          <th width="175">购买数量</th>
+                          <th width="175">产品单价</th>
+                        </tr>
+                      </thead>
+                      <tfoot>
+                        <tr><td colspan="2"><a href="javascript:" class="text-link add"><span class="inline-block icon-plus">+</span>增加价格区间</a></td></tr>
+                      </tfoot>
+                      <tbody>
+                        <tr>
+                          <td colspan="2">起订量<input type="text" class="form-control input-xs input-short">件及以上：<input type="text" class="form-control input-xs input-short">元/件</td>
+                        </tr>
+                        <tr>
+                          <td colspan="2">　订购<input type="text" class="form-control input-xs input-short">件及以上：<input type="text" class="form-control input-xs input-short">元/件 <a href="javascript:" class="text-link del">删除</a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="inline-block text-minor price-preview">
+                    <div class="clearfix">
+                      <div class="pull-left preview-txt">预<br>览</div>
+                      <ul class="pull-left list-unstyled text-right">
+                        <li class="clearfix">
+                          <div class="pull-left quantity">
+                            <strong>5-10</strong>条
+                          </div>
+                          <div class="pull-right price">
+                            <strong class="text-warning">10.00</strong>
+                            元/条
+                          </div>
+                        </li>
+                        <li class="clearfix">
+                          <div class="pull-left quantity">
+                            <strong>≥ 10</strong>条
+                          </div>
+                          <div class="pull-right price">
+                            <strong class="text-warning">9.00</strong>
+                            元/条
+                          </div>
+                        </li>
+                        <li class="clearfix">
+                          <div class="pull-left quantity">
+                            <strong>≥ 100</strong>条
+                          </div>
+                          <div class="pull-right price">
+                            <strong class="text-warning">9.00</strong>
+                            元/条
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label"><span class="text-red">*</span>可售数量：</label>
+                <input type="text" class="form-control input-xs input-short">件
+              </div>
+            </div>
+          </div>
+          <div class="frame-box transaction-info">
+            <div class="frame-box-hd">交易信息 (批发/按数量/有规格)</div>
+            <div class="frame-box-bd">
+              <div class="form-group">
+                <label class="control-label"><span class="text-red">*</span>网上订购：</label>
+                <label class="radio-inline"><input type="radio" name="" checked>支持</label>
+                <label class="radio-inline"><input type="radio" name="">不支持</label>
+              </div>
+              <div class="form-group">
+                <label class="control-label"><span class="text-red">*</span>销售类型：</label>
+                <label class="radio-inline"><input type="radio" name="">零售</label>
+                <label class="radio-inline"><input type="radio" name="" checked>批发</label>
+              </div>
+              <div class="form-group">
+                <label class="control-label"><span class="text-red">*</span>计量单位：</label>
+                <select name="" class="form-control input-xs input-short">
+                  <option value="">件</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="control-label"><span class="text-red">*</span>报价方式：</label>
+                <label class="radio-inline"><input type="radio" name="" checked>按产品数量报价</label>
+                <label class="radio-inline"><input type="radio" name="">按产品规格报价</label>
+              </div>
+              <div class="form-group">
+                <label class="block-control-label control-label"><span class="text-red">*</span>价格区间：</label>
+                <div class="inline-block">
+                  <div class="inline-block">
+                    <table class="prices-table">
+                      <thead>
+                        <tr class="text-muted">
+                          <th width="175">购买数量</th>
+                          <th width="175">产品单价</th>
+                        </tr>
+                      </thead>
+                      <tfoot>
+                        <tr><td colspan="2"><a href="javascript:" class="text-link add"><span class="inline-block icon-plus">+</span>增加价格区间</a></td></tr>
+                      </tfoot>
+                      <tbody>
+                        <tr>
+                          <td colspan="2">起订量<input type="text" class="form-control input-xs input-short">件及以上：<input type="text" class="form-control input-xs input-short">元/件</td>
+                        </tr>
+                        <tr>
+                          <td colspan="2">　订购<input type="text" class="form-control input-xs input-short">件及以上：<input type="text" class="form-control input-xs input-short">元/件 <a href="javascript:" class="text-link del">删除</a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="inline-block text-minor price-preview">
+                    <div class="clearfix">
+                      <div class="pull-left preview-txt">预<br>览</div>
+                      <ul class="pull-left list-unstyled text-right">
+                        <li class="clearfix">
+                          <div class="pull-left quantity">
+                            <strong>5-10</strong>条
+                          </div>
+                          <div class="pull-right price">
+                            <strong class="text-warning">10.00</strong>
+                            元/条
+                          </div>
+                        </li>
+                        <li class="clearfix">
+                          <div class="pull-left quantity">
+                            <strong>≥ 10</strong>条
+                          </div>
+                          <div class="pull-right price">
+                            <strong class="text-warning">9.00</strong>
+                            元/条
+                          </div>
+                        </li>
+                        <li class="clearfix">
+                          <div class="pull-left quantity">
+                            <strong>≥ 100</strong>条
+                          </div>
+                          <div class="pull-right price">
+                            <strong class="text-warning">9.00</strong>
+                            元/条
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="block-control-label control-label"><span class="text-red">*</span>可售数量：</label>
+                <div class="inline-block">
+                  <table class="numbers-table">
+                    <thead>
+                      <tr class="text-muted">
+                        <th width="80">颜色</th>
+                        <th width="80">尺码</th>
+                        <th width="120"><span class="text-red">*</span>可售数量</th>
+                        <th width="120">单品编码</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="txt">军绿色</td>
+                        <td class="txt">XXS</td>
+                        <td><input type="text" class="form-control input-xs input-short"></td>
+                        <td><input type="text" class="form-control input-xs input-short"></td>
+                      </tr>
+                      <tr>
+                        <td class="txt">军绿色</td>
+                        <td class="txt">XXS</td>
+                        <td><input type="text" class="form-control input-xs input-short"></td>
+                        <td><input type="text" class="form-control input-xs input-short"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label">可售总量：</label>
+                100件
+              </div>
+            </div>
+          </div>
+          <div class="frame-box transaction-info">
+            <div class="frame-box-hd">交易信息  (批发/按规格)</div>
+            <div class="frame-box-bd">
+              <div class="form-group">
+                <label class="control-label"><span class="text-red">*</span>网上订购：</label>
+                <label class="radio-inline"><input type="radio" name="" checked>支持</label>
+                <label class="radio-inline"><input type="radio" name="">不支持</label>
+              </div>
+              <div class="form-group">
+                <label class="control-label"><span class="text-red">*</span>销售类型：</label>
+                <label class="radio-inline"><input type="radio" name="">零售</label>
+                <label class="radio-inline"><input type="radio" name="" checked>批发</label>
+              </div>
+              <div class="form-group">
+                <label class="control-label"><span class="text-red">*</span>计量单位：</label>
+                <select name="" class="form-control input-xs input-short">
+                  <option value="">件</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="control-label"><span class="text-red">*</span>报价方式：</label>
+                <label class="radio-inline"><input type="radio" name="">按产品数量报价</label>
+                <label class="radio-inline"><input type="radio" name="" checked>按产品规格报价</label>
+              </div>
+              <div class="form-group">
+                <label class="block-control-label control-label"><span class="text-red">*</span>规格报价：</label>
+                <div class="inline-block">
+                  <table class="numbers-table">
+                    <thead>
+                      <tr class="text-muted">
+                        <th width="80">颜色</th>
+                        <th width="80">尺码</th>
+                        <th width="120"><span class="text-red">*</span>单价（元）</th>
+                        <th width="120"><span class="text-red">*</span>可售数量</th>
+                        <th width="120">单品编码</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="txt">军绿色</td>
+                        <td class="txt">XXS</td>
+                        <td><input type="text" class="form-control input-xs input-short"></td>
+                        <td><input type="text" class="form-control input-xs input-short"></td>
+                        <td><input type="text" class="form-control input-xs input-short"></td>
+                      </tr>
+                      <tr>
+                        <td class="txt">军绿色</td>
+                        <td class="txt">XXS</td>
+                        <td><input type="text" class="form-control input-xs input-short"></td>
+                        <td><input type="text" class="form-control input-xs input-short"></td>
+                        <td><input type="text" class="form-control input-xs input-short"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label">可售总量：</label>
+                100件
+              </div>
+              <div class="form-group">
+                <label class="control-label">最小起订量：</label>
+                <input type="text" class="form-control input-xs input-short">件
+              </div>
+            </div>
+          </div>
+          <!-- <div class="frame-box transaction-info">
+            <div class="frame-box-hd">交易信息</div>
+            <div class="frame-box-bd">
+              <div class="form-group">
+                <label class="control-label"><span class="text-red">*</span>网上订购：</label>
+                <label class="radio-inline"><input type="radio" name="">支持</label>
+                <label class="radio-inline"><input type="radio" name="">不支持</label>
+              </div>
+              <div class="form-group">
+                <label class="control-label"><span class="text-red">*</span>销售类型：</label>
+                <label class="radio-inline"><input type="radio" name="">零售</label>
+                <label class="radio-inline"><input type="radio" name="">批发</label>
+              </div>
+              <div class="form-group">
+                <label class="control-label"><span class="text-red">*</span>计量单位：</label>
+                <select name="" class="form-control input-xs input-short">
+                  <option value="">件</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="control-label"><span class="text-red">*</span>报价方式：</label>
+                <label class="radio-inline"><input type="radio" name="">按产品数量报价</label>
+                <label class="radio-inline"><input type="radio" name="">按产品规格报价</label>
+              </div>
+              <div class="form-group">
+                <label class="block-control-label control-label"><span class="text-red">*</span>价格区间：</label>
+                <div class="inline-block">
+                  <div class="inline-block">
+                    <table class="prices-table">
+                      <thead>
+                        <tr class="text-muted">
+                          <th width="175">购买数量</th>
+                          <th width="175">产品单价</th>
+                        </tr>
+                      </thead>
+                      <tfoot>
+                        <tr><td colspan="2"><a href="javascript:" class="text-link add"><span class="inline-block icon-plus">+</span>增加价格区间</a></td></tr>
+                      </tfoot>
+                      <tbody>
+                        <tr>
+                          <td colspan="2">起订量<input type="text" class="form-control input-xs input-short">件及以上：<input type="text" class="form-control input-xs input-short">元/件</td>
+                        </tr>
+                        <tr>
+                          <td colspan="2">　订购<input type="text" class="form-control input-xs input-short">件及以上：<input type="text" class="form-control input-xs input-short">元/件 <a href="javascript:" class="text-link del">删除</a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="inline-block text-minor price-preview">
+                    <div class="clearfix">
+                      <div class="pull-left preview-txt">预<br>览</div>
+                      <ul class="pull-left list-unstyled text-right">
+                        <li class="clearfix">
+                          <div class="pull-left quantity">
+                            <strong>5-10</strong>条
+                          </div>
+                          <div class="pull-right price">
+                            <strong class="text-warning">10.00</strong>
+                            元/条
+                          </div>
+                        </li>
+                        <li class="clearfix">
+                          <div class="pull-left quantity">
+                            <strong>≥ 10</strong>条
+                          </div>
+                          <div class="pull-right price">
+                            <strong class="text-warning">9.00</strong>
+                            元/条
+                          </div>
+                        </li>
+                        <li class="clearfix">
+                          <div class="pull-left quantity">
+                            <strong>≥ 100</strong>条
+                          </div>
+                          <div class="pull-right price">
+                            <strong class="text-warning">9.00</strong>
+                            元/条
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="block-control-label control-label"><span class="text-red">*</span>规格报价：</label>
+                <div class="inline-block">
+                  <table class="numbers-table">
+                    <thead>
+                      <tr class="text-muted">
+                        <th width="80">颜色</th>
+                        <th width="80">尺码</th>
+                        <th width="120"><span class="text-red">*</span>单价（元）</th>
+                        <th width="120"><span class="text-red">*</span>可售数量</th>
+                        <th width="120">单品编码</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="txt">军绿色</td>
+                        <td class="txt">XXS</td>
+                        <td><input type="text" class="form-control input-xs input-short"></td>
+                        <td><input type="text" class="form-control input-xs input-short"></td>
+                        <td><input type="text" class="form-control input-xs input-short"></td>
+                      </tr>
+                      <tr>
+                        <td class="txt">军绿色</td>
+                        <td class="txt">XXS</td>
+                        <td><input type="text" class="form-control input-xs input-short"></td>
+                        <td><input type="text" class="form-control input-xs input-short"></td>
+                        <td><input type="text" class="form-control input-xs input-short"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label"><span class="text-red">*</span>可售数量：</label>
+                <input type="text" class="form-control input-xs input-short">件
+              </div>
+              <div class="form-group">
+                <label class="block-control-label control-label"><span class="text-red">*</span>可售数量：</label>
+                <div class="inline-block">
+                  <table class="numbers-table">
+                    <thead>
+                      <tr class="text-muted">
+                        <th width="80">颜色</th>
+                        <th width="80">尺码</th>
+                        <th width="120"><span class="text-red">*</span>可售数量</th>
+                        <th width="120">单品编码</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="txt">军绿色</td>
+                        <td class="txt">XXS</td>
+                        <td><input type="text" class="form-control input-xs input-short"></td>
+                        <td><input type="text" class="form-control input-xs input-short"></td>
+                      </tr>
+                      <tr>
+                        <td class="txt">军绿色</td>
+                        <td class="txt">XXS</td>
+                        <td><input type="text" class="form-control input-xs input-short"></td>
+                        <td><input type="text" class="form-control input-xs input-short"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label">可售总量：</label>
+                100件
+              </div>
+              <div class="form-group">
+                <label class="control-label"><span class="text-red">*</span>一口价：</label>
+                <input type="text" class="form-control input-xs input-short">元
+              </div>
+              <div class="form-group">
+                <label class="control-label">最小起订量：</label>
+                <input type="text" class="form-control input-xs input-short">件
+              </div>
+            </div>
+          </div> -->
+          <div class="frame-box detail-info">
+            <div class="frame-box-hd">主图及产品详情</div>
+            <div class="frame-box-bd">
+              <div class="form-group">
+                <label class="block-control-label control-label"><span class="text-red">*</span>产品图片：</label>
+                <div class="inline-block">
+                  <p class="text-minor minor-help">请上传1M以内的实拍产品图片，默认第一张为主图，建议图片大小为750*750px。</p>
+                  <ul class="list-unstyled">
+                    <li class="inline-block">
+                      <span class="uploader uploader-image">
+                        <button type="button" class="image-wrap"></button>
+                      </span>
+                    </li>
+                    <li class="inline-block">
+                      <span class="uploader uploader-image">
+                        <button type="button" class="image-wrap"></button>
+                      </span>
+                    </li>
+                    <li class="inline-block">
+                      <span class="uploader uploader-image">
+                        <button type="button" class="image-wrap"></button>
+                      </span>
+                    </li>
+                    <li class="inline-block">
+                      <span class="uploader uploader-image">
+                        <button type="button" class="image-wrap"></button>
+                      </span>
+                    </li>
+                    <li class="inline-block">
+                      <span class="uploader uploader-image">
+                        <button type="button" class="image-wrap"></button>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="block-control-label control-label"><span class="text-red">*</span>产品描述：</label>
+                <div class="inline-block">
+                  <p class="text-minor minor-help">插入图片的规格：宽度小于750px</p>
+                  <textarea name="" class="description" id="editor"></textarea>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="block-control-label control-label">在店铺的所<br>属分类：</label>
+                <div class="inline-block">
+                  <div class="pull-left categorys">
+                    <ul class="list-unstyled categorys-list">
+                      <li>
+                        <label class="checkbox-inline"><input type="checkbox" name="" class="cate1">一级分类</label>
+                        <ul class="list-unstyled">
+                          <li>
+                            <label class="checkbox-inline"><input type="checkbox" name="">二级分类</label>
+                          </li>
+                          <li>
+                            <label class="checkbox-inline"><input type="checkbox" name="">二级分类</label>
+                          </li>
+                          <li>
+                            <label class="checkbox-inline"><input type="checkbox" name="">二级分类</label>
+                          </li>
+                          <li class="last">
+                            <label class="checkbox-inline"><input type="checkbox" name="">二级分类</label>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <label class="checkbox-inline"><input type="checkbox" name="" class="cate1">一级分类</label>
+                        <ul class="list-unstyled">
+                          <li>
+                            <label class="checkbox-inline"><input type="checkbox" name="">二级分类</label>
+                          </li>
+                          <li>
+                            <label class="checkbox-inline"><input type="checkbox" name="">二级分类</label>
+                          </li>
+                          <li>
+                            <label class="checkbox-inline"><input type="checkbox" name="">二级分类</label>
+                          </li>
+                          <li class="last">
+                            <label class="checkbox-inline"><input type="checkbox" name="">二级分类</label>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <label class="checkbox-inline"><input type="checkbox" name="" class="cate1">一级分类</label>
+                      </li>
+                    </ul>
+                  </div>
+                  <a href="javascript:" class="text-link">管理产品分类</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="frame-box logistics-info">
+            <div class="frame-box-hd">物流及服务设置</div>
+            <div class="frame-box-bd">
+              <h3 class="form-group-title">物流运费设置</h3>
+              <div class="form-group">
+                <label class="control-label"><span class="text-red">*</span>运费设置：</label>
+                <select name="" class="form-control input-xs input-short">
+                  <option value="">选择售后服务模板</option>
+                </select>
+                <a href="javascript:" class="text-link">管理运费模板</a>
+              </div>
+              <div class="form-group">
+                <label class="control-label">单位重量：</label>
+                <input type="text" class="form-control input-xs input-short">
+                公斤/条
+              </div>
+              <h3 class="form-group-title">发布时间设置</h3>
+              <div class="form-group form-group-offset create-time">
+                <label class="radio-inline"><input type="radio" name="product[timeType]" value="1" checked >立即发布</label>
+                <label class="radio-inline"><input type="radio" name="product[timeType]" value="2" >设置发布时间</label>
+                <input type="text" name="product[publicTime]" class="form-control input-xs input-disabled input-short" disabled readonly>
+              </div>
+              <h3 class="form-group-title">售后保障信息</h3>
+              <div class="form-group">
+                <label class="control-label">订购说明：</label>
+                <select name="" class="form-control input-xs input-short">
+                  <option value="">选择售后服务模板</option>
+                </select>
+                <a href="javascript:" class="text-link">管理订购说明</a>
+              </div>
+              <div class="form-group">
+                <label class="control-label">售后服务：</label>
+                <select name="" class="form-control input-xs input-short">
+                  <option value="">选择售后服务模板</option>
+                </select>
+                <a href="javascript:" class="text-link">管理售后服务</a>
+              </div>
+              <div class="form-group">
+                <label class="control-label">退换货：</label>
+                <select name="" class="form-control input-xs input-short">
+                  <option value="">选择售后服务模板</option>
+                </select>
+                <a href="javascript:" class="text-link">管理退换货</a>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <br>
+            <a href="javascript:" class="text-link">点此阅读指易达商城总则</a><br><br>
+            <button type="submit" class="btn btn-sm btn-success">同意协议条款，我要发布</button>
+            <button type="button" class="btn btn-sm btn-cancel">预览</button>
+            <button type="button" class="btn btn-sm btn-cancel">存入草稿箱</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script type="text/html" id="priceItem">
+    <tr>
+      <td colspan="2">　订购<input type="text" class="form-control input-xs input-short" name="product[priceRange][miniMun][]">件及以上：<input type="text" class="form-control input-xs input-short" name="product[priceRange][price][]">元/件 <a href="javascript:" class="text-link del">删除</a></td>
+    </tr>
+  </script>
+  <script type="text/html" id="pricePreview">
+  {{each list}}
+    <li class="clearfix">
+      <div class="pull-left quantity">
+        <strong>≥ {{$value.number}}</strong>条
+      </div>
+      <div class="pull-right price">
+        <strong class="text-warning">{{$value.price}}</strong>
+        元/条
+      </div>
+    </li>
+  {{/each}}
+  </script>
+  <script>seajs.use('app/product/manage/js//createinfo.js');</script>
+</body>
+</html>

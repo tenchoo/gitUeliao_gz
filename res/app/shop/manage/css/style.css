@@ -1,0 +1,103 @@
+/*信息发布*/
+.newspost .control-label{width:100px}
+.newspost .form-group-offset{padding-left:100px;}
+
+/*店铺装修*/
+.choosetemplate ul{padding:0 3px 0 2px;overflow:hidden}
+.choosetemplate li{float:left;padding:10px;margin:10px;width:160px;height:290px;background:#f6f6f6;overflow:hidden;text-align:center}
+.choosetemplate li img{width:160px;height:220px}
+.choosetemplate li p{margin:10px 0;height:20px;line-height:20px;overflow:hidden}
+.choosetemplate li:hover,.choosetemplate li.active{background:#f5eeb8}
+.choosetemplate ul .empty{display:block;margin:30px auto 0;width:200px;text-align:center}
+
+/*模板设置*/
+.settingtemplate .setting-box{margin-top:10px}
+.setting-box .setting-hd{height:32px;line-height:32px;background:#f6f6f6;padding-left:15px}
+.setting-box .setting-bd{margin-top:20px}
+.setting-bd .show-color{width:22px;height:22px;border:1px solid #ccc;cursor: pointer;}
+.setting-bd .show-checkbox{margin-left:25px;vertical-align:middle}
+.setting-bd .message{vertical-align:middle}
+.setting-bd .show-input{margin-top:10px;/* vertical-align: top; */}
+.uploader-button{position: absolute;margin-left:3px}
+.setting-bd .show-input .form-control{width:160px;margin-right:5px}
+.setting-bd .form-group-offset{padding-left:118px}
+.setting-bd .control-label,.setting-bd .show-color{vertical-align:middle}
+.active .show-color{cursor: pointer;}
+.setting-bd .control-label{padding:0;width:115px}
+.image-group .show-info{vertical-align:top;margin-left:10px}
+.image-group .show-info .item{margin-bottom:10px}
+.control-label .radio-inline{padding-right:0}
+
+/*自定义页面*/
+.custompage .control-label{width:100px}
+.custompage .title .btn{padding:0 10px}
+.custompage .title .btn-xs{height:23px;line-height:23px}
+.custompage table{width:100%}
+.custompage table th{font-weight:400;height:45px;color:#999;text-align:center}
+.custompage table td{background:#f6f6f6;border-bottom:1px solid #fff;padding:4px 0;text-align:center}
+.custompage .title{text-align:left;padding-left:15px}
+.custompage table td input.form-control{width:190px}
+.custompage table td input[type="checkbox"]{margin-right:5px}
+.custompage .text-link{padding-left:10px}
+.newspost .content{width:650px;height:560px;}
+
+/*首页推荐*/
+.pro-list{width:390px}
+.recommend .pro-list-hd{padding:7px 10px;background:#f6f6f6;height:24px}
+.rec-pro .pro-list-hd{line-height:24px}
+.recommend .form-horizontal{margin-top:0}
+.recommend select.input-xs{height:24px}
+.recommend .input-xs{height:22px;line-height:22px;margin-right:5px}
+.recommend select.form-control{width:120px}
+.recommend .form-control{width:180px}
+.pro-list-bd li{padding:10px;border-bottom:1px solid #ececec;height:50px}
+.pro-list-bd li span.inline-block{width:190px;margin-left:5px;vertical-align:middle;height:36px;overflow:hidden}
+.pro-list-bd .list-view-info img{width:50px;height:50px}
+.pro-list-bd li .list-view-status{line-height:50px;padding:0 10px;width:36px;text-align:center}
+.recommend .frame-list-bd label{height:26px;line-height:26px}
+
+/*店铺基本设置*/
+.frame-box-bd{padding:20px}
+select.form-control{width:138px}
+.shopsetting .uploader-image{margin-top:5px;}
+
+/*分类管理页*/
+.category-list-hd{background:#f9f9f9;margin:15px 0; border:solid 1px #ececec;padding:5px 10px}
+.category-list-hd .name{width:370px;}
+.category-list-hd .move{width:320px;}
+.category-btns button{margin-right:10px}
+.category-list{margin:15px 0 15px;}
+.category-list .icon{cursor: pointer;}
+.category-list .icon-green-up-dis,.category-list .icon-green-down-dis,.category-list .icon-blue-up-dis,.category-list .icon-blue-down-dis{cursor:default;}
+.category-list .name{width:370px;}
+.category-list .name .icon{margin-top: -9px;}
+.category-list .move{width:310px;padding-top: 1px;}
+.category-list .control{padding-top: 4px;}
+.category-list .control a{margin-right:10px}
+.category-list .item ul{display: none; padding: 12px 0 5px;}
+.category-list .active ul{display: block;}
+.category-list .item li{padding:5px 0 5px 40px}
+.category-list .item li .name{width:340px;}
+.category-list .add a{position: relative;top:-3px;}
+.category-list .input-xs{width:160px; height:22px;line-height:22px}
+.category-list .cate1{padding:4px 10px; background: #f4f4f4;}
+.category-list .cate1 .input-xs{width:190px;margin-left:5px}
+.category-list .inline-block{width:14px;height:19px;overflow: hidden;border:solid #cacaca;border-width:0 0 1px 1px;position: relative;top: -7px;}
+
+/*产品归类*/
+.productscategory tbody .t{padding-right: 60px;}
+.productscategory tbody .t .pull-left{margin-right: 8px;}
+.productscategory .arr,.productscategory .arr i{display: inline-block;
+*display: inline;
+*zoom: 1;overflow: hidden;}
+.productscategory .arr{position: relative;top:3px;margin-left:3px; width:13px;height:10px;border:solid 1px #c9c9c9;}
+.productscategory .arr i{position: relative; width: 0;height: 0;border:solid 5px #fff;border-top-color:#cacaca;top:-1px;left:1px}
+.productscategory tbody select.input-xs{width:122px;height:25px}
+.more-category{width:60px;}
+.more-category-bd{display: none; position: absolute; width:140px; background:#f9f9f9;border:solid 1px #ededed;padding: 6px 8px 10px 10px;z-index:1;}
+.more-category-bd ul{line-height:24px;margin: 4px 0 0;}
+.more-category-bd .icon-close:hover{background-position:-60px -40px}
+.more-category-bd .icon-close-sm{margin-top: 2px;}
+.more-category-bd .icon-close-sm:hover{background-position:-60px -60px}
+.more-category-active .arr i{border-color:#fff;border-bottom-color:#cacaca;top:-7px}
+.more-category-active .more-category-bd{display: block;}

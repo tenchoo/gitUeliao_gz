@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit|ie-stand|ie-comp">
+  <title>物流信息</title>
+  <meta name="keywords" content=""/>
+  <meta name="description" content=""/>
+  <link rel="stylesheet" href="/libs/normalize/3.0.3/normalize.min.css"/>
+  <link rel="stylesheet" href="/common/style.css"/>
+  <script src="/libs/seajs/2.3.0/sea.js"></script>
+  <script src="/libs/seajs/2.3.0/seajs-css.js"></script>
+  <script src="/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="/common/init.js"></script>
+</head>
+<body>
+  <link rel="stylesheet" href="/modules/button/css/style.css"/>
+  <link rel="stylesheet" href="/modules/form/css/style.css"/>
+  <link rel="stylesheet" href="/app/member/frame/css/style.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <div class="frame-head">
+    <div class="container">
+      <h1 class="pull-left"><a href="javascript:"><img src="/app/member/frame/image/logo.png" width="164" height="45" alt=""/></a></h1>
+      <ul class="frame-nav text-center text-bold list-unstyled">
+        <li class="active"><a href="javascript:">首页</a><span></span></li>
+        <li><a href="javascript:">账号设置</a></li>
+        <li><a href="javascript:">消息</a></li>
+        <li><a href="javascript:">管理中心</a></li>
+      </ul>
+      <div class="pull-right frame-search">
+        <form action="" method="get">
+          <input type="text" placeholder="请输入产品名称"/>
+          <button type="submit"><span class="hide">搜索</span></button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="container frame-body">
+    <div class="pull-left list-unstyled frame-menu">
+      <h3 class="active"><span><i></i></span>我的交易</h3>
+      <ul class="list-unstyled">
+        <li class="active"><a href="javascript:">已买到的货品</a></li>
+        <li><a href="javascript:">我的购物车</a></li>
+        <li><a href="javascript:">评价管理</a></li>
+        <li><a href="javascript:">收货地址</a></li>
+        <li><a href="javascript:">我的收藏</a></li>
+      </ul>
+    </div>
+    <script>seajs.use('app/member/frame/js/menu.js');</script>
+    <div class="pull-right frame-content">
+      <div class="order-status">
+        <div class="bd">
+          <span class="item">物流编号：LP00010817623577</span><span class="item item-company">物流公司：圆通速递</span><span class="item">运单号码：1893064138</span>
+        </div>
+      </div>
+      <div class="frame-box">
+				<div class="express-info">
+					<div class="hd pull-left">物流信息：</div>
+					<div class="bd pull-left">
+						<p>2012-09-03 20:01:00 浙江省杭州市天目山路 揽收扫描</p>
+						<p>2012-09-03 20:01:00 浙江省杭州市天目山路 揽收扫描</p>
+						<p>2012-09-03 20:01:00 浙江省杭州市天目山路 揽收扫描</p>
+						<p>2012-09-03 20:01:00 浙江省杭州市天目山路 揽收扫描</p>
+					</div>
+				</div>
+        <div class="express-address">
+       		<p><b>收货信息：</b>广东省深圳市龙岗区平湖华南城1号交易广告6E039，518111，刘一天，13410575664</p>
+       		<p><b>发货信息：</b>广东省深圳市龙岗区平湖华南城1号交易广告6E039，518111，刘一天，13410575664</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>seajs.use('./js/');</script>
+</body>
+</html>

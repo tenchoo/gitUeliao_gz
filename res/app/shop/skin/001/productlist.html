@@ -1,0 +1,464 @@
+﻿<!doctype html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit|ie-stand|ie-comp">
+<title>产品列表-网铺</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="stylesheet" href="/libs/normalize/3.0.3/normalize.min.css" />
+<link rel="stylesheet" href="/common/style.css" />
+<link rel="stylesheet" href="../common/style.css" />
+<link rel="stylesheet" href="css/style.css" />
+<script src="/libs/seajs/2.3.0/sea.js"></script>
+<script src="/libs/seajs/2.3.0/seajs-css.js"></script>
+<script src="/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/common/init.js"></script>
+</head>
+<body>
+  <div class="header container">
+    <h1 class="logo pull-left">
+      <a title="指易达商城系统" href=""><img src="../common/image/logo.png" alt="商城系统"></a>
+    </h1>
+    <div class="pull-right search">
+      <div class="g-cf search-form">
+        <form method="get" enctype="multipart/form-data" name="search-form" id="search-form-main" action="">
+          <div class="pull-left search-cate" data-hover="search-cate-hover">
+            <a href="javascript:" class="search-select-cate">找产品<span class="arr"></span></a>
+            <ul>
+              <li class="active"><a href="">找产品</a></li>
+              <li><a href="">找卖家</a></li>
+            </ul>
+          </div>
+          <input name="keyword" type="text" placeholder="请输入搜索关键字" class="pull-left search-q" id="search-keyword">
+          <button type="submit" class="pull-left search-btn">搜索</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="bg_x header_logo_2">
+    <div class="container logo2">
+      <dl class="clearfix">
+        <dt class="pull-left">
+          <img width="80" height="80" src="http://www.zb2b.com/upload/2015/03/20/142681268075548.png" alt="">
+        </dt>
+        <dd class="pull-left">
+          <p class="logo2_text">隆缘裳服饰旗舰店</p>
+          <p class="logo2_eng">shop32.zb2b.com</p>
+        </dd>
+      </dl>
+    </div>
+    <div class="nav_bar">
+      <div class="container main_nav">
+        <ul>
+          <li><a href="index.html">首页</a></li>
+          <li class="cur"><a href="productlist.html">所有分类</a></li>
+          <li><a href="record.html">诚信档案</a></li>
+          <li><a href="newslist.html">最新动态</a></li>
+          <li><a href="contact.html">联系我们</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--正文 start-->
+  <div class="container main clearfix">
+    <div class="w_210 main_left pull-left">
+      <div class="xinxi">
+        <h2 class="bg_x tit_bg fs_14">卖家信息</h2>
+        <ul>
+          <li class="clearfix"><span class="xinxi_01">卖家名称：</span><span class="xinxi_02"><a href="..\..\index.htm"><strong class="lisheng">隆缘裳服饰旗舰店</strong></a></span></li>
+          <li class="clearfix">固定电话：</li>
+          <li class="clearfix"><span class="xinxi_01">联系地址：</span><span class="xinxi_02">广东广州市越秀区</span></li>
+          <li class="xinxi_xian">
+            <h4>在线客服：</h4>
+          </li>
+          <li>成交订单：<strong>1</strong>笔
+          </li>
+          <li>好&nbsp;&nbsp;评&nbsp;&nbsp;率：0.00%</li>
+          <li>卖家认证：<span class="ico ico_aprovone"></span></li>
+          <li>创店时间：2015-03-19</li>
+          <li>商品数量：32款</li>
+          <li class="dianpu"><a class="btn btn_sc" href="javascript:saveShop()">收藏店铺</a></li>
+        </ul>
+      </div>
+      <div class="sousuo">
+        <h2 class="bg_x tit_bg fs_14">站内搜索</h2>
+        <form method="get" action="http://shop32.zb2b.com/product/list" id="space_search">
+          <ul>
+            <li><span>价格</span><input class="jiage" type="text" name="price_min">&nbsp;-&nbsp;<input class="jiage" type="text" name="price_max"></li>
+            <li><span>产品名</span><input class="pic" type="text" name="name"></li>
+            <li class="sousuo_anniu"><input class="btn_sc btn " type="submit" value="搜索" name="search"></li>
+          </ul>
+        </form>
+      </div>
+      <div class="chanpin">
+        <h2 class="bg_x tit_bg fs_14">产品分类</h2>
+        <div class="menu" id="proSort">
+          <div class="menu_01 open">
+            <h3>
+              <b class=" ico ico_mian1 click"></b> <a href="..\list.htm">未分类</a>
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="xiaoliang">
+        <h2 class="bg_x tit_bg fs_14">销量排行</h2>
+        <div class="xiaoliang_pic bghover">
+          <dl class="clearfix item">
+            <dt class="c_img c_img50 pull-left">
+              <a href="http://www.zb2b.com/product/detail_432"><img src="http://www.zb2b.com/upload/2015/03/23/.tmb/thumb_142707288375049_resize_50_50.png" alt="女装 春装新款短装 女士套装 "></a>
+            </dt>
+            <dd class="pull-left">
+              <span class="title_pro02"> <a href="http://www.zb2b.com/product/detail_432">女装 春装新款短装 女士套装 </a>
+              </span> <span><strong>¥ 248.00</strong></span>
+            </dd>
+          </dl>
+          <dl class="clearfix item">
+            <dt class="c_img c_img50 pull-left">
+              <a href="http://www.zb2b.com/product/detail_386"><img src="http://www.zb2b.com/upload/2015/03/20/.tmb/thumb_142681624864299_resize_50_50.jpg" alt="男士内裤 男 平角裤四角裤头内衣U凸舒适礼盒装"></a>
+            </dt>
+            <dd class="pull-left">
+              <span class="title_pro02"> <a href="http://www.zb2b.com/product/detail_386">男士内裤 男 平角裤四角裤头内衣U凸舒适礼盒</a>
+              </span> <span><strong>¥ 56.00</strong></span>
+            </dd>
+          </dl>
+          <dl class="clearfix item">
+            <dt class="c_img c_img50 pull-left">
+              <a href="http://www.zb2b.com/product/detail_369"><img src="http://www.zb2b.com/upload/2015/03/19/.tmb/thumb_142675123169446_resize_50_50.jpg" alt="雪纺衬衫女春秋 2015春装新款 纯色绣花女士衬衣韩版打底上衣休闲"></a>
+            </dt>
+            <dd class="pull-left">
+              <span class="title_pro02"> <a href="http://www.zb2b.com/product/detail_369">雪纺衬衫女春秋 2015春装新款 纯色绣花女</a>
+              </span> <span><strong>面议</strong></span>
+            </dd>
+          </dl>
+          <dl class="clearfix item">
+            <dt class="c_img c_img50 pull-left">
+              <a href="http://www.zb2b.com/product/detail_418"><img src="http://www.zb2b.com/upload/2015/03/20/.tmb/thumb_142683841790095_resize_50_50.jpg" alt="2015半身裙短裙春秋新款大码百搭收腰A字裙夏 绣花蓬蓬裙百褶裙子"></a>
+            </dt>
+            <dd class="pull-left">
+              <span class="title_pro02"> <a href="http://www.zb2b.com/product/detail_418">2015半身裙短裙春秋新款大码百搭收腰A字裙</a>
+              </span> <span><strong>¥ 118.00</strong></span>
+            </dd>
+          </dl>
+          <dl class="clearfix item">
+            <dt class="c_img c_img50 pull-left">
+              <a href="http://www.zb2b.com/product/detail_381"><img src="http://www.zb2b.com/upload/2015/03/20/.tmb/thumb_142681436943523_resize_50_50.jpg" alt="可外穿2015春秋款新品加大码家居服套装女人睡衣纯棉长袖"></a>
+            </dt>
+            <dd class="pull-left">
+              <span class="title_pro02"> <a href="http://www.zb2b.com/product/detail_381">可外穿2015春秋款新品加大码家居服套装女人</a>
+              </span> <span><strong>面议</strong></span>
+            </dd>
+          </dl>
+          <dl class="clearfix item">
+            <dt class="c_img c_img50 pull-left">
+              <a href="http://www.zb2b.com/product/detail_384"><img src="http://www.zb2b.com/upload/2015/03/20/.tmb/thumb_142681505795106_resize_50_50.jpg" alt="8双加厚船袜男纯棉秋冬 浅口隐形袜子低帮短袜男士毛巾袜"></a>
+            </dt>
+            <dd class="pull-left">
+              <span class="title_pro02"> <a href="http://www.zb2b.com/product/detail_384">8双加厚船袜男纯棉秋冬 浅口隐形袜子低帮短袜</a>
+              </span> <span><strong>¥ 56.00</strong></span>
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+    <div class="w_770 pull-right main_right ">
+      <!--条件搜索框 start-->
+      <div class="suoyou">
+        <h2>所有产品</h2>
+        <dl class="clearfix inter">
+          <dt class="c_999">分类：</dt>
+          <dd id="Mprice">
+            <span class="all pull-left"><a class="cur" href="..\list-1.htm?price=">全部</a></span> <span class="other"> </span>
+          </dd>
+          <dd class="suoyou_more">
+            <a href="javascript:" class="c_06c" onclick=""></a>
+          </dd>
+        </dl>
+        <dl class="clearfix">
+          <dt class="c_999">价格：</dt>
+          <dd id="Mprice2">
+            <span class="all pull-left"><a class="cur" href="index.htm">全部</a></span> <span class="other"> <span><a class="" href="index-1.htm?price=1"><strong>0-10元</strong></a></span> <span><a class="" href="index-2.htm?price=2"><strong>10-50元</strong></a></span> <span><a class=""
+                href="index-3.htm?price=3"><strong>50-100元</strong></a></span> <span><a class="" href="index-4.htm?price=4"><strong>100-300元</strong></a></span> <span><a class="" href="index-5.htm?price=5"><strong>300-500元</strong></a></span> <span><a class="" href="index-6.htm?price=6"><strong>500元以上</strong></a></span>
+            </span>
+          </dd>
+          <dd class="suoyou_more">
+            <a href="javascript:" class="c_06c" onclick=""></a>
+          </dd>
+        </dl>
+        <div class="suoyou_sousuo">
+          <form id="yw0" action="http://shop32.zb2b.com/product/list" method="get">
+            <strong>站内搜索：</strong><span>关键字</span><input class="pic" type="text" value="" name="name" id="name"> <span class="juli">价格</span> <input class="jiage" type="text" value="" name="price_min" id="price_min"> &nbsp;到&nbsp;<input class="jiage" type="text" value=""
+              name="price_max" id="price_max"> <input class="btn_sc btn " name="search" type="submit" value="查找">
+          </form>
+        </div>
+      </div>
+      <!--条件搜索框 end-->
+      <!--产品列表 start-->
+      <div class="list-view pro_list list_hover" id="yw1">
+        <div class="list-view-head clearfix">
+          <div class="pull-left">
+            <a class=" cur" href="index-7.htm?price=&amp;order=">默认排序</a><a class="" href="index-8.htm?price=&amp;order=4">价格<b class="ico ico_down"></b></a><a class="" href="index-9.htm?price=&amp;order=2">销量<b class="ico ico_down"></b></a><a class="" href="index-10.htm?price=&amp;order=1">上架时间<b
+              class="ico ico_down"></b></a>
+          </div>
+          <div class="summary">
+            <div class="list_page pull-right">
+              <ul id="yw2" class="miniPager">
+                <li><a class="prev mem_bgx" href="..\list.htm"><b class="ico ico_prev"></b></a></li>
+                <li><a class="next mem_bgx" href="..\list-2.htm?Product_page=2">下一页<b class="ico ico_next"></b></a></li>
+              </ul>
+            </div>
+            <span class="summary-text">1/2</span>
+          </div>
+        </div>
+        <ul class="clearfix list bghover">
+          <li class="item">
+            <div class="c_img c_img160 kuang">
+              <a href="http://www.zb2b.com/product/detail_440"><img src="http://www.zb2b.com/upload/2015/03/23/.tmb/thumb_142707800185672_resize_160_160.png" alt="欧洲站连衣裙 女装新款小香风复古长袖春秋中长款 连衣裙潮两件套"></a>
+            </div>
+            <p class="title_pro02">
+              <a href="http://www.zb2b.com/product/detail_440">欧洲站连衣裙 女装新款小香风复古长袖春秋中长</a>
+            </p>
+            <p>
+              <strong>¥ 143.00</strong>
+            </p>
+          </li>
+          <li class="item">
+            <div class="c_img c_img160 kuang">
+              <a href="http://www.zb2b.com/product/detail_437"><img src="http://www.zb2b.com/upload/2015/03/23/.tmb/thumb_142707714825716_resize_160_160.jpg" alt="蕾丝连衣裙2015春装新款拼接打底裙A字大码女装韩版修身连衣裙"></a>
+            </div>
+            <p class="title_pro02">
+              <a href="http://www.zb2b.com/product/detail_437">蕾丝连衣裙2015春装新款拼接打底裙A字大码</a>
+            </p>
+            <p>
+              <strong>¥ 155.00</strong>
+            </p>
+          </li>
+          <li class="item">
+            <div class="c_img c_img160 kuang">
+              <a href="http://www.zb2b.com/product/detail_436"><img src="http://www.zb2b.com/upload/2015/03/23/.tmb/thumb_142707617112848_resize_160_160.png" alt="2015新款女装蕾丝衫 雪纺宽松裙 女装打底衫"></a>
+            </div>
+            <p class="title_pro02">
+              <a href="http://www.zb2b.com/product/detail_436">2015新款女装蕾丝衫 雪纺宽松裙 女装打底</a>
+            </p>
+            <p>
+              <strong>面议</strong>
+            </p>
+          </li>
+          <li class="item">
+            <div class="c_img c_img160 kuang">
+              <a href="http://www.zb2b.com/product/detail_435"><img src="http://www.zb2b.com/upload/2015/03/23/.tmb/thumb_142707554889938_resize_160_160.png" alt="女张套裙 迷你连衣裙  雪纺七分袖套张裙"></a>
+            </div>
+            <p class="title_pro02">
+              <a href="http://www.zb2b.com/product/detail_435">女张套裙 迷你连衣裙 雪纺七分袖套张裙</a>
+            </p>
+            <p>
+              <strong>面议</strong>
+            </p>
+          </li>
+          <li class="item">
+            <div class="c_img c_img160 kuang">
+              <a href="http://www.zb2b.com/product/detail_434"><img src="http://www.zb2b.com/upload/2015/03/23/.tmb/thumb_142707483539325_resize_160_160.png" alt="春装新款女装 蕾丝雪纺上衣 娃娃韩版衬衫"></a>
+            </div>
+            <p class="title_pro02">
+              <a href="http://www.zb2b.com/product/detail_434">春装新款女装 蕾丝雪纺上衣 娃娃韩版衬衫</a>
+            </p>
+            <p>
+              <strong>面议</strong>
+            </p>
+          </li>
+          <li class="item">
+            <div class="c_img c_img160 kuang">
+              <a href="http://www.zb2b.com/product/detail_433"><img src="http://www.zb2b.com/upload/2015/03/23/.tmb/thumb_142707386724959_resize_160_160.png" alt="2015新款女装 女装外套 迷你时尚外衣"></a>
+            </div>
+            <p class="title_pro02">
+              <a href="http://www.zb2b.com/product/detail_433">2015新款女装 女装外套 迷你时尚外衣</a>
+            </p>
+            <p>
+              <strong>面议</strong>
+            </p>
+          </li>
+          <li class="item">
+            <div class="c_img c_img160 kuang">
+              <a href="http://www.zb2b.com/product/detail_432"><img src="http://www.zb2b.com/upload/2015/03/23/.tmb/thumb_142707288375049_resize_160_160.png" alt="女装 春装新款短装 女士套装 "></a>
+            </div>
+            <p class="title_pro02">
+              <a href="http://www.zb2b.com/product/detail_432">女装 春装新款短装 女士套装 </a>
+            </p>
+            <p>
+              <strong>¥ 248.00</strong>
+            </p>
+          </li>
+          <li class="item">
+            <div class="c_img c_img160 kuang">
+              <a href="http://www.zb2b.com/product/detail_431"><img src="http://www.zb2b.com/upload/2015/03/23/.tmb/thumb_142707154769204_resize_160_160.jpg" alt="秋冬新款女冬圆领打底衫毛衣女厚套头内搭羊毛衫女韩版宽松潮"></a>
+            </div>
+            <p class="title_pro02">
+              <a href="http://www.zb2b.com/product/detail_431">秋冬新款女冬圆领打底衫毛衣女厚套头内搭羊毛衫</a>
+            </p>
+            <p>
+              <strong>¥ 178.00</strong>
+            </p>
+          </li>
+          <li class="item">
+            <div class="c_img c_img160 kuang">
+              <a href="http://www.zb2b.com/product/detail_430"><img src="http://www.zb2b.com/upload/2015/03/20/.tmb/thumb_142684474789879_resize_160_160.jpg" alt="MII及简2015背心裙夏连衣裙前圆领后V领纯色大码通勤无袖中裙女"></a>
+            </div>
+            <p class="title_pro02">
+              <a href="http://www.zb2b.com/product/detail_430">MII及简2015背心裙夏连衣裙前圆领后V领</a>
+            </p>
+            <p>
+              <strong>¥ 112.00</strong>
+            </p>
+          </li>
+          <li class="item">
+            <div class="c_img c_img160 kuang">
+              <a href="http://www.zb2b.com/product/detail_429"><img src="http://www.zb2b.com/upload/2015/03/20/.tmb/thumb_142684443991351_resize_160_160.jpg" alt="瘦腿袜竖细条纹显瘦黑色大码 裤袜 丝袜春 夏 连裤袜 春秋 打底袜"></a>
+            </div>
+            <p class="title_pro02">
+              <a href="http://www.zb2b.com/product/detail_429">瘦腿袜竖细条纹显瘦黑色大码 裤袜 丝袜春 夏</a>
+            </p>
+            <p>
+              <strong>¥ 72.00</strong>
+            </p>
+          </li>
+          <li class="item">
+            <div class="c_img c_img160 kuang">
+              <a href="http://www.zb2b.com/product/detail_428"><img src="http://www.zb2b.com/upload/2015/03/20/.tmb/thumb_142684381071140_resize_160_160.jpg" alt="健康非海绵性小胸蕾丝收副乳高侧比魔力挺调整型文胸3241"></a>
+            </div>
+            <p class="title_pro02">
+              <a href="http://www.zb2b.com/product/detail_428">健康非海绵性小胸蕾丝收副乳高侧比魔力挺调整型</a>
+            </p>
+            <p>
+              <strong>¥ 116.00</strong>
+            </p>
+          </li>
+          <li class="item">
+            <div class="c_img c_img160 kuang">
+              <a href="http://www.zb2b.com/product/detail_427"><img src="http://www.zb2b.com/upload/2015/03/20/.tmb/thumb_142684327538241_resize_160_160.jpg" alt="休闲裤高腰小脚哈伦裤女春秋韩版潮长裤女裤子黑色萝卜裤hm1"></a>
+            </div>
+            <p class="title_pro02">
+              <a href="http://www.zb2b.com/product/detail_427">休闲裤高腰小脚哈伦裤女春秋韩版潮长裤女裤子黑</a>
+            </p>
+            <p>
+              <strong>¥ 169.00</strong>
+            </p>
+          </li>
+          <li class="item">
+            <div class="c_img c_img160 kuang">
+              <a href="http://www.zb2b.com/product/detail_426"><img src="http://www.zb2b.com/upload/2015/03/20/.tmb/thumb_142684261486903_resize_160_160.jpg" alt="真皮皮衣女短款 海宁单皮夹克女羊皮修身特价春秋机车皮衣外套黑"></a>
+            </div>
+            <p class="title_pro02">
+              <a href="http://www.zb2b.com/product/detail_426">真皮皮衣女短款 海宁单皮夹克女羊皮修身特价春</a>
+            </p>
+            <p>
+              <strong>¥ 985.00</strong>
+            </p>
+          </li>
+          <li class="item">
+            <div class="c_img c_img160 kuang">
+              <a href="http://www.zb2b.com/product/detail_425"><img src="http://www.zb2b.com/upload/2015/03/20/.tmb/thumb_142684202287258_resize_160_160.jpg" alt="2015春装新款OL必备基本款修身显瘦女士西装外套"></a>
+            </div>
+            <p class="title_pro02">
+              <a href="http://www.zb2b.com/product/detail_425">2015春装新款OL必备基本款修身显瘦女士西</a>
+            </p>
+            <p>
+              <strong>¥ 299.00</strong>
+            </p>
+          </li>
+          <li class="item">
+            <div class="c_img c_img160 kuang">
+              <a href="http://www.zb2b.com/product/detail_424"><img src="http://www.zb2b.com/upload/2015/03/20/.tmb/thumb_142684153583406_resize_160_160.jpg" alt="10双装浪莎肉色丝袜连裤袜防勾丝春秋薄款夏季超薄黑丝女袜子批发"></a>
+            </div>
+            <p class="title_pro02">
+              <a href="http://www.zb2b.com/product/detail_424">10双装浪莎肉色丝袜连裤袜防勾丝春秋薄款夏季</a>
+            </p>
+            <p>
+              <strong>¥ 69.00</strong>
+            </p>
+          </li>
+          <li class="item">
+            <div class="c_img c_img160 kuang">
+              <a href="http://www.zb2b.com/product/detail_423"><img src="http://www.zb2b.com/upload/2015/03/20/.tmb/thumb_142684100841778_resize_160_160.jpg" alt="春秋新品男士睡衣英伦格纹长袖纯棉家居服套装冬ms纯棉睡衣男"></a>
+            </div>
+            <p class="title_pro02">
+              <a href="http://www.zb2b.com/product/detail_423">春秋新品男士睡衣英伦格纹长袖纯棉家居服套装冬</a>
+            </p>
+            <p>
+              <strong>¥ 158.00</strong>
+            </p>
+          </li>
+          <li class="item">
+            <div class="c_img c_img160 kuang">
+              <a href="http://www.zb2b.com/product/detail_422"><img src="http://www.zb2b.com/upload/2015/03/20/.tmb/thumb_142684061515974_resize_160_160.jpg" alt="女士内裤纯棉性感可爱少女提臀中低腰全棉三角裤头短裤礼盒装"></a>
+            </div>
+            <p class="title_pro02">
+              <a href="http://www.zb2b.com/product/detail_422">女士内裤纯棉性感可爱少女提臀中低腰全棉三角裤</a>
+            </p>
+            <p>
+              <strong>¥ 49.00</strong>
+            </p>
+          </li>
+          <li class="item">
+            <div class="c_img c_img160 kuang">
+              <a href="http://www.zb2b.com/product/detail_421"><img src="http://www.zb2b.com/upload/2015/03/20/.tmb/thumb_142684025630754_resize_160_160.jpg" alt="欧洲站 春装新款A字阔脚短裤女春2015新品 中腰显瘦女式休闲裤子"></a>
+            </div>
+            <p class="title_pro02">
+              <a href="http://www.zb2b.com/product/detail_421">欧洲站 春装新款A字阔脚短裤女春2015新品</a>
+            </p>
+            <p>
+              <strong>面议</strong>
+            </p>
+          </li>
+          <li class="item">
+            <div class="c_img c_img160 kuang">
+              <a href="http://www.zb2b.com/product/detail_420"><img src="http://www.zb2b.com/upload/2015/03/20/.tmb/thumb_142683981926767_resize_160_160.jpg" alt="2015春秋新款外穿薄款女紧身大码九分小脚裤铅笔打底裤子"></a>
+            </div>
+            <p class="title_pro02">
+              <a href="http://www.zb2b.com/product/detail_420">2015春秋新款外穿薄款女紧身大码九分小脚裤</a>
+            </p>
+            <p>
+              <strong>面议</strong>
+            </p>
+          </li>
+          <li class="item">
+            <div class="c_img c_img160 kuang">
+              <a href="http://www.zb2b.com/product/detail_419"><img src="http://www.zb2b.com/upload/2015/03/20/.tmb/thumb_142683940980059_resize_160_160.jpg" alt="2015春秋小香风复古娃娃领雪纺连衣裙女 装 长袖韩版潮蓬蓬套装裙"></a>
+            </div>
+            <p class="title_pro02">
+              <a href="http://www.zb2b.com/product/detail_419">2015春秋小香风复古娃娃领雪纺连衣裙女 装</a>
+            </p>
+            <p>
+              <strong>¥ 168.00</strong>
+            </p>
+          </li>
+        </ul>
+        <div class="list-view-foot clearfix">
+          <form action="/product/list/" method="get">
+            <div class="list_page t_c">
+              <ul id="yw3" class="yiiPager">
+                <li class="first"><a class="" href="..\list.htm">&lt;&lt; 首页</a></li>
+                <li class="prev"><a class="end mem_bgx" href="..\list.htm">上一页<b class="ico ico_prev"></b></a></li>
+                <li class="page selected"><a class="" href="..\list.htm">1</a></li>
+                <li class="page"><a class="" href="..\list-2.htm?Product_page=2">2</a></li>
+                <li class="next"><a class="" href="..\list-2.htm?Product_page=2">下一页<b class="ico ico_next"></b></a></li>
+                <li class="last"><a class="" href="..\list-2.htm?Product_page=2">末页 &gt;&gt;</a></li>
+              </ul>
+              共2页，到第<input size="2" id="pagerinput" class="t_ipt" type="text" value="" name="Product_page">&nbsp;&nbsp;页
+              <script type="text/javascript">function hrefload(){var a=$("#pagerinput").val();location.href="/product/list?Product_page="+a;}</script>
+              <input class="bgx btn_page" onclick="hrefload()" name="yt0" type="button" value="确定">
+          </form>
+        </div>
+      </div>
+      <div class="keys" style="display: none" title="/product/list/">
+        <span>440</span><span>437</span><span>436</span><span>435</span><span>434</span><span>433</span><span>432</span><span>431</span><span>430</span><span>429</span><span>428</span><span>427</span><span>426</span><span>425</span><span>424</span><span>423</span><span>422</span><span>421</span><span>420</span><span>419</span>
+      </div>
+    </div>
+  </div>
+  <!--产品列表 end-->
+  </div>
+  <!-- content -->
+  <!--正文 end-->
+  <div class="hr_30"></div>
+</body>
+</html>

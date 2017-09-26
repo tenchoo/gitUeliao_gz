@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit|ie-stand|ie-comp">
+  <title>订单详情</title>
+  <meta name="keywords" content=""/>
+  <meta name="description" content=""/>
+  <link rel="stylesheet" href="/libs/normalize/3.0.3/normalize.min.css"/>
+  <link rel="stylesheet" href="/common/style.css"/>
+  <script src="/libs/seajs/2.3.0/sea.js"></script>
+  <script src="/libs/seajs/2.3.0/seajs-css.js"></script>
+  <script src="/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="/common/init.js"></script>
+</head>
+<body>
+  <link rel="stylesheet" href="/modules/button/css/style.css"/>
+  <link rel="stylesheet" href="/modules/form/css/style.css"/>
+  <link rel="stylesheet" href="/app/member/frame/css/style.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <div class="frame-head">
+    <div class="container">
+      <h1 class="pull-left"><a href="javascript:"><img src="/app/member/frame/image/logo.png" width="164" height="45" alt=""/></a></h1>
+      <ul class="frame-nav text-center text-bold list-unstyled">
+        <li class="active"><a href="javascript:">首页</a><span></span></li>
+        <li><a href="javascript:">账号设置</a></li>
+        <li><a href="javascript:">消息</a></li>
+        <li><a href="javascript:">管理中心</a></li>
+      </ul>
+      <div class="pull-right frame-search">
+        <form action="" method="get">
+          <input type="text" placeholder="请输入产品名称"/>
+          <button type="submit"><span class="hide">搜索</span></button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="container frame-body">
+    <div class="pull-left list-unstyled frame-menu">
+      <h3 class="active"><span><i></i></span>我的交易</h3>
+      <ul class="list-unstyled">
+        <li class="active"><a href="javascript:">已买到的货品</a></li>
+        <li><a href="javascript:">我的购物车</a></li>
+        <li><a href="javascript:">评价管理</a></li>
+        <li><a href="javascript:">收货地址</a></li>
+        <li><a href="javascript:">我的收藏</a></li>
+      </ul>
+    </div>
+    <script>seajs.use('app/member/frame/js/menu.js');</script>
+    <div class="pull-right frame-content">
+      <div class="order-status">
+        <div class="hd">当前订单状态：已拍下，请在3天内付款</div>
+        <div class="bd">
+          <p>1.点击这里<span><a href="javascript:" class="text-link">付款</a></span></p>
+          <p>2.如果你想取消这笔订单，可以<span><a href="javascript:" class="text-link">取消订单</a></span></p>
+        </div>
+      </div>
+      <div class="order-status">
+        <div class="hd">当前订单状态：买家已付款</div>
+        <div class="bd">
+          <p>1.如果付款后，卖家在72小时之内未发货，可以<span><a href="javascript:" class="text-link">提醒卖家发货</a></span></p>
+          <p>2.如果您不想购买此产品，可以<span><a href="javascript:" class="text-link">申请退款</a></span></p>
+        </div>
+      </div>
+      <div class="order-status">
+        <div class="hd">当前订单状态：卖家已发货<span class="countdown">6天1小时33分43秒后打款给卖家</span></div>
+        <div class="bd">
+          <p>1.如果您已收到货，且对商品满意，您可以<span><a href="javascript:" class="text-link">确认收货</a></span>打款给卖家</p>
+          <p>2.如果还未收到货，请注意自动打款时间，您可以<span><a href="javascript:" class="text-link">延长收货时间</a></span><span><a href="javascript:" class="text-link">申请退款</a></span><span><a href="javascript:" class="text-link">查看物流</a></span></p>
+        </div>
+      </div>
+      <div class="order-status">
+        <div class="hd">当前订单状态：交易成功</div>
+        <div class="bd">
+          <p>1.如果没有收到货，或收到货后出现问题，您可以联系卖家协商解决</p>
+          <p>2.如果卖家没有履行应尽的承诺，您可以<span><a href="javascript:" class="text-link">售后维权</a></span></p>
+          <p>3.如果您对本次交易还满意，请对商家进行评价，<span><a href="javascript:" class="text-link">立即评价</a></span></p>
+        </div>
+      </div>
+      <div class="order-status">
+        <div class="hd">当前订单状态：已互评</div>
+        <div class="bd">
+          <p>感谢您对商城的支持，期待您的下次光临！您可以：<span><a href="javascript:" class="text-link">查看评价</a></span></p>
+        </div>
+      </div>
+      <div class="order-status">
+        <div class="hd">当前订单状态：交易关闭</div>
+        <div class="bd">
+          <p>关闭类型：买家取消订单</p>
+          <p>原因：我不想买了</p>
+        </div>
+      </div>
+      <div class="order-status">
+        <div class="hd">当前订单状态：退款中</div>
+        <div class="bd">
+          <p>您已经申请了退款，<span><a href="javascript:" class="text-link">点击这里查看</a></span></p>
+        </div>
+      </div>
+      <div class="frame-list order-details">
+        <div class="details-item">收货地址：广东省深圳市龙岗区平湖华南城1号交易广告6E039，518111，刘一天，13410575664</div>
+        <div class="details-item">买家留言：无</div>
+        <div class="frame-list-bd">
+          <table>
+            <thead>
+              <tr><th class="title">产品信息</th><th width="80">单价（元）</th><th width="70">数量</th><th width="80">优惠</th><th width="80">运费（元）</th><th width="80">实付款（元）</th></tr>
+            </thead>
+            <tbody class="list-page-body">
+              <tr class="list-body-bd">
+                <td class="title">
+                  <div class="c-img pull-left"><a href=""><img src=""/></a></div>
+                  <div class="product-title">
+                    <a href="">2012新款 可爱浪漫少女一字领荷叶边衬衫</a>
+                  </div>
+                  <p class="text-minor"><span>颜色：黑色</span><span>尺码：170/90(M)</span><span>尺码：170/90(M)</span><span>尺码：170/90(M)</span></p>
+                </td>
+                <td class="price">6001.00</td>
+                <td class="num">1</td>
+                <td rowspan="2">限时抢购：省39.00元</td>
+                <td rowspan="2">10.00</td>
+                <td rowspan="2">70.00</td>
+              </tr>
+              <tr class="list-body-bd">
+                <td class="title">
+                  <div class="c-img pull-left"><a href=""><img src=""/></a></div>
+                  <div class="product-title">
+                    <a href="">2012新款 可爱浪漫少女一字领荷叶边衬衫</a>
+                  </div>
+                  <p class="text-minor"><span>颜色：黑色</span><span>尺码：170/90(M)</span><span>尺码：170/90(M)</span><span>尺码：170/90(M)</span></p>
+                </td>
+                <td class="price">6001.00</td>
+                <td class="num">1</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>seajs.use('./js/');</script>
+</body>
+</html>

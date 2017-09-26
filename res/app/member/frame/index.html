@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit|ie-stand|ie-comp">
+  <title>会员中心框架</title>
+  <meta name="keywords" content=""/>
+  <meta name="description" content=""/>
+  <link rel="stylesheet" href="/libs/normalize/3.0.3/normalize.min.css"/>
+  <link rel="stylesheet" href="/common/style.css"/>
+  <script src="/libs/seajs/2.3.0/sea.js"></script>
+  <script src="/libs/seajs/2.3.0/seajs-css.js"></script>
+  <script src="/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="/common/init.js"></script>
+</head>
+<body>
+  <link rel="stylesheet" href="css/style.css"/>
+  <div class="frame-head">
+    <div class="container">
+      <h1 class="pull-left"><a href="javascript:"><img src="/app/member/frame/image/logo.png" width="164" height="45" alt=""/></a></h1>
+      <ul class="frame-nav text-center text-bold list-unstyled">
+        <li class="active"><a href="javascript:">首页</a><span></span></li>
+        <li><a href="javascript:">账号设置</a></li>
+        <li><a href="javascript:">消息</a></li>
+        <li><a href="javascript:">管理中心</a></li>
+      </ul>
+      <div class="pull-right frame-search">
+        <form action="" method="get">
+          <input type="text" placeholder="请输入产品名称"/>
+          <button type="submit"><span class="hide">搜索</span></button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="container frame-body">
+    <div class="pull-left list-unstyled frame-menu">
+      <h3 class="active"><span><i></i></span>账号设置</h3>
+      <ul class="list-unstyled">
+        <li class="active"><a href="javascript:">菜单1</a></li>
+        <li><a href="javascript:">菜单2</a></li>
+        <li><a href="javascript:">菜单3</a></li>
+        <li><a href="javascript:">菜单4</a></li>
+        <li><a href="javascript:">菜单5</a></li>
+      </ul>
+      <h3 class="active"><span><i></i></span>产品管理</h3>
+      <ul class="list-unstyled">
+        <li><a href="javascript:">菜单1</a></li>
+        <li><a href="javascript:">菜单2</a></li>
+        <li><a href="javascript:">菜单3</a></li>
+        <li><a href="javascript:">菜单4</a></li>
+        <li><a href="javascript:">菜单5</a></li>
+      </ul>
+      <h3><span><i></i></span>产品管理</h3>
+      <ul class="hide list-unstyled">
+        <li><a href="javascript:">菜单1</a></li>
+        <li><a href="javascript:">菜单2</a></li>
+        <li><a href="javascript:">菜单3</a></li>
+        <li><a href="javascript:">菜单4</a></li>
+        <li><a href="javascript:">菜单5</a></li>
+      </ul>
+    </div>
+    <script>seajs.use('app/member/frame/js/menu.js');</script>
+    <div class="pull-right frame-content">
+      <div class="frame-box">
+        <br/>
+        <br/>
+        带边框内容样式展示
+        <br/>
+        <br/>
+        <br/>
+      </div>
+      <br/>
+      <br/>
+      <div class="frame-box">
+        <div class="frame-box-hd">带边框标题样式展示</div>
+        <div class="frame-box-bd">
+          内容<br/>
+          内容<br/>
+          内容<br/>
+          内容<br/>
+          内容<br/>
+          内容<br/>
+        </div>
+      </div>
+      <br/>
+      <br/>
+      <div class="frame-tab">
+        <ul class="clearfix list-unstyled frame-tab-hd">
+          <li class="active"><a href="javascript:">选项卡项1</a></li>
+          <li><a href="javascript:">选项卡项2</a></li>
+          <li><a href="javascript:">选项卡项3</a></li>
+        </ul>
+        <div class="frame-tab-bd frame-tab-bd-active">选项卡内容1</div>
+        <div class="frame-tab-bd">选项卡内容2</div>
+        <div class="frame-tab-bd">选项卡内容3</div>
+      </div>
+      <br/>
+      <br/>
+      <div class="frame-list">
+      <link rel="stylesheet" href="/modules/button/css/style.css"/>
+      <link rel="stylesheet" href="/modules/form/css/style.css"/>
+        <div class="frame-list-hd">列表展示</div>
+        <div class="frame-list-search">
+          <div class="pull-left">
+            <form action="" method="get">
+              <input type="text" class="form-control input-xs" placeholder="请输入信息标题">
+              <button class="btn btn-xs btn-cancel">查找</button>
+            </form>
+          </div>
+          <div class="pull-right">
+            <a href="newspost.html" class="btn btn-cancel btn-xs">发布信息</a>
+          </div>
+        </div>
+        <div class="frame-list-search">
+          <form action="" method="get">
+            <select name="" class="form-control input-xs">
+              <option value="">选择产品分类</option>
+            </select>
+            <input type="text" class="form-control input-xs" placeholder="请输入产品名称">
+            <button class="btn btn-xs btn-cancel">查找</button>
+          </form>
+        </div>
+        <div class="frame-list-bd">
+          <table>
+            <thead>
+              <tr><th colspan="2" class="title">信息标题</th><th width="140">发布时间</th><th width="100">状态</th><th width="100">操作</th></tr>
+              <tr class="list-page-head"><td colspan="5">
+                <div class="pull-left">
+                  <label for="selectall" class="checkbox-inline"><input type="checkbox">全选</label>
+                  <a href="" class="btn btn-cancel btn-xs">按钮示例</a>
+                  <select name="" class="form-control input-xs">
+                    <option value="">select示例</option>
+                  </select>
+                </div>
+                <div class="pull-right">
+                  <div class="page-text text-muted pull-left">第 1-10 条, 共 12 条 <span>第1页/共2页</span></div>
+                  <div class="page pull-left">
+                    <ul class="list-unstyled">
+                      <li><a href="" class="prev btn btn-cancel btn-xs"><i></i></a></li>
+                      <li><a href="" class="next btn btn-cancel btn-xs">下一页<i></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </td></tr>
+            </thead>
+            <tfoot class="list-page-foot">
+              <tr class="spacing"><td colspan="5"></td></tr>
+              <tr><td colspan="5">
+                <div class="pull-left">
+                  <label for="selectall" class="checkbox-inline"><input type="checkbox">全选</label>
+                  <a href="" class="btn btn-cancel btn-xs">批量删除</a>
+                  <select name="" class="form-control input-xs">
+                    <option value="">select示例</option>
+                  </select>
+                </div>
+                <div class="pull-right">
+                  <div class="page pull-left">
+                    <ul class="list-unstyled">
+                      <li><a href="" class="prev btn btn-cancel btn-xs"><i></i></a></li>
+                      <li><a href="" class="prev-c btn btn-cancel btn-xs"><i></i>上一页</a></li>
+                      <li><a href="" class="page-num active">1</a></li>
+                      <li><a href="" class="page-num ">2</a></li>
+                      <li><a href="" class="next btn btn-cancel btn-xs">下一页<i></i></a></li>
+                      <li><a href="" class="next-l btn btn-cancel btn-xs"><i></i></a></li>
+                    </ul>
+                  </div>
+                  <div class="page-text text-muted pull-left">
+                    <span>到第</span>
+                    <input type="text">
+                    <span>页</span>
+                  </div>
+                  <a href="" class="btn btn-cancel btn-xs">确定</a>
+                </div>
+              </td></tr>
+            </tfoot>
+            <tbody class="list-page-body">
+              <tr>
+                <td class="check"><input type="checkbox" ></td>
+                <td><a href="javascript:">费好大劲才抢到的，非常美，很庆幸把剩块费好大劲才抢到的，非常美，很庆幸把剩块费好大劲才抢到的，非常美，很庆幸把剩块</a></td>
+                <td>2015-06-30</td>
+                <td>待审核</td>
+                <td>
+                  <a href="javascript:" class="text-link">编辑</a>
+                  <a href="javascript:" class="text-link">删除</a>
+                </td>
+              </tr>
+              <tr>
+                <td class="check"><input type="checkbox" ></td>
+                <td><a href="javascript:">费好大劲才抢到的，非常美，很庆幸把剩块</a></td>
+                <td>2015-06-30</td>
+                <td>待审核</td>
+                <td>
+                  <a href="javascript:" class="text-link">编辑</a>
+                  <a href="javascript:" class="text-link">删除</a>
+                </td>
+              </tr>
+              <tr>
+                <td class="check"><input type="checkbox" ></td>
+                <td><a href="javascript:">费好大劲才抢到的，非常美，很庆幸把剩块</a></td>
+                <td>2015-06-30</td>
+                <td>待审核</td>
+                <td>
+                  <a href="javascript:" class="text-link">编辑</a>
+                  <a href="javascript:" class="text-link">删除</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="padding-bottom:200px"></div>
+</body>
+</html>

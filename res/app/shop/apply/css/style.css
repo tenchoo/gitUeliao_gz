@@ -1,0 +1,22 @@
+.frame-box-bd{padding:20px}
+select.form-control{width:138px}
+.apply .form-group-offset span.help-block {margin-left:0}
+
+/*图片上传样式*/
+.form-horizontal .image-group{height:120px}
+.form-horizontal .image-group .control-label{vertical-align: top;}
+.uploader-image{width:120px;height:120px}
+.uploader-image .webuploader-pick{padding:0;height:120px;*width:120px;display: inline-block;*display: inline;*zoom: 1;border-radius:0 }
+.uploader-image button{position: relative;width:120px;height:120px;padding:0; overflow: hidden; background:#f9f9f9 url(img/id-card.jpg) center;border:0;}
+.half-length button{background-image: url(img/half-length.jpg);}
+.business .image-group{vertical-align: top;}
+.business-license button{background-image: url(img/business-license.jpg);
+}
+.uploader-image span{position: absolute;width:120px;height:21px;left: 0;bottom: 0;line-height:21px;color:#fff}
+.uploader-image .bg{background:#000;opacity:0.6;filter: alpha(opacity=60);}
+
+.example{margin-left:20px;height:120px}
+.example .disc{margin-left:15px;line-height:2}
+.example .disc p{margin:0}
+.form-horizontal .code {width: 98px}
+.form-horizontal .send-code{margin-left:6px}

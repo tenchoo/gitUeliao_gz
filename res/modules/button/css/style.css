@@ -1,0 +1,22 @@
+.btn{border-radius:3px;padding:0 15px;font-size:16px;border:solid 1px #ddd;height:37px;*margin-right:5px}
+.btn-xs{font-size:12px;height:28px}
+.btn-sm{font-size:14px;height:32px}
+.btn-lg{font-size:18px;height:40px}
+.btn-xl{font-size:20px;height:46px}
+a.btn{line-height:37px;text-decoration:none;display:inline-block;*display:inline;*zoom:1}
+a.btn-xs{line-height:28px}
+a.btn-sm{line-height:32px}
+a.btn-lg{line-height:40px}
+a.btn-xl{line-height:46px}
+.btn-warning{background:#f60;border-color:#f60;color:#fff}
+.btn-warning:hover,.btn-warning:focus{background-color:#ff4800;border-color:#da3e00}
+a.btn-warning,a.btn-warning:hover,a.btn-warning:focus{color:#fff;text-decoration:none}
+.btn-success{background:#37bc08;border-color:#269400;color:#fff}
+.btn-success:hover,.btn-success:focus{background-color:#3ecf0b;border-color:#3ecf0b}
+a.btn-success,a.btn-success:hover,a.btn-success:focus{color:#fff;text-decoration:none}
+.btn-cancel{background:#ececec;border-color:#ccc;color:#444}
+.btn-cancel:hover,.btn-cancel:focus{background:#dedede}
+a.btn-cancel,a.btn-cancel:hover{color:#444;text-decoration:none}
+.btn-disabled,.btn-disabled:hover{background:#bbb;border-color:#bbb;color:#fff}
+
+.btn-block{display: block;width:100%;}

@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit|ie-stand|ie-comp">
+<title>购物车</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="stylesheet" href="/libs/normalize/3.0.3/normalize.min.css" />
+<link rel="stylesheet" href="/common/style.css" />
+<script src="/libs/seajs/2.3.0/sea.js"></script>
+<script src="/libs/seajs/2.3.0/seajs-css.js"></script>
+<script src="/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/common/init.js"></script>
+</head>
+<body>
+  <link rel="stylesheet" href="/modules/button/css/style.css" />
+  <link rel="stylesheet" href="/modules/icon/css/style.css" />
+  <link rel="stylesheet" href="/modules/form/css/style.css" />
+  <link rel="stylesheet" href="/app/member/frame/css/style.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <br><br>
+  <div class="container">
+    <div class="cart-step">
+      <ul class="list-unstyled">
+        <li class="first cur"><span class="one">1.查看购物车</span></li>
+        <li><span class="two">2.确认订单信息</span></li>
+        <li><span class="three">3.付款</span></li>
+        <li><span class="four">4.确认收货</span></li>
+        <li class="last"><span class="five">5.完成</span></li>
+      </ul>
+    </div>
+    <br>
+    <div class="frame-list-bd">
+      <table class="cart-index">
+        <thead>
+          <tr>
+            <th class="title">商品信息</th>
+            <th width="220">单价（元）</th>
+            <th width="100">数量</th>
+            <th width="190">金额（元）</th>
+            <th width="100">操作</th>
+          </tr>
+        </thead>
+        <tbody class="list-page-body">
+          <tr class="list-body-bd" data-total="25600" data-price="25600">
+            <td class="title">
+              <div class="c-img product-img pull-left">
+                <a href=""><img src="" /></a>
+              </div>
+              <div class="product-title">
+                <a href="">2012新款 可爱浪漫少女一字领荷叶边衬衫</a>
+              </div>
+              <p class="text-minor">
+                <span>颜色：黑色</span><span>尺码：170/90(M)</span><span>尺码：170/90(M)</span><span>尺码：170/90(M)</span>
+              </p>
+            </td>
+            <td class="price">
+                256.00</td>
+            <td class="num"><button type="button" disabled="" class="minus dis"><i class="icon icon-cart icon-minus"></i></button><input type="text" class="form-control input-xs int-only" value="1" min="1" max="99999999" maxlength="8"><button type="button" class="plus"><i class="icon icon-cart icon-plus"></i></button></td>
+            <td class="text-warning total">256.00</td>
+            <td><a href="javascript:" class="del">删除</a></td>
+          </tr>
+          <tr class="list-body-bd" data-total="12800" data-price="12800">
+            <td class="title">
+              <div class="c-img product-img pull-left">
+                <a href=""><img src="" /></a>
+              </div>
+              <div class="product-title">
+                <a href="">2012新款 可爱浪漫少女一字领荷叶边衬衫</a>
+              </div>
+              <p class="text-minor">
+                <span>颜色：黑色</span><span>尺码：170/90(M)</span><span>尺码：170/90(M)</span><span>尺码：170/90(M)</span>
+              </p>
+            </td>
+            <td class="price">128.00</td>
+            <td class="num"><button type="button" disabled="" class="minus dis"><i class="icon icon-cart icon-minus"></i></button><input type="text" class="form-control input-xs int-only" value="1" min="1" max="99999999" maxlength="8"><button type="button" class="plus"><i class="icon icon-cart icon-plus"></i></button></td>
+            <td class="text-warning total">128.00</td>
+            <td><a href="javascript:" class="del">删除</a></td>
+          </tr>
+          <tr class="list-body-bd" data-total="12000" data-price="12000">
+            <td class="title">
+              <div class="c-img product-img pull-left">
+                <a href=""><img src="" /></a>
+              </div>
+              <div class="product-title">
+                <a href="">2012新款 可爱浪漫少女一字领荷叶边衬衫</a>
+              </div>
+              <p class="text-minor">
+                <span>颜色：黑色</span><span>尺码：170/90(M)</span><span>尺码：170/90(M)</span><span>尺码：170/90(M)</span>
+              </p>
+            </td>
+            <td class="price">120.00</td>
+            <td class="num"><button type="button" disabled="" class="minus dis"><i class="icon icon-cart icon-minus"></i></button><input type="text" class="form-control input-xs int-only" value="1" min="1" max="99999999" maxlength="8"><button type="button" class="plus"><i class="icon icon-cart icon-plus"></i></button></td>
+            <td class="text-warning total">120.00</td>
+            <td><a href="javascript:" class="del">删除</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <div class="clearfix total-info">
+        <div class="pull-right">
+          <span class="total-bor totalnum">数量总计：3件</span> <span class="total-price">合计（不含运费）：<b class="totalprice text-warning">504.00</b> 元
+          </span> <a class="btn btn-warning" href="javascript:">结算</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="else-pro container">
+    <h3 class="hd">购买过此商品的还购了...</h3>
+    <div class="bd pro_list">
+      <ul class="list-unstyled">
+        <li>
+          <div class="c-img">
+            <a target="_blank" title="包邮送包 东芝移动硬盘2t 2.5寸 USB3.0黑甲虫2tb 正品 可加密" href="/product/detail_594"><img src="http://www.zb2b.com/upload/2015/03/25/.tmb/thumb_142727171245559_resize_120_120.png" alt="包邮送包 东芝移动硬盘2t 2.5寸 USB3.0黑甲虫2tb 正品 可加密"></a>
+          </div>
+          <p class="price">
+            <strong class="text-warning">¥679.96</strong>
+          </p>
+          <p class="t">
+            <a href="/product/detail_594">包邮送包 东芝移动硬盘2t 2.5寸 USB3.0黑甲虫2tb 正品 可加密</a>
+          </p>
+        </li>
+        <li>
+          <div class="c-img">
+            <a target="_blank" title="包邮送包 东芝移动硬盘2t 2.5寸 USB3.0黑甲虫2tb 正品 可加密" href="/product/detail_594"><img src="http://www.zb2b.com/upload/2015/03/25/.tmb/thumb_142727171245559_resize_120_120.png" alt="包邮送包 东芝移动硬盘2t 2.5寸 USB3.0黑甲虫2tb 正品 可加密"></a>
+          </div>
+          <p class="price">
+            <strong class="text-warning">¥679.96</strong>
+          </p>
+          <p class="t">
+            <a href="/product/detail_594">包邮送包 东芝移动硬盘2t 2.5寸 USB3.0黑甲虫2tb 正品 可加密</a>
+          </p>
+        </li>
+        <li>
+          <div class="c-img">
+            <a target="_blank" title="包邮送包 东芝移动硬盘2t 2.5寸 USB3.0黑甲虫2tb 正品 可加密" href="/product/detail_594"><img src="http://www.zb2b.com/upload/2015/03/25/.tmb/thumb_142727171245559_resize_120_120.png" alt="包邮送包 东芝移动硬盘2t 2.5寸 USB3.0黑甲虫2tb 正品 可加密"></a>
+          </div>
+          <p class="price">
+            <strong class="text-warning">¥679.96</strong>
+          </p>
+          <p class="t">
+            <a href="/product/detail_594">包邮送包 东芝移动硬盘2t 2.5寸 USB3.0黑甲虫2tb 正品 可加密</a>
+          </p>
+        </li>
+        <li>
+          <div class="c-img">
+            <a target="_blank" title="包邮送包 东芝移动硬盘2t 2.5寸 USB3.0黑甲虫2tb 正品 可加密" href="/product/detail_594"><img src="http://www.zb2b.com/upload/2015/03/25/.tmb/thumb_142727171245559_resize_120_120.png" alt="包邮送包 东芝移动硬盘2t 2.5寸 USB3.0黑甲虫2tb 正品 可加密"></a>
+          </div>
+          <p class="price">
+            <strong class="text-warning">¥679.96</strong>
+          </p>
+          <p class="t">
+            <a href="/product/detail_594">包邮送包 东芝移动硬盘2t 2.5寸 USB3.0黑甲虫2tb 正品 可加密</a>
+          </p>
+        </li>
+        <li>
+          <div class="c-img">
+            <a target="_blank" title="包邮送包 东芝移动硬盘2t 2.5寸 USB3.0黑甲虫2tb 正品 可加密" href="/product/detail_594"><img src="http://www.zb2b.com/upload/2015/03/25/.tmb/thumb_142727171245559_resize_120_120.png" alt="包邮送包 东芝移动硬盘2t 2.5寸 USB3.0黑甲虫2tb 正品 可加密"></a>
+          </div>
+          <p class="price">
+            <strong class="text-warning">¥679.96</strong>
+          </p>
+          <p class="t">
+            <a href="/product/detail_594">包邮送包 东芝移动硬盘2t 2.5寸 USB3.0黑甲虫2tb 正品 可加密</a>
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script>
+      seajs.use('app/cart/js/cart.js');
+    </script>
+</body>
+</html>

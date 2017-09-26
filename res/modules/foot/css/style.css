@@ -1,0 +1,25 @@
+.footer{background:#444}
+.footer-member{background:#fafafa;margin-top:30px;}
+.footer h3{margin:0;padding:0}
+.foot-guide{overflow: hidden;padding:20px 0;color:#fff}
+.foot-guide h3{font-family:Microsoft YaHei;font-size:16px;margin:0 0 10px;font-weight:400}
+.foot-guide ul{margin-left:-1px}
+.foot-guide li{float:left;height: 89px;padding: 0 0 18px 20px;line-height:22px}
+.foot-guide li a{margin-right:15px;color:#fff}
+.foot-guide .rookie{padding-left:10px;width:150px;margin-right:80px}
+.foot-guide .buyers{width: 209px;margin-right:30px}
+.foot-guide .buyers span{background-position:-50px 0}
+.foot-guide .buyers a{margin-right:24px}
+.foot-guide .clause span{background-position:-100px 0}
+.foot-guide .clause{width: 273px;}
+.foot-guide .safe span{background-position:-150px 0}
+.foot-guide .safe{width: 239px;}
+.foot-guide .wechat{width:70px;height:102px;color:#fff;margin-right:50px}
+
+.foot-link{padding:10px 0;color:#999}
+.foot-link a{margin:0 5px;color:#999}
+.foot-link a:hover{color:#f60}
+
+.foot-icp{margin-top:10px;color:#999;padding-bottom:20px}
+.foot-link a{color:#999}
+.foot-icp p{margin:0 0 10px}

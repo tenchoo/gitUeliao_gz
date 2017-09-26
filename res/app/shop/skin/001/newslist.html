@@ -1,0 +1,233 @@
+﻿<!doctype html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit|ie-stand|ie-comp">
+<title>资讯列表页-网铺</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="stylesheet" href="/libs/normalize/3.0.3/normalize.min.css" />
+<link rel="stylesheet" href="/common/style.css" />
+<link rel="stylesheet" href="../common/style.css" />
+<link rel="stylesheet" href="css/style.css" />
+<script src="/libs/seajs/2.3.0/sea.js"></script>
+<script src="/libs/seajs/2.3.0/seajs-css.js"></script>
+<script src="/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/common/init.js"></script>
+</head>
+<body>
+  <div class="header container">
+    <h1 class="logo pull-left">
+      <a title="指易达商城系统" href=""><img src="../common/image/logo.png" alt="商城系统"></a>
+    </h1>
+    <div class="pull-right search">
+      <div class="g-cf search-form">
+        <form method="get" enctype="multipart/form-data" name="search-form" id="search-form-main" action="">
+          <div class="pull-left search-cate" data-hover="search-cate-hover">
+            <a href="javascript:" class="search-select-cate">找产品<span class="arr"></span></a>
+            <ul>
+              <li class="active"><a href="">找产品</a></li>
+              <li><a href="">找卖家</a></li>
+            </ul>
+          </div>
+          <input name="keyword" type="text" placeholder="请输入搜索关键字" class="pull-left search-q" id="search-keyword">
+          <button type="submit" class="pull-left search-btn">搜索</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="bg_x header_logo_2">
+    <div class="container logo2">
+      <dl class="clearfix">
+        <dt class="pull-left">
+          <img width="80" height="80" src="http://www.zb2b.com/upload/2015/03/20/142681268075548.png" alt="">
+        </dt>
+        <dd class="pull-left">
+          <p class="logo2_text">隆缘裳服饰旗舰店</p>
+          <p class="logo2_eng">shop32.zb2b.com</p>
+        </dd>
+      </dl>
+    </div>
+    <div class="nav_bar">
+      <div class="container main_nav">
+        <ul>
+          <li><a href="index.html">首页</a></li>
+          <li><a href="productlist.html">所有分类</a></li>
+          <li><a href="record.html">诚信档案</a></li>
+          <li class="cur"><a href="newslist.html">最新动态</a></li>
+          <li><a href="contact.html">联系我们</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--导航end-->
+  <!--正文 start-->
+  <div class="container main clearfix">
+    <div class="w_210 main_left pull-left">
+      <!--卖家信息start-->
+      <div class="xinxi">
+        <h2 class="bg_x tit_bg fs_14">卖家信息</h2>
+        <ul>
+          <li class="clearfix"><span class="xinxi_01">卖家名称：</span><span class="xinxi_02"><a href="..\index.htm"><strong class="lisheng">隆缘裳服饰旗舰店</strong></a></span></li>
+          <li class="clearfix">固定电话：</li>
+          <li class="clearfix"><span class="xinxi_01">联系地址：</span><span class="xinxi_02">广东广州市越秀区</span></li>
+          <li class="xinxi_xian">
+            <h4>在线客服：</h4>
+          </li>
+          <li>成交订单：<strong>1</strong>笔
+          </li>
+          <li>好&nbsp;&nbsp;评&nbsp;&nbsp;率：0.00%</li>
+          <li>卖家认证：<span class="ico ico_aprovone"></span></li>
+          <li>创店时间：2015-03-19</li>
+          <li>商品数量：32款</li>
+          <li class="dianpu"><a class="btn btn_sc" href="javascript:saveShop()">收藏店铺</a></li>
+        </ul>
+      </div>
+      <!--卖家信息 end-->
+      <!--站内搜索 start-->
+      <div class="sousuo">
+        <h2 class="bg_x tit_bg fs_14">站内搜索</h2>
+        <form method="get" action="http://shop32.zb2b.com/product/list" id="space_search">
+          <ul>
+            <li><span>价格</span><input class="jiage" type="text" name="price_min">&nbsp;-&nbsp;<input class="jiage" type="text" name="price_max"></li>
+            <li><span>产品名</span><input class="pic" type="text" name="name"></li>
+            <li class="sousuo_anniu"><input class="btn_sc btn " type="submit" value="搜索" name="search"></li>
+          </ul>
+        </form>
+      </div>
+      <!--站内搜索 end-->
+      <!--产品分类 start-->
+      <div class="chanpin">
+        <h2 class="bg_x tit_bg fs_14">产品分类</h2>
+        <div class="menu" id="proSort">
+          <div class="menu_01 open">
+            <h3>
+              <b class=" ico ico_mian1 click"></b> <a href="..\product\list.htm">未分类</a>
+            </h3>
+          </div>
+        </div>
+      </div>
+      <!--产品分类 end-->
+      <!--销量排行 start-->
+      <div class="xiaoliang">
+        <h2 class="bg_x tit_bg fs_14">销量排行</h2>
+        <div class="xiaoliang_pic bghover">
+          <dl class="clearfix item">
+            <dt class="c_img c_img50 pull-left">
+              <a href="http://www.zb2b.com/product/detail_432"><img src="http://www.zb2b.com/upload/2015/03/23/.tmb/thumb_142707288375049_resize_50_50.png" alt="女装 春装新款短装 女士套装 "></a>
+            </dt>
+            <dd class="pull-left">
+              <span class="title_pro02"> <a href="http://www.zb2b.com/product/detail_432">女装 春装新款短装 女士套装 </a>
+              </span> <span><strong>¥ 248.00</strong></span>
+            </dd>
+          </dl>
+          <dl class="clearfix item">
+            <dt class="c_img c_img50 pull-left">
+              <a href="http://www.zb2b.com/product/detail_386"><img src="http://www.zb2b.com/upload/2015/03/20/.tmb/thumb_142681624864299_resize_50_50.jpg" alt="男士内裤 男 平角裤四角裤头内衣U凸舒适礼盒装"></a>
+            </dt>
+            <dd class="pull-left">
+              <span class="title_pro02"> <a href="http://www.zb2b.com/product/detail_386">男士内裤 男 平角裤四角裤头内衣U凸舒适礼盒</a>
+              </span> <span><strong>¥ 56.00</strong></span>
+            </dd>
+          </dl>
+          <dl class="clearfix item">
+            <dt class="c_img c_img50 pull-left">
+              <a href="http://www.zb2b.com/product/detail_369"><img src="http://www.zb2b.com/upload/2015/03/19/.tmb/thumb_142675123169446_resize_50_50.jpg" alt="雪纺衬衫女春秋 2015春装新款 纯色绣花女士衬衣韩版打底上衣休闲"></a>
+            </dt>
+            <dd class="pull-left">
+              <span class="title_pro02"> <a href="http://www.zb2b.com/product/detail_369">雪纺衬衫女春秋 2015春装新款 纯色绣花女</a>
+              </span> <span><strong>面议</strong></span>
+            </dd>
+          </dl>
+          <dl class="clearfix item">
+            <dt class="c_img c_img50 pull-left">
+              <a href="http://www.zb2b.com/product/detail_418"><img src="http://www.zb2b.com/upload/2015/03/20/.tmb/thumb_142683841790095_resize_50_50.jpg" alt="2015半身裙短裙春秋新款大码百搭收腰A字裙夏 绣花蓬蓬裙百褶裙子"></a>
+            </dt>
+            <dd class="pull-left">
+              <span class="title_pro02"> <a href="http://www.zb2b.com/product/detail_418">2015半身裙短裙春秋新款大码百搭收腰A字裙</a>
+              </span> <span><strong>¥ 118.00</strong></span>
+            </dd>
+          </dl>
+          <dl class="clearfix item">
+            <dt class="c_img c_img50 pull-left">
+              <a href="http://www.zb2b.com/product/detail_381"><img src="http://www.zb2b.com/upload/2015/03/20/.tmb/thumb_142681436943523_resize_50_50.jpg" alt="可外穿2015春秋款新品加大码家居服套装女人睡衣纯棉长袖"></a>
+            </dt>
+            <dd class="pull-left">
+              <span class="title_pro02"> <a href="http://www.zb2b.com/product/detail_381">可外穿2015春秋款新品加大码家居服套装女人</a>
+              </span> <span><strong>面议</strong></span>
+            </dd>
+          </dl>
+          <dl class="clearfix item">
+            <dt class="c_img c_img50 pull-left">
+              <a href="http://www.zb2b.com/product/detail_384"><img src="http://www.zb2b.com/upload/2015/03/20/.tmb/thumb_142681505795106_resize_50_50.jpg" alt="8双加厚船袜男纯棉秋冬 浅口隐形袜子低帮短袜男士毛巾袜"></a>
+            </dt>
+            <dd class="pull-left">
+              <span class="title_pro02"> <a href="http://www.zb2b.com/product/detail_384">8双加厚船袜男纯棉秋冬 浅口隐形袜子低帮短袜</a>
+              </span> <span><strong>¥ 56.00</strong></span>
+            </dd>
+          </dl>
+        </div>
+      </div>
+      <!--销量排行 end-->
+    </div>
+    <div class="w_770 pull-right main_right ">
+      <!--最新动态 start-->
+      <div class="recent rack">
+        <h2>最新动态</h2>
+        <div class="recent_list">
+          <div class="list-view" id="yw0">
+            <ul class="recent_one">
+              <li>
+                <span class="pull-right">2015/07/15 08:40</span> 
+                <a href="newsdetail.html">关于举办“2015中国电子商务与物流协调发展大会”</a>
+              </li>
+              <li>
+                <span class="pull-right">2015/07/15 08:40</span> 
+                <a href="newsdetail.html">关于举办“2015中国电子商务与物流协调发展大会”</a>
+              </li>
+              <li>
+                <span class="pull-right">2015/07/15 08:40</span> 
+                <a href="newsdetail.html">关于举办“2015中国电子商务与物流协调发展大会”</a>
+              </li>
+              <li>
+                <span class="pull-right">2015/07/15 08:40</span> 
+                <a href="newsdetail.html">关于举办“2015中国电子商务与物流协调发展大会”</a>
+              </li>
+              <li>
+                <span class="pull-right">2015/07/15 08:40</span> 
+                <a href="newsdetail.html">关于举办“2015中国电子商务与物流协调发展大会”</a>
+              </li>
+              <li class="recent_bor"></li>
+              <li>
+                <span class="pull-right">2015/07/15 08:40</span> 
+                <a href="newsdetail.html">关于举办“2015中国电子商务与物流协调发展大会”</a>
+              </li>
+              <li>
+                <span class="pull-right">2015/07/15 08:40</span> 
+                <a href="newsdetail.html">关于举办“2015中国电子商务与物流协调发展大会”</a>
+              </li>
+              <li>
+                <span class="pull-right">2015/07/15 08:40</span> 
+                <a href="newsdetail.html">关于举办“2015中国电子商务与物流协调发展大会”</a>
+              </li>
+              <li>
+                <span class="pull-right">2015/07/15 08:40</span> 
+                <a href="newsdetail.html">关于举办“2015中国电子商务与物流协调发展大会”</a>
+              </li>
+              <li>
+                <span class="pull-right">2015/07/15 08:40</span> 
+                <a href="newsdetail.html">关于举办“2015中国电子商务与物流协调发展大会”</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--最新动态 end-->
+    </div>
+    <!-- content -->
+  </div>
+  <!--正文 end-->
+  <div class="hr_30"></div>
+</body>
+</html>

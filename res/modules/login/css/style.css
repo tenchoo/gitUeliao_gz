@@ -1,0 +1,8 @@
+.login-wrap{width: 280px;margin: 30px auto;/* padding: 25px 0; */}
+.login-wrap .message-box{margin-top: -23px;position: absolute;color: #f00;font-weight: 700;}
+.login-wrap label{font-weight:700}
+.login-wrap .btn-block{margin-top: 15px;}
+.login-wrap .form-group{margin: 3px 0 10px;}
+.login-wrap .code{width: 148px;}
+.login-wrap .code-wrap img{margin: 1px 2px;}
+.login-wrap .code-wrap span{width:36px;line-height:1.4}

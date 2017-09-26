@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit|ie-stand|ie-comp">
+  <title>登录</title>
+  <meta name="keywords" content=""/>
+  <meta name="description" content=""/>
+  <link rel="stylesheet" href="/libs/normalize/3.0.3/normalize.min.css"/>
+  <link rel="stylesheet" href="/common/style.css"/>
+  <script src="/libs/seajs/2.3.0/sea.js"></script>
+  <script src="/libs/seajs/2.3.0/seajs-css.js"></script>
+  <script src="/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="/common/init.js"></script>
+</head>
+<body>
+  <link rel="stylesheet" href="/modules/button/css/style.css"/>
+  <link rel="stylesheet" href="/modules/form/css/style.css"/>
+  <link rel="stylesheet" href="css/popup-login.css"/>
+  <form action="" method="post">
+    <label>手机号码：</label>
+    <div class="form-group">
+      <input type="text" class="form-control input-sm username" autofocus/>
+    </div>
+    <label>密码：</label>
+    <div class="form-group">
+      <input type="password" class="form-control input-sm password"/>
+    </div>
+    <label>验证码：</label>
+    <div class="clearfix form-group code-wrap">
+      <input type="text" class="form-control input-sm code pull-left"/>
+      <img src="/common/placeholder.png" width="80" height="30" alt="点击刷新验证码" class="pull-left" title="点击刷新验证码"/>
+      <span class="pull-left">看不清换一张</span>
+    </div>
+    <button class="btn btn-sm btn-block btn-warning" type="submit">登 录</button>
+  </form>
+  <script>
+    seajs.use('app/member/account/js/popup-login.js');
+  </script>
+</body>
+</html>

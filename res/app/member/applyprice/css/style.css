@@ -1,0 +1,12 @@
+.frame-list-bd table th{height:40px}
+.frame-list-bd tfoot td{border-bottom:solid 1px #e8e8e8;background: #f6f6f6;padding:10px 0;}
+.frame-list-bd tfoot .add-product{margin-right:15px;}
+.frame-list-bd th.text-center{text-align: center;}
+.list-page-body .c-img{margin:0 8px 0 5px}
+.list-page-body .product-title{height:35px;overflow: hidden;width:220px;}
+.list-page-body .input-xs{display: inline-block;width:98px;margin-right:5px;}
+.list-page-body .b-price{display: inline-block;width:120px;}
+.list-page-body .stat{text-align: center;border:solid #e8e8e8;border-width:0 1px}
+.list-page-body .title{background: #f6f6f6;border-top:solid 1px #e8e8e8;}
+.list-page-body .option{padding-left:30px;}
+.list-page-foot .spacing td{background: none;}

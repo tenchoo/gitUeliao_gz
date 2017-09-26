@@ -1,0 +1,98 @@
+/*物流设置*/
+.add-freight{margin:5px 15px}
+.freight-list li{margin:10px 0;}
+.freight-template table{width:100%;}
+.freight-form .freight-template{display: none; padding:15px 0;}
+.freight-form .active .freight-template{display: block;}
+.freight-form .freight-template table{width: 638px;}
+.freight-template input{height:20px}
+.freight-template th,.freight-template td{border:solid 1px #cacaca;padding:4px 10px;text-align: center;}
+.freight-template th{font-weight:400;background:#f5f5f5}
+.freight-template .text-left{text-align: left;}
+.freight-title{background:#e9f6d4;border:solid 1px #cacaca;border-bottom:0;height:34px;line-height:34px;padding:0 10px}
+.freight-title a{margin-left:6px}
+.freight-title h3{margin:0;}
+.freight-title input{width:70px;margin:0 4px 0 2px}
+.freight-template td input{width:60px;}
+.freight-foot{height:36px;line-height:36px;padding-left:10px;border:solid 1px #cacaca;border-top:0;}
+.areas-text{padding-right: 28px;}
+
+.freight-form{padding: 20px 20px 40px;}
+.freight-method{vertical-align: top;width: 638px;}
+.freight-method ul{margin-top:10px}
+.freight-method li{margin:4px 0;min-height: 20px;}
+.freight-method .default-tip{height: 24px;vertical-align: middle;}
+
+/*已买到的货品*/
+.frame-tab-hd li a b{margin:0 5px}
+.frame-tab-hd li a:hover{text-decoration:none}
+.salelist .frame-list-search{padding:10px 40px;*height:70px}
+.salelist .frame-list-search .item{padding:5px 0}
+.salelist .frame-list-search label{margin-right:15px;line-height:23px}
+.salelist .frame-list-search input.input-xs {width:120px}
+.salelist .frame-list-search select.input-xs{margin-left:-3px}
+.salelist .frame-list-search .order-time{line-height:23px}
+.salelist .frame-list-search .order-time span{display:inline-block;*display:inline;*zoom:1;width:78px;text-align:center}
+.salelist .frame-list-search .pull-right{margin:23px 30px 0 0}
+.salelist .frame-list-bd table th,.salelist .frame-list-bd table .list-body-bd td{text-align:center}
+.salelist .frame-list-bd table th.title,.salelist .frame-list-bd table .list-body-bd td.title{text-align:left}
+.salelist .frame-list-bd .no-show{margin-left:10px}
+.salelist .list-body-hd{border-top:1px solid #e8e8e8;background:#f9f9f9}
+.list-body-hd .order-info{padding-right:15px;width:340px}
+.list-body-hd .order-info b{margin-right:20px}
+.list-body-hd input[type="checkbox"]{margin: 3px 0 0 -5px;}
+.list-body-bd .c-img{margin-right:10px;width:80px;height:80px}
+.list-body-bd .c-img a{width:80px;height:80px;*font-size:80px}
+.list-body-bd .product-title{width:160px;height:38px;overflow:hidden}
+.list-body-bd p{margin:0}
+.list-body-bd .title p{max-height:32px;line-height:16px;overflow:hidden}
+.list-body-bd .title p span{margin-right:5px}
+.list-body-bd td{border:1px solid #e8e8e8}
+.list-body-bd .title,.list-body-bd .price,.list-body-bd .num,.list-body-bd .service{border:0}
+.salelist .frame-list-bd table th.title{text-align:left}
+
+.dialog-confirm p{padding:5px 0}
+
+.dialog-confirm .form-control{width:60px}
+.dialog-confirm .input-xs{height:23px;line-height:23px}
+.dialog-confirm .frame-list-bd table th{background:#e7f1fe}
+.dialog-confirm .frame-list-bd table td.postage{border-left:1px solid #e8e8e8}
+
+/*订单详情*/
+.remind-box{background: #ffffe1 url(img/remind.png) 10px center no-repeat;border: 1px solid #e9c085;padding:10px 30px;margin-bottom:10px}
+.remind-box b{margin:0 5px}
+.order-status{background: #ffffe1;border: 1px solid #e9c085;padding:10px 30px;margin-bottom:10px}
+.order-status .hd{font-size:14px;font-weight:700}
+.order-status .hd .countdown{margin-left:30px;font-size:12px;font-weight:400}
+.order-status p{margin:10px 0}
+.order-status span{margin:0 5px}
+
+.details-item{height:40px;line-height:40px;padding-left:15px;margin-bottom:5px;background:#f9f9f9}
+.order-details .frame-list-bd{margin-top:15px}
+.order-details .frame-list-bd th,.order-details .frame-list-bd td{text-align:center}
+.order-details .frame-list-bd th.title,.order-details .frame-list-bd td.title{text-align:left}
+
+/*查看物流*/
+.order-status .bd .item{width:240px;margin-right:20px;display:inline-block}
+.order-status .bd .item-company{width:180px}
+.express-info{padding:20px;overflow:hidden}
+.express-info .hd{width:80px;text-align:right;font-weight:700}
+.express-info .bd{min-height:300px;padding: 0;}
+.express-info .bd li{margin-bottom:5px}
+.express-address{padding:10px 30px;background:#f7f7f7;line-height:24px}
+.express-address p{margin:0}
+
+/*发货*/
+.deliver-goods .frame-list-bd th,.deliver-goods .frame-list-bd td{text-align:center}
+.deliver-goods .frame-list-bd td{border-width:1px 0}
+.deliver-goods .frame-list-bd th.title,.deliver-goods .frame-list-bd td.title{text-align:left}
+.deliver-goods .frame-list-bd td .product-title{margin-top:21px}
+.receiving-info{margin:10px 0}
+.receiving-info .hd{font-size:14px;font-weight:700;height:28px;line-height:28px}
+.receiving-info .bd{background:#f9f9f9;border:solid #ececec;border-width:1px 1px 0}
+.receiving-info .bd p{margin:0;border-bottom:1px solid #ececec;height:38px;line-height:38px;padding:0 10px}
+.choice-express .hd{font-size:14px;font-weight:700;height:28px;line-height:28px}
+.choice-express .bd{border:1px solid #ececec;background:#f9f9f9}
+.express-form .form-control{width:200px}
+.express-form textarea.form-control{width:300px}
+.express-form .other{margin-left:15px}

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit|ie-stand|ie-comp">
+  <title>表单 示例</title>
+  <meta name="keywords" content=""/>
+  <meta name="description" content=""/>
+  <link rel="stylesheet" href="/libs/normalize/3.0.3/normalize.min.css"/>
+  <link rel="stylesheet" href="/common/style.css"/>
+  <link rel="stylesheet" href="/modules/icon/css/style.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <script src="/libs/seajs/2.3.0/sea.js"></script>
+  <script src="/libs/seajs/2.3.0/seajs-css.js"></script>
+  <script src="/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="/common/init.js"></script>
+</head>
+<body class="container">
+  <h2>表单样式</h2>
+  <form action="">
+    <h3>输入框尺寸</h3>
+    <div>
+      <input type="text" class="form-control" value="form-control" />
+      <br/>
+      <br/>
+      <input type="text" class="form-control input-sm" value="form-control input-sm" />
+      <br/>
+      <br/>
+      <input type="text" class="form-control input-xs" value="form-control input-xs"/>
+    </div>
+    <h3>禁用状态</h3>
+    <div>
+      <input type="text" class="form-control input-disabled" value="form-control input-disabled" disabled/>
+    </div>
+    <h3>错误效果</h3>
+    <div>
+      <input type="text" class="form-control has-error" value="form-control has-error" />
+    </div>
+    <h3>下拉框</h3>
+    <div>
+      <select class="form-control">
+        <option>请选择</option>
+      </select>
+      <br/>
+      <br/>
+      <select class="form-control input-sm">
+        <option>请选择</option>
+      </select>
+      <br/>
+      <br/>
+      <select class="form-control input-xs">
+        <option>请选择</option>
+      </select>
+    </div>
+  </form>
+  <h2>表单交互</h2>
+  <form action="">
+    <h3>输入框</h3>
+    <div class="form-group">
+      <input type="text" class="form-control" value="" />
+    </div>
+    <br/>
+    <br/>
+    <h3>多行文本</h3>
+    <div class="form-group textarea-group">
+      <textarea name="" class="form-control"></textarea>
+    </div>
+  </form>
+  <h2>表单布局</h2>
+  <form action="">
+    <div class="form-group">
+      <label class="control-label" for="account">登录名：</label>
+      <input type="text" name="account" class="form-control username" placeholder="手机或邮箱注册" id="account">
+    </div>
+  </form>
+  <script>seajs.use('modules/form/js/demo.js')</script>
+</body>
+</html>

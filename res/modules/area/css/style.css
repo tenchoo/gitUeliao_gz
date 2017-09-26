@@ -1,0 +1,29 @@
+.area-select select.form-control{width: 91px;}
+
+
+.area-checkbox{width: 820px;margin:-25px -26px 0;}
+.area-checkbox .bg{background:#f1f1f1}
+  .area-item{padding:5px}
+  .province-label,.area-label{display: inline-block;
+  *display: inline;
+  *zoom: 1;  width: 38px;}
+  .province-label .arr{display: inline-block;
+  *display: inline;
+  *zoom: 1;overflow: hidden; width:16px;height:16px;position: absolute;margin: 2px 0 0 2px;}
+  .province-label .arr i{position: absolute;display: inline-block;
+  *display: inline;
+  *zoom: 1;width:0;height:0;border: solid 6px #fff;border-top-color:#999;margin: 5px 0 0 1px;}
+  .area-hd{padding: 6px 10px 6px 20px;}
+  .area-label{font-weight:700;}
+  .city-bd{position: absolute; display: none; width: 250px;border:solid 1px #c4c4c4;padding: 7px 0 15px 19px;z-index: 1;background:#fff;margin-left: -94px;}
+  .city-bd li{padding: 5px 0;}
+
+  .city-bd .close{margin: 8px 0 0 175px;}
+  .city-hd{margin-bottom:-1px;padding: 6px 12px 6px 22px;z-index:2 ;background:#fff}
+  .area-checkbox .active .city-hd{position: relative;padding: 5px 11px 5px 21px;border:solid 1px #c4cece;border-bottom:0}
+  .area-checkbox .active .province-label .arr i{border-top-color:#fff;border-bottom-color:#999;margin-top: -1px;}
+  .active .city-bd{display: block;}
+  .area-checkbox .bg .province-label .arr i{border-color:#f1f1f1;border-top-color:#999}
+  .area-checkbox .bg .city-hd{background:#f1f1f1}
+  .area-checkbox .bg .active .province-label .arr i{border-color:#fff;border-bottom-color:#999}
+  .area-checkbox .bg .active .city-hd{background: #fff;}

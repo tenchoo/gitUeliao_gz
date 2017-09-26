@@ -1,0 +1,15 @@
+/*客服设置*/
+.service-list{margin-bottom:20px}
+.service-list .title{padding-left:15px}
+.service-list td p{margin:0}
+.service-list .item{width:200px}
+.add-service{border:0;margin-bottom:20px}
+.add-service .hd{height:24px;line-height:24px;padding:5px 15px;background:#f9f9f9}
+.add-service .hd .title{font-size:14px;font-weight:700;}
+.add-service .hd span{font-size:12px;font-weight:400}
+.add-service .control-label{width:200px}
+.add-service .form-group-offset{padding-left:203px}
+
+.service-list .list-page-body .icon{cursor:pointer;}
+.service-list .list-page-body .icon-blue-up-dis,.service-list .list-page-body .icon-blue-down-dis{cursor:default;}
+

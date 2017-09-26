@@ -1,0 +1,17 @@
+php_errors.log
+application/runtime/*
+.coding-ide/
+.buildpath
+.project
+.settings/
+application/controllers/DefaultController.php
+.idea
+deployment-config.json
+application/yiic
+application/yiic.bat
+application/yiic.php
+application/config/console.php
+sftp-config.json
+application/config/console.php
+application/config/test.php
+application/tests/

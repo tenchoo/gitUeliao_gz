@@ -1,0 +1,38 @@
+.base-category select.form-control{width:260px;height:260px;margin-right:10px}
+.control-div {padding: 8px 0 0 15px;}
+.control-div ul{padding-left:0}
+.content{width:600px;height:375px}
+.input-other{display: inline-block;width:100px;position: relative;top: 5px;}
+.title-group .input-group-addon{min-width:36px;}
+
+
+.attr-div .checkbox-inline+.checkbox-inline,
+.attr-div .radio-inline+.radio-inline{
+  margin-left:0
+}
+
+.attr-div .checkbox-inline,
+.attr-div .radio-inline{
+  margin-right:10px
+}
+
+.spec-set{padding-top:0}
+.spec-set .form-control{display: inline-block;vertical-align: middle;width: 40%;}
+.batch-spec-set .form-control{width:120px;}
+.colors-checked .text{display: inline-block;width: 31%; vertical-align: middle;}
+.colors-checked li{width:33%; float: left;padding:10px; margin:-1px 0 0 -1px;border:solid 1px #dedede;white-space: nowrap;overflow: hidden;}
+.colors-checked button,.colors-checked .c,.color-items .c{display: inline-block; width:32px;height:32px;background:transparent;border:solid 1px #dedede;vertical-align: middle;padding: 0;}
+.colors-checked .uploader{margin-bottom:-13px;}
+
+.colors{border:solid 1px #dedede;}
+.color-group{background:#ededed;border-bottom:solid 1px #dedede;margin-bottom: 0;}
+.color-group li{float: left;padding: 8px 9px;cursor: pointer;}
+.color-group .all{padding-top: 1px;}
+.color-group .active{position: relative; background:#fff;border:solid #dedede;border-width:0 1px;margin-bottom:-1px;padding:8px 8px 9px;cursor: default;}
+.color-items{padding: 5px 0;overflow-y: auto;margin: 0;max-height: 172px;}
+.color-items li{float: left;width: 178px; padding:10px 0 10px 15px;white-space: nowrap;overflow: hidden;}
+.color-items .c{position: relative;margin:-5px 3px 0 0}
+
+.unit select,.unit input{width:46%;display: inline-block;}
+
+.time .form-control{ position: absolute; display: inline-block; margin:-4px 0 0 10px; width:160px;}

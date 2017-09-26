@@ -1,0 +1,7 @@
+.table-bordered>tfoot>tr>td{border:0}
+.table-bordered>tfoot>tr>td span{line-height:30px;margin-right:10px}
+.table-bordered>tfoot>tr>td span .form-control{display:inline-block;width:auto;}
+
+.purchase-add .panel input{width:300px}
+.purchase-add td .input-group{width:205px}
+.purchase-add  .table-bordered > tfoot > tr > td span.text-danger{margin-right:0;}

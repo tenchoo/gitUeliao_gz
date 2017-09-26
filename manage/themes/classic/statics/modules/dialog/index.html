@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit|ie-stand|ie-comp">
+  <title>对话框 示例</title>
+  <meta name="keywords" content=""/>
+  <meta name="description" content=""/>
+  <link rel="stylesheet" href="/libs/normalize/3.0.3/normalize.min.css"/>
+  <link rel="stylesheet" href="/common/style.css"/>
+  <script src="/libs/seajs/2.3.0/sea.js"></script>
+  <script src="/libs/seajs/2.3.0/seajs-css.js"></script>
+  <script src="/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="/common/init.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>confirm提示弹窗</h2>
+    <div>
+      <input type="text" value="confirm提示"/>
+      <button class="confirm_btn" type="button">演示</button>
+    </div>
+    <h2>tip提示弹窗</h2>
+    <div>
+      <input type="text" value="提示信息"/>
+      <button class="tip_btn" type="button">演示</button>
+    </div>
+  </div>
+  <script>
+    seajs.use('modules/dialog/js/demo.js');
+  </script>
+</body>
+</html>

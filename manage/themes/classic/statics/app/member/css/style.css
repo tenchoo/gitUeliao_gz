@@ -1,0 +1,22 @@
+/*基本资料*/
+.h3{display:none}
+.input-date{background: #fff url(img/datePicker.gif) no-repeat right;}
+
+/*详细资料*/
+label label{font-weight:400}
+.form-margin-top{margin-top:10px}
+.inline-block{height:30px;line-height:30px}
+.form-secant{width:900px;border-bottom:1px solid #dedede}
+.contacts-hd{height:30px;line-height:30px;font-size:14px;font-weight:700;margin-top:10px}
+.form-contacts .input-sm{width:220px}
+.form-contacts .form-control{display:inline-block}
+.form-contacts span{margin-left:10px}
+.form-contacts .radio-inline input{margin:3px 0 0 -15px;}
+.modifydetail .area-select select.form-control{width:32.5%;display:inline-block}
+.form-contacts .radio-inline{padding-top:0}
+
+/*客户配置*/
+.paymonthly span{margin-left:20px}
+
+/*客户分配*/
+.distribution-confirm .radio{margin-right:10px}

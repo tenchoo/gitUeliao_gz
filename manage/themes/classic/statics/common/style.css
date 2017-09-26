@@ -1,0 +1,92 @@
+body {
+  font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", "FontAwesome", sans-serif;
+  overflow-y:scroll;
+}
+
+.text-disabled,.text-disabled:hover,.text-disabled:focus{color:#ccc;cursor:not-allowed;text-decoration:none}
+
+.text-danger{color:#f00}
+.control-label .text-danger{color:#f00}
+.control-label{font-weight:400;padding-right:0}
+
+
+.head h1{margin:0 20px;}
+
+  .admin-info{padding: 17px 20px 0;}
+  .admin-info a{margin-left:15px}
+
+.head-nav{height:42px;padding-left:10px;background: #64b30d;line-height:42px}
+.head-nav a{color:#fff;display: inline-block;
+*display: inline;
+*zoom: 1;padding:0 10px}
+.head-nav .active{background: #579a0f;}
+
+.side-menu{padding:5px 5px 0}
+
+.side-menu .panel:first-child {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+
+.side-menu .panel:not(:first-child) {
+  border-radius: 0px;
+  border-top: 0px;
+  margin-top: 0px;
+}
+
+.side-menu .panel-default>.panel-heading{background: #64b30d;color:#fff}
+
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover{background:#c0e0b5;color:#555;border-color:#ddd}
+.breadcrumb{margin-bottom:10px;}
+.h3{font-size:16px; margin:10px 0}
+
+.search-panel .panel-body{padding: 9px;}
+
+.table{margin:-15px 0 5px;}
+
+.table thead tr,.table tfoot tr{background:#f5f5f5}
+
+/* .table td[rowspan]{vertical-align: middle;text-align: center;} */
+
+.list-well{padding:9px 9px 4px 5px;min-height: 49px;}
+.list-well .pagination {margin: 0;}
+.list-well .checkbox-inline input[type=checkbox]{margin-left:-14px}
+.list-well .checkbox-inline{margin-right:6px;padding-left:14px}
+
+.content-wrap{padding:15px;min-height:560px}
+
+.do-success{position: fixed;width:50%;top: 196px;z-index:999;left:25%}
+
+.input-date{background: #fff url(img/datePicker.gif) no-repeat right;}
+
+.space{height:15px}
+.list-hd{background:#f5f5f5;width:100%;}
+.list-hd.book{background:#e8f6d2}
+.list-hd.obligate{background:#fff9dc}
+.list-hd.tailproduct{background:#d7ecff}
+.list-hd b{margin:0 10px}
+.list-hd span.first{margin-left:5px}
+.list-hd span{width:24%;display:inline-block;*display:block;*zoom:1;}
+.list-bd .c-img{margin-right:10px}
+.list-bd .c-img a{width:100px;height:100px;*font-size:100px}
+.list-bd .product-title{width:200px;height:19px;line-height:19px;overflow:hidden}
+
+.foot{padding:20px 0;border-top:1px solid #e1e1e1;background:#f8f8f8;margin-top:30px;text-align:center;color:#999;}
+.foot p{margin:0}
+
+.form-control[readonly]{background-color:#fff;cursor:pointer;}
+
+/*参见 http://cn.vuejs.org/api/#v-cloak*/
+[v-cloak] {
+  display: none;
+}
+
+.hide-left{
+  position: fixed;
+  top: 40%;
+  left: 0;
+  background: #f5f5f5;
+  border:solid 1px #ddd;
+}
+.hide-left a{padding:15px 0;display: block;color:#666;text-decoration: none;}

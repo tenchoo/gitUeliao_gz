@@ -1,0 +1,23 @@
+.dialog{position: fixed;_position: absolute; left:50%;top: 45%;z-index: 999;visibility: hidden;}
+
+.dialog-content{ border:solid 1px #9fa3a7;box-shadow:3px 3px 3px rgba(0, 0, 0, 0.2);background:#fff;overflow: hidden;}
+
+.dialog-header{height:32px;background:#f1f1f1}
+.dialog-title{margin:0 32px 0 10px;line-height:32px}
+.dialog-close{float: right;width:32px;height:32px;border:none;background:url(img/close.png) no-repeat center 10px;}
+.dialog-close:hover,.dialog-close:focus{background-position:center -22px}
+
+.dialog-body{padding:25px;min-width:180px}
+.dialog-body p{margin:0;}
+
+.dialog-footer{padding-bottom: 25px; text-align: center;}
+.dialog-footer button{border:solid 1px;border-radius:3px;margin:0 3px;padding: 4px 25px;}
+.dialog-footer .dialog-btn-success{border-color:#269400;background:#37bc08  ;color: #fff;}
+.dialog-footer .dialog-btn-success:hover,.dialog-footer .dialog-btn-success:focus{background:#2ba600}
+.dialog-footer .dialog-btn-cancel{border-color: #ccc;background:#ececec }
+.dialog-footer .dialog-btn-cancel:hover,.dialog-footer .dialog-btn-cancel:focus{background:#dedede}
+
+.dialog-tip{background:#ffffe1;border:solid 1px #d8d8d8;font-size:14px;padding:5px 25px 3px}
+.dialog-warn{background:#fdf8e4;border:solid 1px #faebcc;font-size:14px;padding:5px 25px 3px;color:#8d6a40}
+.dialog-error{background:#f2dedf;border:solid 1px #ecccd1;font-size:14px;padding:5px 25px 3px;color:#a84144}
+.dialog-success{background:#e0efd8;border:solid 1px #d8e9c5;font-size:14px;padding:5px 25px 3px;color:#3e783b}

@@ -1,0 +1,31 @@
+a.glyphicon{text-decoration: none;}
+
+.well .title{line-height: 28px;}
+.well .sort{margin-left: 296px;}
+.well .spec-color{margin-left: 291px;}
+.well .spec-image{margin-right:20px}
+
+.category-list{line-height:30px;}
+.category-list a.glyphicon{color:#666;margin:0 3px;}
+.category-list > li>div{background:#f3f3f3;padding: 6px 4px;}
+.category-list > li:nth-child(even) >div{background:#e4e4e4}
+.category-list ul li{margin: 8px 0 8px 21px;padding: 3px;}
+.category-list ul ul li{padding-left:20px; background: url(img/l.png) no-repeat 0 2px;}
+.category-list > li>div>.name,.spec-list .name{width:384px;}
+.category-list > li > ul > li >div> .name{width:364px;}
+.name{width: 323px;}
+.name .form-control{width:200px;}
+.sort{width:180px;}
+.category-list .sort a{color:#337ab7}
+a.glyphicon.dis{color:#aaa;cursor:default;}
+.control{width: 200px;}
+.control a{margin-right:5px}
+
+.spec-color,.spec-image{width: 120px;}
+.spec-list .spec-color,.spec-list .spec-image{margin-top: -9px;}
+
+.search .checkbox-inline{margin-top: -13px;}
+.title .checkbox-inline{margin-top: -19px;}
+.title .input-sm{width:80%;}
+
+.helpcategory-list .radio-inline input{margin-top:8px}

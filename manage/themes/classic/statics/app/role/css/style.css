@@ -1,0 +1,9 @@
+.auth-manage li{}
+
+
+.auth-manage li>div{padding:10px 0 10px 10px;border-bottom:dashed 1px #dedede}
+.auth-manage li li>div{padding-left:30px}
+.auth-manage li li li>div{padding-left:60px}
+
+.auth-manage .list-inline{padding:10px 0 10px 80px;border-bottom:dashed 1px #dedede}
+.auth-manage .list-inline li{ width:15%;overflow: hidden;}

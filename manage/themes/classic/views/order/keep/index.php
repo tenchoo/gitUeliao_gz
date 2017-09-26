@@ -1,0 +1,83 @@
+<div class="panel panel-default search-panel">
+	<div class="panel-body">
+		<form role="search" class="pull-left form-inline"
+			action="<?php echo $this->createUrl(Yii::app()->getController()->getAction()->id);?>">
+			成交时间: <input type="text" name="createTime1"
+				value="<?php echo $condition['createTime1']; ?>"
+				class="form-control input-sm input-date" id="starttime" readonly/> 到 <input
+				type="text" name="createTime2"
+				value="<?php echo $condition['createTime2']; ?>"
+				class="form-control input-sm input-date" id="endtime" readonly/>
+			<div class="form-group">
+				<input type="text" name="orderId"
+					value="<?php echo $condition['orderId'];?>" placeholder="请输入订单编号"
+					class="form-control input-sm" />
+			</div>
+			<button class="btn btn-sm btn-default">查找</button>
+		</form>
+	</div>
+</div>
+<div class="clearfix well well-sm list-well">
+    <?php $this->beginContent('//layouts/_page',array('pages'=>$pages));$this->endContent();?>
+</div>
+<table class="table table-condensed table-bordered">
+  <colgroup><col width="40%"><col width="10%"><col width="10%"><col width="15%"><col width="15%"><col width="10%"></colgroup>
+	<thead>
+	<tr>
+		<td>产品信息</td>
+		<td>单价（元）</td>
+		<td>数量</td>
+		<td>总金额（元）</td>
+		<td>状态</td>
+		<td>操作</td>
+	</tr>
+	</thead>
+</table>
+<br>
+<?php foreach(  $orders as $order  ){
+	if(is_null($order->orderInfo)) continue;?>
+<table class="table table-condensed table-bordered">
+  <colgroup><col width="40%"><col width="10%"><col width="10%"><col width="15%"><col width="15%"><col width="10%"></colgroup>
+	<tbody>
+		<tr class="list-hd">
+			<td colspan="6">
+				<span class="first">留货订单：<?php echo $order->orderInfo->orderId;?></span>
+				<span>客户：<?php echo $order->orderInfo->companyname;?></span>
+				<span>业务员：<?php echo $order->orderInfo->username;?></span>
+				<span><?php echo $order->orderInfo->createTime;?></span>
+			</td>
+		</tr>
+		<?php
+			$count = $order->orderInfo->productsTotal;
+			foreach( $order->orderInfo->products as $key=>$pval  ){ ?>
+			<tr class="list-bd">
+				<td>
+					<div class="c-img pull-left">
+						<img src="<?php echo $this->img().$pval['mainPic'];?>_50" alt="" width="50" height="50"/>
+					</div>
+					<div class="product-title"><?php echo $pval['title'];?></div>
+					<p><?php echo $pval['singleNumber'];?>&nbsp;&nbsp;<?php echo $pval['color'];?></p>
+				</td>
+				<td> <?php echo Order::priceFormat($pval['price']);?></td>
+				<td><?php echo Order::quantityFormat($pval['num']);?></td>
+				<?php if($key=='0'){?>
+					<td rowspan="<?php echo $count;?>">
+						<?php echo number_format($order->orderInfo->realPayment,2);?><Br/>
+						（运费<?php echo $order->orderInfo->freight;?>元）
+					</td>
+					<td rowspan="<?php echo $count;?>" >
+						留货至:<?php echo date('Y-m-d', $order->expireTime);?>
+					</td>
+					<td rowspan="<?php echo $count;?>">
+						<a href="<?php echo $this->createUrl('examine',array('id'=>$order->orderId));?>">订单审核</a>
+					</td>
+				<?php } ?>
+			</tr>
+		<?php } ?>
+		</tbody>
+   </table>
+   <br>
+	<?php }?>
+<div class="clearfix well well-sm list-well">
+    <?php $this->beginContent('//layouts/_page',array('pages'=>$pages));$this->endContent();?>
+</div>

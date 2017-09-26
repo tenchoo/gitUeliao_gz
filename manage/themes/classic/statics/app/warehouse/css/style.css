@@ -1,0 +1,35 @@
+.addnew-form input{width:200px}
+.addnew-form .control-label{width:80px;text-align:right;}
+
+.import thead span{margin-right:100px}
+.import tr.list-bd{background:#fff}
+.import tr.list-bd td{border:0}
+.import tr{width:100%}
+.import tr select{display:inline-block;width:30%}
+.import tr select.importtitle{width:auto}
+
+.panel-default ~ .table-bordered{margin-top:-10px}
+
+td.packing-info[rowspan]{text-align:left;padding-left:15px}
+.list-hd span {margin-left:50px;width:auto;}
+
+.alloction .panel .form-inline .form-control{width:20%}
+.alloction .col-md-5,.stocktaking .col-md-5{padding-right:0}
+.alloction .col-md-7,.stocktaking .col-md-7{padding-left:5px}
+
+.warehousechoose .form-control{width:32.5%;display: inline-block;}
+
+.form-inline select.form-control{margin-left:10px}
+.form-inline .cate2-wrap input{margin-right:5px}
+.form-inline .cate2-wrap label{font-weight:400}
+.form-inline .cate2-wrap ul{display: inline-block; margin-left:10px; width:200px;height:134px;overflow-y:scroll;}
+
+.form-inline .cate3-wrap input{margin-right:5px}
+.form-inline .cate3-wrap label{font-weight:400}
+.form-inline .cate3-wrap ul{display: inline-block; margin-left:10px; width:200px;height:134px;overflow-y:scroll;}
+
+.distribution-item .name{margin-left:30px}
+.distribution-item select{width:200px}
+.distribution-list tr .form-control{width:150px}
+.distribution-list .integer,.distribution-list .remainder,.distribution-list .total{margin-left:0}
+.distribution-list .empty td{padding:20px 0}

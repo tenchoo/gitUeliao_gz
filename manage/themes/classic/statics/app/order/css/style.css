@@ -1,0 +1,19 @@
+/*订单设置*/
+.order-setting .form-control{display:inline-block}
+.order-setting .input-sm{width:250px}
+.order-setting .unit{width:80px}
+
+/*查看订单*/
+.list-group-item .uploader{vertical-align: middle;}
+
+.comment textarea{width:90%}
+
+span>.form-control{display: inline-block;width:auto}
+span>.input-note{width:40%;}
+.order-detail{margin:-10px 0 10px}
+
+.packForm{}
+.packForm .input-sm{width:140px}
+.packForm span{cursor:pointer}
+.new-packForm{padding-right:3px;}
+.clear-top{display: inline-block;margin-top: 3.7px;}

@@ -1,0 +1,15 @@
+.svn/
+.settings/
+.buildpath
+.project
+.idea/
+application/config/console.php
+application/yiic
+application/yiic.bat
+application/yiic.php
+!.gitignore
+deployment-config.json
+application/config/test.php
+application/tests/
+application/php_errors.log
+sftp-config.json

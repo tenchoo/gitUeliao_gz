@@ -1,0 +1,290 @@
+body {
+    font-size: 16px;
+    font-family: 微软雅黑;
+    color: rgb(0, 0, 0);
+}
+
+
+/*公共*/
+
+a {
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 7px 15px 7px 15px;
+    color: white;
+    box-shadow: 0px 3px 5px #888888;
+}
+
+button {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    outline: none;
+    color: white;
+}
+
+a:focus {
+    text-decoration: none;
+    outline: none;
+    color: white;
+}
+
+:focus {
+    outline: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.padding {
+    padding: 0;
+}
+
+.orange {
+    color: rgb(288, 98, 0);
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    top: 2px;
+}
+.real{
+    position: relative;
+    top: 1px;
+}
+.wan-orange{
+    position: absolute;
+    font-size: 20px;
+    top: 382px;
+    color: rgb(288, 98, 0);
+    font-weight: 600;
+}
+.fen-orange{
+    position: absolute;
+    font-size: 20px;
+    bottom: 4px;
+    color: rgb(288, 98, 0);
+    font-weight: 600;
+}
+.gui-orange{
+    position: absolute;
+    font-size: 20px;
+    top: 404px;
+    color: rgb(288, 98, 0);
+    font-weight: 600;
+}
+
+.bg-red {
+    background-color: rgb(249, 89, 89);
+    color: white;
+}
+
+.red-border {
+    border: 1px solid rgb(249, 89, 89);
+}
+
+.bg-blue {
+    background-color: rgb(91, 165, 204);
+    color: white;
+}
+
+.blue-border {
+    border: 1px solid rgb(91, 165, 204);
+}
+
+.bg-gray {
+    background-color: rgb(152, 152, 152);
+    color: white;
+}
+
+.gray-border {
+    border: 1px solid rgb(152, 152, 152);
+}
+
+.gray {
+    background: rgb(240, 240, 240);
+}
+
+.yellow {
+    background: rgb(255, 240, 219);
+}
+
+.red {
+    color: rgb(223, 0, 0);
+}
+
+.font-gray {
+    color: #666666;
+}
+
+.progress {
+    background: #999999;
+}
+
+.progress-bar {
+    width: 40%;
+}
+
+
+/*公共end*/
+
+.container {
+    width: 76.28147619047618%;
+}
+
+header {
+    height: 37px;
+    background: rgb(240, 240, 240);
+    line-height: 34px;
+    border-bottom: 1px solid #dddbde;
+    font-size: 14px;
+}
+
+.logo {
+    margin-left: -11px;
+}
+
+nav {
+    height: 90px;
+}
+
+nav .rightimg {
+    margin-top: 15px
+}
+
+nav .sec {
+    display: table;
+    margin: 23px auto;
+}
+
+.sec .seclect {
+    width: 120px;
+    height: 40px;
+    margin-right: 5px
+}
+
+.sec .text {
+    width: 300px;
+    height: 40px;
+}
+
+.sec .but {
+    width: 70px;
+    height: 40px;
+    margin-left: 5px;
+}
+
+nav .leftdata {
+    margin-top: 23px
+}
+
+nav .leftdata .input-data {
+    display: none
+}
+
+nav .leftdata .span-data-data {
+    visibility: hidden;
+}
+
+.tips {
+    background-color: rgb(240, 240, 240);
+    height: 55px;
+    line-height: 50px;
+    border: 1px solid #dddbde;
+    overflow: hidden;
+}
+
+section {
+    border: 1px solid #dddbde;
+    margin-top: 15px;
+    height: 472px;
+}
+
+.section-header td {
+    line-height: 20px;
+}
+
+.section-header thead,
+.modal-header {
+    background-color: rgb(15, 189, 154);
+    color: white;
+    font-weight: normal;
+}
+
+.section-header thead th {
+    font-weight: normal;
+}
+
+.th-fir {
+    padding-left: 7px
+}
+
+.th-las {
+    padding-left: 13px
+}
+
+.progress {
+    border-radius: 10px;
+}
+
+.progress-bar {
+    background-color: rgb(249, 89, 89);
+    width: 35%;
+    border-radius: 10px;
+}
+
+.modal-dialog {
+    width: 804px;
+    height: 636px;
+}
+
+.modal-header,
+.modal-footer {
+    border: 0px;
+}
+
+..modal-body td {
+    display: none;
+}
+
+.modal-footer button {
+    background-color: rgb(15, 189, 154);
+    color: white;
+    width: 240px;
+    height: 60px;
+    font-size: 28px;
+}
+
+.modal-footer button:hover {
+    background-color: rgb(15, 189, 154);
+    color: white;
+}
+
+.num {
+   width: 403px;
+}
+
+.txt {
+    width: 105px;
+    height: 31px;
+}
+
+.new-div{
+   
+    float: left;
+}   
+.tab tr
+{
+  width: 200px;
+  
+}
+.btn-default {
+    background-color: rgb(15, 189, 154);
+    color: white;
+}
